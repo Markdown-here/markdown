@@ -152,13 +152,17 @@ Indent two spaces to nest.
 
 ---
 
-## Links and images
-
-**Link**
+## Links
 
 ```markdown
 [Markdown Guide](https://www.markdownguide.org/)
 ```
+
+The text in `[ ]` is the label people click. The URL goes in `( )`.
+
+---
+
+## Images
 
 **Image next to your file**
 
@@ -172,7 +176,9 @@ Indent two spaces to nest.
 ![Team photo](https://example.com/images/team.png)
 ```
 
-An image is a link with a `!` in front. The text in `[ ]` is the alt text.
+The `!` shows the image in the doc instead of linking to it.
+
+The text in `[ ]` is the alt text.
 
 ---
 
