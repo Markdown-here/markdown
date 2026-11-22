@@ -174,17 +174,29 @@ for name in ["Ana", "Ben"]:
 
 ---
 
-## Quotes and dividers
+## Quotes
 
 ```markdown
 > Write it once, read it anywhere.
-
-***
 ```
 
 > Write it once, read it anywhere.
 
-`***` (or `---`) draws a line between sections.
+---
+
+## Dividers
+
+```markdown
+The meeting is on Tuesday.
+
+---
+
+Next up: the budget.
+```
+
+`---` on its own line draws a line between sections.
+
+Leave a **blank line above it**. Without one, the text above turns into a heading.
 
 ---
 

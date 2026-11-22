@@ -33,7 +33,7 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 | Code | `` `code` `` |
 | Code block | ` ```python ` … ` ``` ` |
 | Quote | `> text` |
-| Divider | `***` on its own line |
+| Divider | `---` after a blank line |
 
 ## Level up: in files, not chat
 

@@ -34,7 +34,7 @@ Plain text with a few symbols. Save as `.md`.
 | Code | `` `code` `` |
 | Code block | ` ```python ` … ` ``` ` |
 | Quote | `> text` |
-| Divider | `***` on its own line |
+| Divider | `---` after a blank line |
 
 ## Level up: GitHub flavor
 
