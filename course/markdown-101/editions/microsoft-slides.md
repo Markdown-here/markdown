@@ -137,7 +137,7 @@ The blank line is the most important character in Markdown.
 
 ## Lists: Bulleted
 
-You type:
+**You type:**
 
 ```markdown
 - Milk
@@ -145,7 +145,7 @@ You type:
   - Free range
 ```
 
-You get:
+**You get:**
 
 - Milk
 - Eggs
@@ -159,7 +159,7 @@ Point at "Free range": indent two spaces to nest a list.
 
 ## Lists: Numbered
 
-You type:
+**You type:**
 
 ```markdown
 1. Open the file
@@ -167,7 +167,7 @@ You type:
 3. Save
 ```
 
-You get:
+**You get:**
 
 1. Open the file
 2. Make the change
@@ -222,13 +222,13 @@ for name in ["Ana", "Ben"]:
 
 ## Quote
 
-You type:
+**You type:**
 
 ```markdown
 > "A bad system will beat a good person every time." - W. Edwards Deming
 ```
 
-You get:
+**You get:**
 
 > "A bad system will beat a good person every time." - W. Edwards Deming
 
@@ -244,7 +244,7 @@ li { margin: 0.05em 0; }
 
 From *Never Eat Alone* by Keith Ferrazzi (2005):
 
-You type:
+**You type:**
 
 ```markdown
 > A network is something you have, not something you "do".
@@ -252,7 +252,7 @@ You type:
 > Build it before you need it.
 ```
 
-You get:
+**You get:**
 
 > A network is something you have, not something you "do".
 >
