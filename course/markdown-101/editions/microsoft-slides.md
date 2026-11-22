@@ -104,7 +104,7 @@ Core 80% starts (0:06-0:16). Live demo in VS Code with preview open. Keep a stea
 Launch the beta by June.
 ```
 
-- `#` for heading level 1, `##` for level 2, `###` for level 3
+- Use `#` for a level 1 heading, `##` for level 2, and `###` for level 3
 - A space after the `#`, and a blank line before and after
 - One `# Title` per file, and don't skip levels
 
