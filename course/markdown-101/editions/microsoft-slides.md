@@ -205,9 +205,9 @@ The text in `[ ]` is the alt text.
 
 ## Code
 
-Inline: `` `print()` `` gives `print()`
+Inline code: `` `print()` `` gives `print()`
 
-A block: three backticks and a language name
+A code block: three backticks and a language name
 
 ````markdown
 ```python
