@@ -66,15 +66,13 @@ Show the raw text of a real Copilot answer if you can (copy it into VS Code). "T
 
 ---
 
-## Why bother?
+## Why Markdown?
 
-| | |
-|---|---|
-| **Readable raw** | No app needed to understand it |
-| **Portable** | Any editor, any Operating System, OneDrive, GitHub, phones |
-| **Future-proof** | It's just text |
-| **Reviewable** | Changes show up clearly in Git |
-| **AI-native** | Copilot reads and writes it, so your docs are Copilot-ready |
+- **Readable raw:** no app needed to understand it
+- **Portable:** any editor, any Operating System, OneDrive, GitHub, phones
+- **Future-proof:** it's just text
+- **Reviewable:** changes show up clearly in Git
+- **AI-native:** Copilot reads and writes it, so your docs are Copilot-ready
 
 ---
 
