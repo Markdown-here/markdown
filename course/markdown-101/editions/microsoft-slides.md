@@ -84,7 +84,7 @@ Create a file called `notes.md` in any of these:
 
 - **VS Code**: open preview side by side with `Ctrl+K V`
 - **Notepad** on Windows 11
-- **OneDrive** app or web: *Add New* › *Markdown Document*
+- **OneDrive** app or Web: *Add New* › *Markdown Document*
 
 Type along. Typos are fine.
 
