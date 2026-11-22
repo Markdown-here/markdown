@@ -209,11 +209,27 @@ The text in `[ ]` is the alt text.
 
 ---
 
-## Code
+## Code: Inline
 
-Inline code: `` `print()` `` gives `print()`
+**You type:**
 
-A code block: three backticks ```` ``` ```` and a language name
+```markdown
+Use `print()` to show text.
+```
+
+**You get:**
+
+Use `print()` to show text.
+
+One backtick on each side of the code.
+
+---
+
+## Code: Block
+
+Three backticks ```` ``` ```` and a language name.
+
+**You type:**
 
 ````markdown
 ```python
@@ -222,6 +238,12 @@ for name in ["Ana", "Ben"]:
 ```
 ````
 
+**You get:**
+
+```python
+for name in ["Ana", "Ben"]:
+    print(f"Hello, {name}!")
+```
 ---
 
 ## Quote
