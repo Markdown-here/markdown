@@ -29,9 +29,9 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 | 0:06–0:16 | **The core 80%** (live) | Typed in VS Code with preview open. Attendees follow in VS Code, Notepad, or OneDrive |
 | 0:16–0:21 | **Level up** | Tables, task lists, and a Mermaid diagram rendered in VS Code or GitHub: "this could replace your draw.io diagram". Flavors: in Teams `*bold*` is **bold**; in Markdown it's *italic* |
 | 0:21–0:26 | **Exercise** | Turn a messy Teams-meeting recap into Markdown. Bonus: ask Copilot to do it, then review what it wrote |
-| 0:26–0:27 | **Wrap** | Cheat sheet in OneDrive, VS Code extensions to install, teaser: "Next: write docs in Git, read them in Confluence" |
+| 0:26–0:27 | **Wrap** | Cheat sheet in OneDrive, VS Code extensions to install |
 | 0:27–0:29 | **Q&A** | Before the close, never after it |
-| 0:29–0:30 | **Close** | Reveal the deck is one Markdown file. Call to action: "Write your next meeting note in Markdown." |
+| 0:29–0:30 | **Close** | Reveal the deck is one Markdown file |
 
 ## Prep checklist
 
