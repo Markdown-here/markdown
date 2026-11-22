@@ -252,6 +252,7 @@ The columns don't need to line up. VS Code can format them for you.
 
 ![bg right:30% 58%](../../../media/confluence-publishing-flow.svg)
 
+````markdown
 ```mermaid
 flowchart TB
     org_dept_BusinessAnalyst[Write in VS Code]
@@ -260,6 +261,7 @@ flowchart TB
     org_dept_BusinessAnalyst -->|Commit and push| org_dept_Manager
     org_dept_Manager -->|GitHub Action publishes| org_dept_ProjectTeamMember
 ```
+````
 
 GitHub draws this as a diagram. Change a word, the diagram updates.
 
