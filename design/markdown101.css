@@ -33,7 +33,7 @@ section {
   font-family: var(--sans);
   font-size: 29px;
   line-height: 1.45;
-  padding: 64px 80px 56px;
+  padding: 36px 80px 56px;
   /* Content slides start at the top. The base theme centres them with align-content. */
   align-content: start;
   justify-content: flex-start;
