@@ -1,0 +1,6 @@
+flowchart TB
+    org_dept_BusinessAnalyst[Write in VS Code]
+    org_dept_Manager[Review on GitHub]
+    org_dept_ProjectTeamMember[Read in Confluence]
+    org_dept_BusinessAnalyst -->|Commit and push| org_dept_Manager
+    org_dept_Manager -->|GitHub Action publishes| org_dept_ProjectTeamMember

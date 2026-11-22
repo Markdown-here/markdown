@@ -111,7 +111,6 @@ These points became the [Microsoft edition](../course/markdown-101/editions/micr
 - Use **Teams** and **Copilot** as the hook ("you already do this"). Copilot's answers are Markdown, and you can ask it to write Markdown for you.
 - Use **Teams** as the flavors example.
 - Use a **Mermaid** diagram in the level-up segment and mention where it's going: GitHub, Confluence, and replacing draw.io.
-- End with a teaser: "Next: write docs in Git, read them in Confluence."
 
 ## Useful references
 

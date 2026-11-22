@@ -28,16 +28,16 @@ The course is built into PDF, HTML, and PowerPoint by the [Course workflow](.git
 | When | What you get | Footer says |
 |:---|:---|:---|
 | Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 dev-<commit>` |
-| A version tag, like `v1.0.0` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 v1.0.0` |
+| A version tag, like `v0.1` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 v0.1` |
 
 To release a version:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v0.1
+git push origin v0.1
 ```
 
-Use [semantic versions](https://semver.org/): the major number for a restructured course, the minor number for new slides or sections, and the patch number for fixes.
+Versions have two parts, `v<major>.<minor>`: bump the major number for a restructured course and the minor number for everything else, like new slides, sections, or fixes. Stay on `v0.x` until the course is ready to call 1.0.
 
 To build locally: `npm install`, then `npm run build`. Files land in `dist/`.
 

@@ -1,7 +1,7 @@
 ---
 type: Cheatsheet
 marp: true
-footer: "Markdown 101 · github.com/thephm/markdown"
+footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
 theme: markdown101
 size: a4
 class: cheatsheet
@@ -34,14 +34,14 @@ Plain text with a few symbols. Save as `.md`.
 | Code | `` `code` `` |
 | Code block | ` ```python ` … ` ``` ` |
 | Quote | `> text` |
-| Divider | `***` on its own line |
+| Divider | `---` after a blank line |
 
 ## Level up: GitHub flavor
 
 | You want | You type |
 |---|---|
-| Table | `\| A \| B \|` then `\|---\|---\|` |
 | Task list | `- [ ] to do`, `- [x] done` |
+| Table | `\| A \| B \|` then `\|---\|---\|` |
 | Strikethrough | `~~old~~` |
 | Diagram | ` ```mermaid ` code block |
 

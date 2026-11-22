@@ -1,7 +1,7 @@
 ---
 type: Presentation
 marp: true
-footer: "Markdown 101 · github.com/thephm/markdown"
+footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
 theme: markdown101
 paginate: true
 size: 16:9
@@ -59,7 +59,8 @@ Show the raw text of a real Copilot answer if you can (copy it into VS Code). "T
 
 - **Plain text** with a few symbols that mean formatting
 - Created in **2004** by John Gruber, with Aaron Swartz
-- Readable as-is, and converts cleanly to HTML, Word, PDF, slides
+- Readable by humans and machines
+- Converts cleanly to HTML, Word, PDF, or slides
 
 > A Markdown file still makes sense if the app that made it disappears.
 
@@ -70,7 +71,7 @@ Show the raw text of a real Copilot answer if you can (copy it into VS Code). "T
 | | |
 |---|---|
 | **Readable raw** | No app needed to understand it |
-| **Portable** | Any editor, any OS, OneDrive, GitHub, phones |
+| **Portable** | Any editor, any Operating System, OneDrive, GitHub, phones |
 | **Future-proof** | It's just text |
 | **Reviewable** | Changes show up clearly in Git |
 | **AI-native** | Copilot reads and writes it, so your docs are Copilot-ready |
@@ -160,29 +161,42 @@ An image is a link with a `!` in front. The text in `[ ]` is the alt text.
 
 ## Code
 
-Inline: `` `npm install` `` gives `npm install`
+Inline: `` `print()` `` gives `print()`
 
 A block: three backticks and a language name
 
 ````markdown
-```powershell
-Get-ChildItem *.md
+```python
+for name in ["Ana", "Ben"]:
+    print(f"Hello, {name}!")
 ```
 ````
 
 ---
 
-## Quotes and dividers
+## Quotes
 
 ```markdown
 > Write it once, read it anywhere.
-
-***
 ```
 
 > Write it once, read it anywhere.
 
-`***` (or `---`) draws a line between sections.
+---
+
+## Dividers
+
+```markdown
+The meeting is on Tuesday.
+
+---
+
+Next up: the budget.
+```
+
+`---` on its own line draws a line between sections.
+
+Leave a **blank line above it**. Without one, the text above turns into a heading.
 
 ---
 
@@ -193,9 +207,11 @@ Get-ChildItem *.md
 | Heading | `# Title` |
 | Bold, italic | `**bold**`, `*italic*` |
 | List | `- item`, `1. item` |
-| Link, image | `[text](url)`, `![alt](image.png)` |
+| Link | `[text](url)` |
+| Image | `![alt](image.png)` |
 | Code | `` `code` ``, three backticks |
 | Quote | `> quote` |
+| Divider | `---` |
 
 This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
@@ -205,10 +221,26 @@ This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
 # Level up
 
-Tables, task lists, diagrams
+Task lists, tables, diagrams
 
 <!--
 Level up (0:16-0:21).
+-->
+
+---
+
+## Task lists
+
+```markdown
+- [x] Book the room
+- [ ] Send the agenda
+- [ ] Order coffee
+```
+
+GitHub shows these as checkboxes you can tick.
+
+<!--
+Show this rendered on GitHub, not on the slide.
 -->
 
 ---
@@ -231,36 +263,30 @@ The columns don't need to line up. VS Code can format them for you.
 
 ---
 
-## Task lists
-
-```markdown
-- [x] Book the room
-- [ ] Send the agenda
-- [ ] Order coffee
-```
-
-GitHub shows these as checkboxes you can tick.
-
-<!--
-Show this rendered on GitHub, not on the slide.
--->
-
----
-
 ## Diagrams as code
 
+![bg right:30% 58%](../../../media/confluence-publishing-flow.svg)
+
+````markdown
 ```mermaid
-flowchart LR
-    A[Write in VS Code] --> B[Review on GitHub]
-    B --> C[Read in Confluence]
+flowchart TB
+    org_dept_BusinessAnalyst[Write in VS Code]
+    org_dept_Manager[Review on GitHub]
+    org_dept_ProjectTeamMember[Read in Confluence]
+    org_dept_BusinessAnalyst -->|Commit and push| org_dept_Manager
+    org_dept_Manager -->|GitHub Action publishes| org_dept_ProjectTeamMember
 ```
+````
 
 GitHub draws this as a diagram. Change a word, the diagram updates.
 
-*This could replace your draw.io diagram.*
+`TB` is Top-to-Bottom. `LR` is Left-to-Right.
+
+*This will replace draw.io diagrams.*
 
 <!--
-Switch to GitHub or VS Code (with a Mermaid extension) to show it rendered. Marp doesn't draw Mermaid, which is a nice reminder that flavors differ.
+The picture on the right is media/confluence-publishing-flow.svg, exported from media/confluence-publishing-flow.mmd. Marp doesn't draw Mermaid itself, which is a nice reminder that flavors differ. Switch to GitHub or VS Code (with a Mermaid extension) to show it drawing live.
+The GitHub Action that publishes to Confluence is the workflow this diagram describes (verify it's set up before you promise it).
 -->
 
 ---
@@ -289,6 +315,8 @@ Check every row in Teams before the session (prep checklist).
 - Tables, task lists, and diagrams work in **files**: GitHub, VS Code, Confluence via publishing
 - In **chat**, stick to bold, italic, and code
 
+> We will add **YAML frontmatter** standards for all our artifacts. This is the next course!
+
 ---
 
 ## Exercise: rescue the recap
@@ -312,10 +340,10 @@ Exercise (0:21-0:26). Walk around or watch chat. Show one or two results, then t
 
 ## Keep going
 
-- **Cheat sheet**: in the shared OneDrive folder
+- **This course**: [github.com/thephm/markdown](https://github.com/thephm/markdown)
+- **Cheat sheet**: [in the course repo](https://github.com/thephm/markdown/blob/4efc2784a1dbca75a0c3dac0907aed60aa2b896e/course/markdown-101/editions/microsoft-cheatsheet.md)
 - **VS Code extensions**: markdownlint, a Mermaid preview, Marp
 - **Learn more**: [markdownguide.org](https://www.markdownguide.org/), [commonmark.org/help](https://commonmark.org/help/)
-- **Next session**: write docs in Git, read them in Confluence
 
 <!--
 Wrap (0:26-0:27). Quick, then straight into questions.
@@ -341,10 +369,10 @@ If nobody asks, seed one: "A common question is: does this work in Confluence?"
 
 # One more thing
 
-This whole deck is **one Markdown file**.
+You type `*this*`, you get *this*.
 
-Write your next meeting note in Markdown.
+**That's Markdown!**
 
 <!--
-Close (0:29-0:30). Open microsoft-slides.md in VS Code and scroll through it, then say the call to action and stop. No "any other questions?" after this.
+Close (0:29-0:30). Say it, then stop. No "any other questions?" after this.
 -->

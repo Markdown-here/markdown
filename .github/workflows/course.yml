@@ -2,7 +2,7 @@ name: Course
 
 # Builds the Markdown 101 slides and handouts as PDF, HTML, and PowerPoint.
 # Every push to main: download them from the run's "markdown-101" artifact.
-# Every tag like v1.0.0: also published as a GitHub Release.
+# Every tag like v0.1: also published as a GitHub Release.
 
 on:
   push:

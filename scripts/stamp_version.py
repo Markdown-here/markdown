@@ -1,8 +1,8 @@
 """Stamp a version into the footer of every Marp file before a build.
 
-    python scripts/stamp_version.py v1.0.0
+    python scripts/stamp_version.py v0.1
 
-Turns `footer: "Markdown 101 · ..."` into `footer: "Markdown 101 v1.0.0 · ..."`.
+Turns `footer: "Markdown 101 · ..."` into `footer: "Markdown 101 v0.1 · ..."`.
 Run it in CI only: it edits files in place and the result isn't meant to be committed.
 """
 import re
