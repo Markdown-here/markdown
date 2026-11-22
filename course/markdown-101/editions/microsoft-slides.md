@@ -312,6 +312,7 @@ Exercise (0:21-0:26). Walk around or watch chat. Show one or two results, then t
 
 ## Keep going
 
+- **This course**: [github.com/thephm/markdown](https://github.com/thephm/markdown)
 - **Cheat sheet**: in the shared OneDrive folder
 - **VS Code extensions**: markdownlint, a Mermaid preview, Marp
 - **Learn more**: [markdownguide.org](https://www.markdownguide.org/), [commonmark.org/help](https://commonmark.org/help/)
