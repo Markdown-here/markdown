@@ -23,7 +23,7 @@ You already write it. Let's write it on purpose.
 30 minutes · bring a laptop
 
 <!--
-Presenter notes: welcome, 30 minutes, hands-on. Ask everyone to open VS Code, Notepad, or OneDrive in a browser now.
+Presenter notes: welcome, 30 minutes, hands-on. Ask everyone to open VS Code, Notepad, or the OneDrive app now. In the OneDrive iPhone app it's + › Markdown Document (check the web version before the session).
 -->
 
 ---
@@ -87,7 +87,7 @@ Create a file called `notes.md` in any of these:
 
 - **VS Code**: open preview side by side with `Ctrl+K V`
 - **Notepad** on Windows 11
-- **OneDrive** in the browser: *New* › *Text document*, rename to `.md`
+- **OneDrive** app or web: *Add New* › *Markdown Document*
 
 Type along. Typos are fine.
 
