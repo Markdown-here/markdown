@@ -18,4 +18,5 @@ type: Instructions
 - Work-specific content goes in `work/`. Keep the core course tool-neutral.
 - Mark anything untested at work with **(verify)**.
 - Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits the repo in its footer. Render it and look at it before calling it done.
+- Never commit generated files (PDF, HTML, PowerPoint). The Course workflow builds them, and version tags publish releases. Pushing a tag is a push: ask first.
 - Beginner-facing tables use plain `---` separators, no alignment colons.

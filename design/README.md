@@ -33,6 +33,7 @@ Slide classes: `<!-- _class: lead -->` for title and closing slides, `<!-- _clas
 ## Preview and export
 
 - **VS Code:** install Marp for VS Code. The repo's [`.vscode/settings.json`](../.vscode/settings.json) registers the theme, so the preview uses it. Export from the Marp button.
-- **Command line:** `npm install`, then `npm run build`. PDFs and the PowerPoint file land in `dist/`, which isn't committed.
+- **Command line:** `npm install`, then `npm run build`. HTML, PDF, and PowerPoint files land in `dist/`, which isn't committed.
+- **Releases:** GitHub builds everything on each push and publishes a release for each version tag. See [Releases](../README.md#releases).
 
 Always credit the source: the `footer` links back to this repo.

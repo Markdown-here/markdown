@@ -1,0 +1,51 @@
+name: Course
+
+# Builds the Markdown 101 slides and handouts as PDF, HTML, and PowerPoint.
+# Every push to main: download them from the run's "markdown-101" artifact.
+# Every tag like v1.0.0: also published as a GitHub Release.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Stamp version into footers
+        run: |
+          if [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            VERSION="$GITHUB_REF_NAME"
+          else
+            VERSION="dev-${GITHUB_SHA::7}"
+          fi
+          python3 scripts/stamp_version.py "$VERSION"
+
+      - name: Build slides and handouts
+        run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: markdown-101
+          path: dist/
+
+      - name: Publish release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

@@ -18,7 +18,28 @@ AI-first, human-gorgeous. Everything here is plain Markdown with stable IDs, so 
 | [templates/](templates/) | Entry templates, based on [HAL_md](https://github.com/thephm/hal_md) |
 | [work/](work/) | Work-specific context: tools, constraints, docs-as-code to Confluence plan |
 | [design/](design/) | One look for slides and handouts: the Marp theme and how to export PDFs |
+| [media/](media/) | Source images for slides and handouts |
 | [scripts/](scripts/) | `build_references.py`: checks every entry, generates the lists and `references.json` |
+
+## Releases
+
+The course is built into PDF, HTML, and PowerPoint by the [Course workflow](.github/workflows/course.yml). Generated files are never committed.
+
+| When | What you get | Footer says |
+|:---|:---|:---|
+| Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 dev-<commit>` |
+| A version tag, like `v1.0.0` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 v1.0.0` |
+
+To release a version:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Use [semantic versions](https://semver.org/): the major number for a restructured course, the minor number for new slides or sections, and the patch number for fixes.
+
+To build locally: `npm install`, then `npm run build`. Files land in `dist/`.
 
 ## Document types
 
