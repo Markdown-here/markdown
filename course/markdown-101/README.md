@@ -35,8 +35,8 @@ The core course below is tool-neutral. An edition keeps the same structure and t
 Shared by all editions unless an edition says otherwise.
 
 - [ ] Slides (written in Markdown, naturally, with [Marp](../../references/tools/marp.md); see [Slide tool](#slide-tool)). Done for the [Microsoft edition](editions/microsoft-slides.md); a core deck can be cut from it
-- [ ] `cheatsheet.md`: one page, printable
-- [ ] `exercise-before.md` / `exercise-after.md`: the meeting-notes rewrite
+- [x] [`cheatsheet.md`](cheatsheet.md): one page, printable
+- [x] [`exercise-before.md`](exercise-before.md) / [`exercise-after.md`](exercise-after.md): the meeting-notes rewrite
 - [ ] Demo script with exact keystrokes so the live part stays on time
 - [ ] "Next steps" page linking to [references](../../references/) by ID
 

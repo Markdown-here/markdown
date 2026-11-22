@@ -48,9 +48,9 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 ## Edition-specific materials
 
 - [x] [Slide deck](microsoft-slides.md) in [Marp](../../../references/tools/marp.md), with presenter notes. Open it in VS Code with the Marp extension to preview, present, or export to PDF and PowerPoint. It follows the house flavor in [Which Markdown?](../../../work/README.md#which-markdown)
-- [ ] `teams-recap-before.md`: a realistic, messy meeting recap (no real names or projects)
+- [x] [`teams-recap-before.md`](teams-recap-before.md): a realistic, messy meeting recap (no real names or projects), with the answer key [`teams-recap-after.md`](teams-recap-after.md)
 - [ ] Mermaid version of a familiar draw.io diagram
-- [ ] Cheat sheet variant with a "Teams vs Markdown" box
+- [x] [Cheat sheet variant](microsoft-cheatsheet.md) with a "Teams vs Markdown" box
 - [ ] Recommended VS Code extensions list: Markdown preview with Mermaid support, markdownlint **(verify names)**
 
 ## Follow-ups that build street cred

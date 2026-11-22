@@ -33,6 +33,8 @@ Every Markdown file in this repo starts with YAML frontmatter, and its **first f
 | `List` | A generated list of references |
 | `Inbox` | Items waiting for triage |
 | `Context` | Background on an environment, like [work/](work/) |
+| `Exercise` | A course exercise: starter file or answer key |
+| `Cheatsheet` | A one-page handout |
 
 Reference entries and templates use their own types (`Resource`, `App`, `Person`, and so on): see [references/README.md](references/README.md). To add a new type, add it here and to `DOC_TYPES` in [`scripts/build_references.py`](scripts/build_references.py).
 
