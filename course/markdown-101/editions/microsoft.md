@@ -27,7 +27,7 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 | 0:00–0:03 | **Hook** | Show a Teams message with `code`, then a Copilot answer, then the raw Markdown behind it. "You already use this" |
 | 0:03–0:06 | **What and why** | Core content, plus: Copilot reads and writes Markdown, so docs in Markdown are docs Copilot can use |
 | 0:06–0:16 | **The core 80%** (live) | Typed in VS Code with preview open. Attendees follow in VS Code, Notepad, or OneDrive |
-| 0:16–0:21 | **Level up** | Task lists, tables, and a Mermaid diagram rendered in VS Code or GitHub: "this could replace your draw.io diagram". Flavors: in Teams `*bold*` is **bold**; in Markdown it's *italic* |
+| 0:16–0:21 | **Level up** | Task lists, tables, and a Mermaid diagram rendered in VS Code or GitHub: "this will replace draw.io diagrams". Flavors: in Teams `*bold*` is **bold**; in Markdown it's *italic* |
 | 0:21–0:26 | **Exercise** | Turn a messy Teams-meeting recap into Markdown. Bonus: ask Copilot to do it, then review what it wrote |
 | 0:26–0:27 | **Wrap** | Link to this course on GitHub, cheat sheet in the repo, VS Code extensions to install |
 | 0:27–0:29 | **Q&A** | Before the close, never after it |

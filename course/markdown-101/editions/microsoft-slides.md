@@ -257,7 +257,7 @@ flowchart LR
 
 GitHub draws this as a diagram. Change a word, the diagram updates.
 
-*This could replace your draw.io diagram.*
+*This will replace draw.io diagrams.*
 
 <!--
 Switch to GitHub or VS Code (with a Mermaid extension) to show it rendered. Marp doesn't draw Mermaid, which is a nice reminder that flavors differ.
