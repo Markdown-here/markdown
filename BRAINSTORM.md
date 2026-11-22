@@ -8,28 +8,28 @@ type: Brainstorm
 
 ## The pitch
 
-**One destination for anyone who wants to learn Markdown, try it, or find the best resources about it** — designed so that humans *and* AI agents get first-class experiences.
+**One destination for anyone who wants to learn Markdown, try it, or find the best resources about it**, designed so that humans *and* AI agents both get a first-class experience.
 
 ## Audiences
 
-- **Newcomers** — "what is this and why does everyone use it?"
-- **Everyday writers** — notes, docs, READMEs, chat apps
-- **Power users** — flavors, extensions, diagrams, math, static sites
-- **AI builders** — Markdown is the lingua franca of LLM input/output
-- **Teams** — internal training (hello, Markdown 101)
+- **Newcomers**: "what is this and why does everyone use it?"
+- **Everyday writers**: notes, docs, READMEs, chat apps
+- **Power users**: flavors, extensions, diagrams, math, static sites
+- **AI builders**: Markdown is the lingua franca of LLM input/output
+- **Teams**: internal training (hello, Markdown 101)
 
 ## Site sections
 
-1. **Learn** — Markdown 101 course, then 201 (tables, footnotes, task lists, Mermaid), flavor deep-dives (CommonMark, GFM, Obsidian, MultiMarkdown, MDX)
-2. **Try** — live split-pane playground; flavor switcher showing how the same source renders differently; "fix this broken Markdown" challenges
-3. **Reference / Cheat sheet** — every syntax element, one page each, with examples, gotchas, and per-flavor support matrix
-4. **Resources** — curated articles, specs, guides, videos, books
-5. **Tools** — editors, converters, linters, renderers, tagged by platform (`#ios #android #windows #macos #linux #web #cli`) and by kind (`#editor #converter #linter #notes #static-site`)
-6. **People** — the creators, maintainers, and educators (HAL_md People template)
-7. **Organizations** — spec bodies, companies, projects (HAL_md Organization template)
-8. **Markdown + AI** — prompting with Markdown, why LLMs output it, `llms.txt`, Markdown for RAG/chunking, agent instruction files (`CLAUDE.md`, `AGENTS.md`)
-9. **History / Timeline** — 2004 Gruber + Swartz → CommonMark → GFM → today
-10. **Gallery** — beautiful real-world Markdown (READMEs, docs sites, notes vaults)
+1. **Learn**: Markdown 101 course, then 201 (tables, footnotes, task lists, Mermaid), flavor deep-dives (CommonMark, GFM, Obsidian, MultiMarkdown, MDX)
+2. **Try**: live split-pane playground; flavor switcher showing how the same source renders differently; "fix this broken Markdown" challenges
+3. **Reference / Cheat sheet**: every syntax element, one page each, with examples, gotchas, and per-flavor support matrix
+4. **Resources**: curated articles, specs, guides, videos, books
+5. **Tools**: editors, converters, linters, renderers, tagged by platform (`#ios #android #windows #macos #linux #web #cli`) and by kind (`#editor #converter #linter #notes #static-site`)
+6. **People**: the creators, maintainers, and educators (HAL_md People template)
+7. **Organizations**: spec bodies, companies, projects (HAL_md Organization template)
+8. **Markdown + AI**: prompting with Markdown, why LLMs output it, `llms.txt`, Markdown for RAG/chunking, agent instruction files (`CLAUDE.md`, `AGENTS.md`)
+9. **History / Timeline**: 2004 Gruber + Swartz → CommonMark → GFM → today
+10. **Gallery**: beautiful real-world Markdown (READMEs, docs sites, notes vaults)
 
 ## AI-first ideas
 
@@ -50,9 +50,9 @@ type: Brainstorm
 
 ## Reference data principles
 
-- **Markdown is the source of truth** — everything else is generated
+- **Markdown is the source of truth**: everything else is generated
 - **Every entry has:** unique ID, deep link, state, source, and is well formed (lintable)
-- **IDs are permanent** — never renumbered, never reused; retired entries keep their ID with state `retired`
+- **IDs are permanent**: never renumbered, never reused; retired entries keep their ID with state `retired`
 - Validate with a script in CI (required fields, unique IDs, valid states, link checks)
 
 ## Roadmap (rough)
@@ -60,7 +60,7 @@ type: Brainstorm
 1. **Now:** Markdown 101 course + seed the references lists
 2. Pull in existing notes from `c:\notes`
 3. ~~Validator script + CI~~ done; add markdownlint and link checks next
-4. Pick a site generator (Astro / VitePress / Docusaurus — decide later) and ship v0
+4. Pick a site generator (Astro, VitePress, or Docusaurus, to be decided) and ship v0
 5. Playground, cheat sheet, flavor matrix
 6. AI layer: llms.txt, JSON export, MCP server
 

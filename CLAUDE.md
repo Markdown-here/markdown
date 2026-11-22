@@ -10,6 +10,17 @@ type: Instructions
 - **Ask before every push.** Commit locally, show me what would be pushed, and wait for a yes. Approval for one push doesn't cover the next one.
 - Don't open pull requests unless I ask.
 
+## Writing style
+
+Write like a person who knows the subject, not like an AI.
+
+- **No em dashes (—).** Use a period, comma, colon, or parentheses instead. En dashes in ranges like `0:00–0:03` are fine.
+- **Plain, specific words.** No "delve", "seamless", "leverage", "robust", "unlock", "elevate", "empower", "game-changer", "landscape" (unless it means page orientation), "journey", "in today's fast-paced world".
+- **No filler.** No intros that restate the title, no "In conclusion", no "It's not just X, it's Y", no lists padded to three items.
+- **Short sentences, active voice.** Say what something does and why it matters to the reader.
+- **Light formatting.** Bold for the few words that matter, not every other phrase. Emoji only when they carry meaning, like a ✅ / ❌ legend.
+- **No hype.** Don't claim things we haven't checked. Mark them **(verify)**.
+
 ## Conventions
 
 - Every `.md` file starts with frontmatter whose first field is `type`, capitalized. Allowed types are listed in [README.md](README.md#document-types).

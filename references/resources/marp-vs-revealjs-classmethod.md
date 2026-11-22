@@ -2,7 +2,7 @@
 type: Article
 slug: marp-vs-revealjs-classmethod
 title: I compared Marp and Reveal.js with the same content
-url: https://dev.classmethod.jp/en/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/
+url: https://dev.classmethod.jp/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/
 people:
   - 
 organizations:
@@ -29,8 +29,8 @@ DevelopersIO (Classmethod) builds the same deck in [Marp](../tools/marp.md) and 
 
 ## Notes
 
-- Also available in Japanese.
+- The original is in Japanese. An English version was published at `dev.classmethod.jp/en/...` but returned 404 on 2026-11-22. Use your browser's translate.
 
 ## References
 
-1. <https://dev.classmethod.jp/en/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/>
+1. <https://dev.classmethod.jp/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/>

@@ -1,1 +1,4 @@
 example\.com
+# Block automated checkers but the pages exist
+reddit\.com
+npmjs\.com

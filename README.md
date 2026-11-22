@@ -12,7 +12,7 @@ AI-first, human-gorgeous. Everything here is plain Markdown with stable IDs, so 
 
 | Path | What |
 |:---|:---|
-| [BRAINSTORM.md](BRAINSTORM.md) | The big idea list — site sections, AI-first features, roadmap |
+| [BRAINSTORM.md](BRAINSTORM.md) | The big idea list: site sections, AI-first features, roadmap |
 | [course/markdown-101/](course/markdown-101/) | 30-minute Markdown 101 course (first deliverable) |
 | [references/](references/) | The curated reference lists: Resources, Tools, People, Organizations |
 | [templates/](templates/) | Entry templates, based on [HAL_md](https://github.com/thephm/hal_md) |

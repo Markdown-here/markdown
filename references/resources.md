@@ -17,7 +17,7 @@ Books, specs, guides, articles, and videos about Markdown. 34 entries. Schema: [
 | [Getting Started With Markdown](resources/getting-started-with-markdown.md) | Article | active | `#article` `#beginner` `#cheatsheet` | <https://itsfoss.com/markdown-guide/> |
 | [GitHub Flavored Markdown Spec](resources/gfm-spec.md) | Resource | active | `#spec` `#free` | <https://github.github.com/gfm/> |
 | [How to Use Markdown](resources/how-to-use-markdown.md) | Article | active | `#article` `#beginner` | <https://www.wired.com/story/how-to-use-markdown/> |
-| [I compared Marp and Reveal.js with the same content](resources/marp-vs-revealjs-classmethod.md) | Article | draft | `#article` `#slides` | <https://dev.classmethod.jp/en/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/> |
+| [I compared Marp and Reveal.js with the same content](resources/marp-vs-revealjs-classmethod.md) | Article | draft | `#article` `#slides` | <https://dev.classmethod.jp/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/> |
 | [Introducing Markdown](resources/introducing-markdown.md) | Article | active | `#article` `#history` | <https://daringfireball.net/2004/03/introducing_markdown> |
 | [Learning Markdown](resources/learning-markdown.md) | Book | active | `#book` |  |
 | [llms.txt](resources/llms-txt.md) | Resource | watch | `#spec` `#ai` `#free` | <https://llmstxt.org/> |

@@ -2,7 +2,7 @@
 type: Course
 ---
 
-# Markdown 101 — 30 minutes
+# Markdown 101 in 30 minutes
 
 **Goal:** Everyone leaves able to write a clean README, meeting notes, or chat message in Markdown, and knows where to learn more.
 
