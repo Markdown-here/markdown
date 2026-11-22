@@ -135,20 +135,51 @@ The blank line is the most important character in Markdown.
 
 ---
 
-## Lists
+## Lists: Bulleted
+
+<style scoped>
+p { margin: 0.3em 0; }
+pre { margin: 0.3em 0 0.6em; }
+li { margin: 0.05em 0; }
+</style>
+
+You type:
 
 ```markdown
 - Milk
 - Eggs
   - Free range
 - Bread
+```
 
+You get:
+
+- Milk
+- Eggs
+  - Free range
+- Bread
+
+<!--
+Point at "Free range": indent two spaces to nest a list.
+-->
+
+---
+
+## Lists: Numbered
+
+You type:
+
+```markdown
 1. Open the file
 2. Make the change
 3. Save
 ```
 
-Indent two spaces to nest.
+You get:
+
+1. Open the file
+2. Make the change
+3. Save
 
 ---
 
@@ -199,11 +230,13 @@ for name in ["Ana", "Ben"]:
 
 ## Quote
 
+You type:
+
 ```markdown
 > "A bad system will beat a good person every time." - W. Edwards Deming
 ```
 
-Renders as:
+You get:
 
 > "A bad system will beat a good person every time." - W. Edwards Deming
 
@@ -211,7 +244,15 @@ Renders as:
 
 ## Multi-line quotes
 
+<style scoped>
+p { margin: 0.3em 0; }
+pre { margin: 0.3em 0 0.6em; }
+li { margin: 0.05em 0; }
+</style>
+
 From *Never Eat Alone* by Keith Ferrazzi (2005):
+
+You type:
 
 ```markdown
 > A network is something you have, not something you "do".
@@ -219,7 +260,7 @@ From *Never Eat Alone* by Keith Ferrazzi (2005):
 > Build it before you need it.
 ```
 
-Renders as:
+You get:
 
 > A network is something you have, not something you "do".
 >
