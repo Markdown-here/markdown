@@ -217,6 +217,7 @@ footer {
   left: 80px;
   bottom: 26px;
 }
+footer a { color: inherit; border-bottom: 1px solid currentColor; }
 
 section.lead footer, section.break footer { color: rgba(255, 255, 255, 0.75); }
 

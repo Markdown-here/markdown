@@ -1,7 +1,7 @@
 ---
 type: Presentation
 marp: true
-footer: "Markdown 101 · github.com/thephm/markdown"
+footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
 theme: markdown101
 paginate: true
 size: 16:9
