@@ -64,6 +64,22 @@ Each template also keeps its HAL_md-specific fields (`organizations`, `people`, 
 
 A GitHub Action runs `--check` on every push, so broken entries and out-of-date lists fail the build.
 
+## Books
+
+Books are Resources with the `book` tag, using [Book.md](../templates/Book.md):
+
+- `people` lists the authors' slugs, `organizations` the publisher's.
+- `read` is the date you finished it (`YYYY-MM-DD`), `rating` is 1–5, `format` is `ebook`, `print`, or `audio`.
+- Your notes go in the body: **Summary**, **Key takeaways**, **Quotes**, **Notes**.
+
+## Editing in Obsidian
+
+This repo works as an Obsidian vault, or as a folder inside your vault.
+
+- **Settings → Files and links:** turn off **Use [[Wikilinks]]**, and set **New link format** to **Relative path to file**. Links then work on GitHub and on the site too.
+- **Settings → Templates:** point the template folder at `templates/`.
+- Run the build script before committing, or let the GitHub Action tell you what to fix.
+
 ## Style
 
 - Left-align table columns (`|:---|`). Center a column only when its content is centered.

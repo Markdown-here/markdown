@@ -1,0 +1,9 @@
+# Obsidian: keep per-device state out of Git
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+__pycache__/
