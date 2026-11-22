@@ -335,21 +335,34 @@ Level up (0:16-0:21).
 
 ## Task lists
 
+**You type:**
+
 ```markdown
 - [x] Book the room
 - [ ] Send the agenda
 - [ ] Order coffee
 ```
 
-GitHub shows these as checkboxes you can tick.
+**You get:**
+
+<style scoped>
+ul:last-of-type { list-style: none; padding-left: 0.2em; }
+ul:last-of-type li::marker { content: ""; }
+</style>
+
+- ☑ Book the room
+- ☐ Send the agenda
+- ☐ Order coffee
 
 <!--
-Show this rendered on GitHub, not on the slide.
+The slide fakes the checkboxes with ☑ and ☐, because the slide tool doesn't draw task lists. GitHub shows real checkboxes you can tick: show it there.
 -->
 
 ---
 
 ## Tables
+
+**You type:**
 
 ```markdown
 | Owner | Task          | Due    |
@@ -358,12 +371,12 @@ Show this rendered on GitHub, not on the slide.
 | Alex  | Fix login bug | Mon    |
 ```
 
+**You get:**
+
 | Owner | Task | Due |
 |---|---|---|
 | Sam | Update guide | Fri |
 | Alex | Fix login bug | Mon |
-
-The columns don't need to line up. VS Code can format them for you.
 
 ---
 
