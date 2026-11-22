@@ -88,6 +88,8 @@ flowchart LR
 
 ## How this shapes Markdown 101
 
+These points became the [Microsoft edition](../course/markdown-101/editions/microsoft.md) of the course.
+
 - Use **VS Code** for the live demo. **Notepad** and **OneDrive** are the "nothing to install" options.
 - Use **Teams** and **Copilot** as the hook ("you already do this"). Copilot's answers are Markdown, and you can ask it to write Markdown for you.
 - Use **Teams** as the flavors example.

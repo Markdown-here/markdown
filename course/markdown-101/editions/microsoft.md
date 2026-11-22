@@ -1,0 +1,50 @@
+# Markdown 101 — Microsoft edition
+
+Same structure and timing as the [core course](../README.md), tuned for a workplace on Microsoft 365, GitHub, and Confluence. Background on the environment and the bigger docs-as-code goal: [work context](../../../work/README.md).
+
+> Items marked **(verify)** need a quick test in the real environment before the session.
+
+## Tools attendees use
+
+| Tool | Role in the session |
+|:---|:---|
+| **VS Code** | Main demo editor. Split view: source left, preview right (`Ctrl+K V`) |
+| **Notepad** (Windows 11) | "Nothing to install" option, with basic Markdown formatting **(verify)** |
+| **OneDrive** | Create and edit `.md` files from the browser or iOS, so anyone can follow along |
+| **Teams chat** | The hook and the flavors example |
+| **Copilot** | Proof that Markdown is everywhere: its answers are Markdown |
+| **GitHub** | Where Markdown renders fully, including Mermaid |
+| **Confluence** | Where most people read docs today; the closing teaser |
+
+## Agenda
+
+| Time | Segment | Microsoft-specific content |
+|:---|:---|:---|
+| 0:00–0:03 | **Hook** | Show a Teams message with `code`, then a Copilot answer, then the raw Markdown behind it. "You already use this" |
+| 0:03–0:06 | **What and why** | Core content, plus: Copilot reads and writes Markdown, so docs in Markdown are docs Copilot can use |
+| 0:06–0:16 | **The core 80%** (live) | Typed in VS Code with preview open. Attendees follow in VS Code, Notepad, or OneDrive |
+| 0:16–0:21 | **Level up** | Tables, task lists, and a Mermaid diagram rendered in VS Code or GitHub: "this could replace your draw.io diagram". Flavors: in Teams `*bold*` is **bold**; in Markdown it's *italic* |
+| 0:21–0:27 | **Exercise** | Turn a messy Teams-meeting recap into Markdown. Bonus: ask Copilot to do it, then review what it wrote |
+| 0:27–0:30 | **Wrap** | Cheat sheet in OneDrive, VS Code extensions to install, teaser: "Next: write docs in Git, read them in Confluence" |
+
+## Prep checklist
+
+- [ ] Test every Teams formatting shortcut: `*x*`, `**x**`, `_x_`, `~x~`, `` `x` ``, lists, quotes **(verify)**
+- [ ] Confirm the Notepad version on work laptops supports Markdown formatting **(verify)**
+- [ ] Confirm attendees can create `.md` files in OneDrive and that the web preview renders them **(verify)**
+- [ ] Pick a Copilot prompt for the hook and the exercise, and test it on the day (answers vary)
+- [ ] Have a draw.io diagram from a real Confluence page, redrawn in Mermaid, for the level-up
+- [ ] Put the cheat sheet and exercise files in a shared OneDrive or SharePoint folder
+
+## Edition-specific materials
+
+- [ ] `teams-recap-before.md`: a realistic, messy meeting recap (no real names or projects)
+- [ ] Mermaid version of a familiar draw.io diagram
+- [ ] Cheat sheet variant with a "Teams vs Markdown" box
+- [ ] Recommended VS Code extensions list: Markdown preview with Mermaid support, markdownlint **(verify names)**
+
+## Follow-ups that build street cred
+
+- Office hours: "bring a Confluence page, leave with a Markdown version"
+- A pilot team for docs-as-code, publishing from GitHub to Confluence
+- Markdown 201: diagrams-as-code with Mermaid
