@@ -2,7 +2,8 @@
 
 ## Git
 
-- **Work directly on `main`.** Commit and push to `main`. Don't create or push other branches, including session branches like `claude/...`, unless I ask for one.
+- **Work directly on `main`.** Don't create or push other branches, including session branches like `claude/...`, unless I ask for one.
+- **Ask before every push.** Commit locally, show me what would be pushed, and wait for a yes. Approval for one push doesn't cover the next one.
 - Don't open pull requests unless I ask.
 
 ## Conventions
