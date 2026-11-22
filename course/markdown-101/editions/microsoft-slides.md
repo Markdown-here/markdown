@@ -26,11 +26,10 @@ Presenter notes: welcome, 30 minutes, hands-on. Ask everyone to open VS Code, No
 
 ## You already use Markdown
 
+- You type `*this*`, you get *this*. **That's Markdown!**
 - **Copilot** answers with headings, bold, and bullet lists
 - Every **GitHub** README is a Markdown file
 - In **Teams**, you type `` `code` `` and it turns into `code`
-
-You type `*this*`, you get *this*. **That's Markdown!**
 
 <!--
 Hook (0:00-0:03). Live: show a Copilot answer. Then send a Teams message with backticks.
