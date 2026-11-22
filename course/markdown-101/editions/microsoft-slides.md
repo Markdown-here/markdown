@@ -38,10 +38,9 @@ You are *awesome*!
 
 - **Copilot** answers with headings, bold, and bullet lists
 - Every **GitHub** README is a Markdown file
-- In **Teams**, you type `` `code` `` and it turns into `code`
 
 <!--
-Hook (0:00-0:03). Live: show a Copilot answer. Then send a Teams message with backticks.
+Hook (0:00-0:03). Live: show a Copilot answer.
 -->
 
 ---
