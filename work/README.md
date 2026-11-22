@@ -26,6 +26,31 @@ A Microsoft shop.
 | OneDrive | Everyone | Store and edit `.md` files from iOS and web | Works today |
 | Notepad (Windows 11) | Everyone | Basic Markdown formatting in recent versions **(verify)** | Zero-install option for the course |
 
+## Which Markdown?
+
+**House standard: [GitHub Flavored Markdown (GFM)](../references/resources/gfm-spec.md).** It's [CommonMark](../references/resources/commonmark-spec.md) plus tables, task lists, strikethrough, and autolinks, and it's what GitHub, Copilot, and most of our tools already speak. Mermaid diagrams sit on top as fenced `mermaid` code blocks.
+
+**What Markdown 101 teaches:** the CommonMark core first, because it works almost everywhere, then the GFM extras, marked "works in files, not always in chat".
+
+Neither Teams nor Confluence follows a spec. Teams has its own chat shortcuts. Confluence turns some Markdown into rich text as you type or paste, and stores pages in its own format, so the docs-as-code pipeline converts GFM on publish.
+
+| Feature | CommonMark | GitHub (GFM) | VS Code preview | Marp slides | Teams chat | Confluence Cloud editor |
+|:---|:---|:---|:---|:---|:---|:---|
+| Headings `#` | yes | yes | yes | yes | ? | as you type ? |
+| `**bold**` `*italic*` | yes | yes | yes | yes | `*x*` is **bold**, italic is `_x_` | ? |
+| Lists | yes | yes | yes | yes | ? | as you type ? |
+| Links `[text](url)` | yes | yes | yes | yes | ? | ? |
+| `` `code` `` and fenced code | yes | yes | yes | yes | yes | as you type ? |
+| Blockquote `>` | yes | yes | yes | yes | ? | as you type ? |
+| Tables | no | yes | yes | yes | no | no, use the table tool ? |
+| Task lists `- [ ]` | no | yes | ? | ? | no | `[]` as you type ? |
+| Strikethrough `~~x~~` | no | yes | yes | yes | `~x~` ? | ? |
+| Mermaid | no | yes | with an extension | no, use an image | no | with an app or as an image ? |
+
+`?` means not tested yet. Fill it in during the [prep checklist](../course/markdown-101/editions/microsoft.md#prep-checklist).
+
+Pasting Markdown into Confluence Cloud is reported to work only sometimes (it depends on the browser and the editor version), and there's no native Markdown macro without a Marketplace app ([Atlassian Community](https://community.atlassian.com/forums/Confluence-questions/How-to-insert-markdown-text-into-my-Confluence-Page/qaa-p/3037606)). Another reason to publish from Git rather than paste. **(verify)**
+
 ## Teams is not Markdown
 
 Teams chat converts a few Markdown-like patterns as you type, but it isn't real Markdown and doesn't follow the spec:
