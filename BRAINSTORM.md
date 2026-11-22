@@ -1,3 +1,7 @@
+---
+type: Brainstorm
+---
+
 # Brainstorm
 
 > Living document. Ideas first, judgment later.

@@ -1,3 +1,7 @@
+---
+type: Readme
+---
+
 # References
 
 Curated, well-formed, AI-friendly references. **One Markdown file per entry**, using [HAL_md](https://github.com/thephm/hal_md)-style templates, so entries can move between this site and an Obsidian vault.

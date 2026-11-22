@@ -1,4 +1,5 @@
 ---
+type: Presentation
 marp: true
 theme: default
 paginate: true

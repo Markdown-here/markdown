@@ -1,3 +1,7 @@
+---
+type: Context
+---
+
 # Work context and constraints
 
 The workplace this site's content (starting with [Markdown 101](../course/markdown-101/)) has to land in. Kept separate from the general site because it's specific to one organization.

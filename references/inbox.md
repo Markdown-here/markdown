@@ -1,3 +1,7 @@
+---
+type: Inbox
+---
+
 # Inbox
 
 Things mentioned in my notes that aren't entries yet. Triage each into a proper entry, or delete it.

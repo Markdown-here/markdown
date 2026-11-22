@@ -1,3 +1,7 @@
+---
+type: Readme
+---
+
 # Templates
 
 One template per reference type. They follow the [HAL_md templates](https://github.com/thephm/hal_md/tree/main/templates) so entries move freely between this site and a HAL_md / Obsidian vault, with a few site-specific fields added.

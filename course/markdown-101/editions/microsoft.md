@@ -1,3 +1,7 @@
+---
+type: Course
+---
+
 # Markdown 101 — Microsoft edition
 
 Same structure and timing as the [core course](../README.md), tuned for a workplace on Microsoft 365, GitHub, and Confluence. Background on the environment and the bigger docs-as-code goal: [work context](../../../work/README.md).

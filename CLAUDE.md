@@ -1,3 +1,7 @@
+---
+type: Instructions
+---
+
 # CLAUDE.md
 
 ## Git
@@ -8,6 +12,7 @@
 
 ## Conventions
 
+- Every `.md` file starts with frontmatter whose first field is `type`, capitalized. Allowed types are listed in [README.md](README.md#document-types).
 - After adding or changing anything in `references/`, run `python scripts/build_references.py`, then `--check`. Commit the generated files.
 - Slugs are permanent. Never rename or reuse one.
 - Work-specific content goes in `work/`. Keep the core course tool-neutral.
