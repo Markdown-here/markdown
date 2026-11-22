@@ -349,8 +349,10 @@ If nobody asks, seed one: "A common question is: does this work in Confluence?"
 
 # One more thing
 
-This whole deck's content is from **one Markdown file**.
+You type `*this*`, you get *this*.
+
+**That's Markdown!**
 
 <!--
-Close (0:29-0:30). Open microsoft-slides.md in VS Code and scroll through it, then stop. No "any other questions?" after this.
+Close (0:29-0:30). Say it, then stop. No "any other questions?" after this.
 -->

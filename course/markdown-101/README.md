@@ -28,7 +28,7 @@ The core course below is tool-neutral. An edition keeps the same structure and t
 | 0:21–0:26 | **Exercise** | Rewrite a messy plain-text meeting note into well-structured Markdown (starter file provided) |
 | 0:26–0:27 | **Wrap** | Cheat sheet handout, top tools and resources, where to go next |
 | 0:27–0:29 | **Q&A** | Questions come before the close, so the audience doesn't get the last word |
-| 0:29–0:30 | **Close** | Reveal: the deck is one Markdown file. End on one call to action, and stop |
+| 0:29–0:30 | **Close** | One line: "You type `*this*`, you get *this*. That's Markdown!" Then stop |
 
 ## Materials to build
 

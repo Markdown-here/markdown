@@ -193,6 +193,7 @@ section.lead h1::after {
 section.lead p { font-size: 34px; color: rgba(255, 255, 255, 0.9); margin: 0.2em 0; }
 section.lead strong { color: var(--accent); }
 section.lead code { background: rgba(255, 255, 255, 0.15); color: #fff; }
+section.lead em, section.break em { color: #fff; }
 
 /* Section dividers */
 section.break {
