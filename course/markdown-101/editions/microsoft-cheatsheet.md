@@ -53,7 +53,7 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 | `` `text` `` | `code` | `code` |
 | A table | a table | plain text |
 
-In chat, stick to bold, italic, and code. **(verify)** every row in Teams.
+In Teams chats, stick to bold, italic, and code. **(verify)** every row in Teams.
 
 ## Gotchas
 
