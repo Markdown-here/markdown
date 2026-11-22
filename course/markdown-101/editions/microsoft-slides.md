@@ -26,7 +26,16 @@ Presenter notes: welcome, 30 minutes, hands-on. Ask everyone to open VS Code, No
 
 ## You already use Markdown
 
-- You type `*this*`, you get *this*. **That's Markdown!**
+**You type:**
+
+```markdown
+You are *awesome*!
+```
+
+**You get:**
+
+You are *awesome*!
+
 - **Copilot** answers with headings, bold, and bullet lists
 - Every **GitHub** README is a Markdown file
 - In **Teams**, you type `` `code` `` and it turns into `code`
