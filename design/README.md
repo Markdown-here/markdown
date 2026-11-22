@@ -26,7 +26,7 @@ footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/
 | For | Add | Size |
 |:---|:---|:---|
 | Slides | `paginate: true` | 16:9 |
-| A one-page handout | `size: a4` and `class: cheatsheet` | A4 landscape, three columns |
+| A one-page handout | `size: a4-portrait` and `class: cheatsheet` | A4 portrait, two columns |
 
 Slide classes: `<!-- _class: lead -->` for title and closing slides, `<!-- _class: break -->` for section dividers.
 

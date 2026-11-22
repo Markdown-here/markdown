@@ -3,7 +3,7 @@ type: Cheatsheet
 marp: true
 footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
 theme: markdown101
-size: a4
+size: a4-portrait
 class: cheatsheet
 ---
 

@@ -3,8 +3,9 @@
  * @auto-scaling true
  * @size 16:9 1280px 720px
  * @size a4 1123px 794px
+ * @size a4-portrait 794px 1123px
  *
- * One look for everything we share: slides (16:9) and one-page handouts (A4, landscape).
+ * One look for everything we share: slides (16:9) and one-page handouts (A4, portrait).
  * Slide classes: lead (title), break (section divider), cheatsheet (A4 handout).
  */
 
@@ -231,7 +232,7 @@ section.cheatsheet {
   font-size: 14.5px;
   line-height: 1.38;
   padding: 128px 30px 34px;
-  column-count: 3;
+  column-count: 2;
   column-gap: 26px;
   column-fill: balance;
 }
@@ -290,7 +291,7 @@ section.cheatsheet table {
 
 section.cheatsheet th, section.cheatsheet td { padding: 4px 9px; }
 section.cheatsheet td:first-child { font-weight: 600; white-space: nowrap; }
-section.cheatsheet code { font-size: 0.92em; }
+section.cheatsheet code { font-size: 0.92em; white-space: nowrap; }
 section.cheatsheet ul { margin: 0 0 16px; padding-left: 1.1em; break-inside: avoid; }
 section.cheatsheet p { margin: 0 0 12px; }
 section.cheatsheet blockquote { font-size: 14px; padding: 8px 14px; break-inside: avoid; }
