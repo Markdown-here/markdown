@@ -20,6 +20,7 @@ A Microsoft shop.
 | GitHub | Developers | Full GFM, Mermaid renders natively | Source of truth for docs-as-code |
 | Confluence | Most project teams | Partial, via shortcuts and macros **(verify)** | Where people read and write today. Target for publishing |
 | draw.io (in Confluence) | Project teams | None, it's a diagram tool | Can import Mermaid **(verify)**, which gives a migration path |
+| Copilot (M365 and GitHub) | Everyone, developers | Answers are written in Markdown | GitHub Copilot also reads instructions from Markdown files like `.github/copilot-instructions.md` |
 | Teams chat | Everyone | Partial, its own rules | See below |
 | Loop | Me, some others | Typing shortcuts **(verify)** | I'm moving to Confluence because others live there |
 | OneDrive | Everyone | Store and edit `.md` files from iOS and web | Works today |
@@ -82,11 +83,13 @@ flowchart LR
 - **Meet people where they are.** Readers stay in Confluence; only writers change tools.
 - **Start with a willing team** that already uses GitHub, then show their docs in Confluence.
 - **Show, don't argue:** a PR with a reviewed diagram change is more convincing than a slide about it.
+- **Ride the AI wave:** Copilot reads and writes Markdown, so docs in Markdown are docs Copilot can use. That's an easier argument than "Git is better".
 - **Markdown 101 is step one.** Street cred first, then docs-as-code.
 
 ## How this shapes Markdown 101
 
 - Use **VS Code** for the live demo. **Notepad** and **OneDrive** are the "nothing to install" options.
-- Use **Teams** as the hook ("you already do this") and as the flavors example.
+- Use **Teams** and **Copilot** as the hook ("you already do this"). Copilot's answers are Markdown, and you can ask it to write Markdown for you.
+- Use **Teams** as the flavors example.
 - Use a **Mermaid** diagram in the level-up segment and mention where it's going: GitHub, Confluence, and replacing draw.io.
 - End with a teaser: "Next: write docs in Git, read them in Confluence."
