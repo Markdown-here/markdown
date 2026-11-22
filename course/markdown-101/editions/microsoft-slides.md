@@ -200,10 +200,22 @@ for name in ["Ana", "Ben"]:
 ## Quotes
 
 ```markdown
-> Write it once, read it anywhere.
+> "A bad system will beat a good person every time." - W. Edwards Deming
+
+> Write it once.
+>
+> Read it anywhere.
 ```
 
-> Write it once, read it anywhere.
+> "A bad system will beat a good person every time." - W. Edwards Deming
+
+> Write it once.
+>
+> Read it anywhere.
+
+<!--
+Point at the line with just `>`: it keeps the blank line inside the quote. Without it, the quote ends there.
+-->
 
 ---
 
