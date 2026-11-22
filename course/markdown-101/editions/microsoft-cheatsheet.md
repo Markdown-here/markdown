@@ -1,5 +1,10 @@
 ---
 type: Cheatsheet
+marp: true
+footer: "Markdown 101 · github.com/thephm/markdown"
+theme: markdown101
+size: a4
+class: cheatsheet
 ---
 
 # Markdown cheat sheet: Microsoft edition
@@ -13,31 +18,31 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 - **Notepad** on Windows 11 **(verify)**
 - **Copilot:** ask it to "answer in Markdown" or "turn this into Markdown"
 
-## The core: works almost everywhere
+## The core: works everywhere
 
 | You want | You type |
 |---|---|
-| Heading | `# Title`, `## Section`, `### Subsection` |
-| Paragraph | Leave a **blank line** between paragraphs |
+| Heading | `# Title` and `## Section` |
+| Paragraph | A **blank line** between |
 | Bold | `**bold**` |
 | Italic | `*italic*` or `_italic_` |
-| Bulleted list | `- item` (indent two spaces to nest) |
-| Numbered list | `1. item` |
-| Link | `[text](https://example.com)` |
-| Image | `![description](picture.png)` |
-| Inline code | `` `code` `` |
-| Code block | Three backticks, then the language: ` ```powershell ` … ` ``` ` |
-| Quote | `> quoted text` |
-| Divider | `***` or `---` on its own line |
+| Bullets | `- item` |
+| Numbers | `1. item` |
+| Link | `[text](url)` |
+| Image | `![alt text](pic.png)` |
+| Code | `` `code` `` |
+| Code block | ` ```python ` … ` ``` ` |
+| Quote | `> text` |
+| Divider | `***` on its own line |
 
 ## Level up: in files, not chat
 
 | You want | You type |
 |---|---|
-| Table | `\| Name \| Due \|`, then `\|---\|---\|`, then one row per line |
-| Task list | `- [ ] to do` and `- [x] done` |
+| Table | `\| A \| B \|` then `\|---\|---\|` |
+| Task list | `- [ ] to do`, `- [x] done` |
 | Strikethrough | `~~old~~` |
-| Diagram | A code block with the language `mermaid` (renders on GitHub, and in VS Code with an extension) |
+| Diagram | ` ```mermaid ` code block |
 
 ## Teams is not Markdown
 
@@ -53,6 +58,7 @@ In chat, stick to bold, italic, and code. **(verify)** every row in Teams.
 ## Gotchas
 
 - **No blank line, no new paragraph.** Two lines in a row join into one.
+- **Nest a list** by indenting two spaces.
 - **Put a space after the symbol:** `# Title`, not `#Title`.
 - **Show a symbol as-is** with a backslash: `\*not italic\*`.
 

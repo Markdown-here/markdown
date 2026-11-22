@@ -1,42 +1,56 @@
 ---
 type: Cheatsheet
+marp: true
+footer: "Markdown 101 · github.com/thephm/markdown"
+theme: markdown101
+size: a4
+class: cheatsheet
 ---
 
 # Markdown cheat sheet
 
 Plain text with a few symbols. Save as `.md`.
 
-## The core: works almost everywhere
+## Where to write it
+
+- **Any text editor:** save the file as `.md`
+- **VS Code:** preview with `Ctrl+Shift+V`
+- **Obsidian:** notes app built on Markdown files
+- **GitHub:** READMEs, issues, and comments
+- **AI chat:** ask for an answer "in Markdown"
+
+## The core: works everywhere
 
 | You want | You type |
 |---|---|
-| Heading | `# Title`, `## Section`, `### Subsection` |
-| Paragraph | Leave a **blank line** between paragraphs |
+| Heading | `# Title` and `## Section` |
+| Paragraph | A **blank line** between |
 | Bold | `**bold**` |
 | Italic | `*italic*` or `_italic_` |
-| Bulleted list | `- item` (indent two spaces to nest) |
-| Numbered list | `1. item` |
-| Link | `[text](https://example.com)` |
-| Image | `![description](picture.png)` |
-| Inline code | `` `code` `` |
-| Code block | Three backticks, then the language: ` ```python ` … ` ``` ` |
-| Quote | `> quoted text` |
-| Divider | `***` or `---` on its own line |
+| Bullets | `- item` |
+| Numbers | `1. item` |
+| Link | `[text](url)` |
+| Image | `![alt text](pic.png)` |
+| Code | `` `code` `` |
+| Code block | ` ```python ` … ` ``` ` |
+| Quote | `> text` |
+| Divider | `***` on its own line |
 
-## Level up: GitHub Flavored Markdown
+## Level up: GitHub flavor
 
 | You want | You type |
 |---|---|
-| Table | `\| Name \| Due \|`, then `\|---\|---\|`, then one row per line |
-| Task list | `- [ ] to do` and `- [x] done` |
+| Table | `\| A \| B \|` then `\|---\|---\|` |
+| Task list | `- [ ] to do`, `- [x] done` |
 | Strikethrough | `~~old~~` |
-| Diagram | A code block with the language `mermaid` |
+| Diagram | ` ```mermaid ` code block |
 
 Works on GitHub and in most editors, but not always in chat apps.
 
 ## Gotchas
 
 - **No blank line, no new paragraph.** Two lines in a row join into one.
+- **Nest a list** by indenting two spaces.
 - **Put a space after the symbol:** `# Title`, not `#Title`.
 - **Show a symbol as-is** with a backslash: `\*not italic\*`.
 - **Chat apps have their own rules.** The same characters can mean something else there.

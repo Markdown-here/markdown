@@ -17,6 +17,7 @@ AI-first, human-gorgeous. Everything here is plain Markdown with stable IDs, so 
 | [references/](references/) | The curated reference lists: Resources, Tools, People, Organizations |
 | [templates/](templates/) | Entry templates, based on [HAL_md](https://github.com/thephm/hal_md) |
 | [work/](work/) | Work-specific context: tools, constraints, docs-as-code to Confluence plan |
+| [design/](design/) | One look for slides and handouts: the Marp theme and how to export PDFs |
 | [scripts/](scripts/) | `build_references.py`: checks every entry, generates the lists and `references.json` |
 
 ## Document types

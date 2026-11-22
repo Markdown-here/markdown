@@ -17,3 +17,5 @@ type: Instructions
 - Slugs are permanent. Never rename or reuse one.
 - Work-specific content goes in `work/`. Keep the core course tool-neutral.
 - Mark anything untested at work with **(verify)**.
+- Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits the repo in its footer. Render it and look at it before calling it done.
+- Beginner-facing tables use plain `---` separators, no alignment colons.

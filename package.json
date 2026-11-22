@@ -1,0 +1,13 @@
+{
+  "name": "markdown",
+  "private": true,
+  "description": "Build the Markdown 101 slides and handouts with Marp, using the theme in design/",
+  "scripts": {
+    "slides": "marp course/markdown-101/editions/microsoft-slides.md --pdf -o dist/markdown-101-slides.pdf && marp course/markdown-101/editions/microsoft-slides.md --pptx -o dist/markdown-101-slides.pptx",
+    "handouts": "marp course/markdown-101/cheatsheet.md --pdf -o dist/markdown-cheatsheet.pdf && marp course/markdown-101/editions/microsoft-cheatsheet.md --pdf -o dist/markdown-cheatsheet-microsoft.pdf",
+    "build": "npm run slides && npm run handouts"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0"
+  }
+}

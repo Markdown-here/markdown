@@ -1,17 +1,12 @@
 ---
 type: Presentation
 marp: true
-theme: default
+footer: "Markdown 101 · github.com/thephm/markdown"
+theme: markdown101
 paginate: true
 size: 16:9
 title: Markdown 101
 description: 30-minute hands-on Markdown course, Microsoft edition
-style: |
-  section { font-size: 30px; }
-  section.lead { text-align: center; justify-content: center; }
-  section.lead h1 { font-size: 72px; }
-  table { font-size: 26px; }
-  code { font-size: 0.9em; }
 ---
 
 <!-- _class: lead -->
@@ -206,7 +201,7 @@ This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: break -->
 
 # Level up
 

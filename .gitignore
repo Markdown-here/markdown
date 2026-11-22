@@ -7,3 +7,7 @@
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Build output
+node_modules/
+dist/

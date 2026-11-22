@@ -1,0 +1,3 @@
+# Marp CLI settings: use our theme for slides and handouts.
+themeSet: design
+allowLocalFiles: true
