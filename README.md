@@ -27,8 +27,8 @@ The course is built into PDF, HTML, and PowerPoint by the [Course workflow](.git
 
 | When | What you get | Footer says |
 |:---|:---|:---|
-| Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 dev-<commit>` |
-| A version tag, like `v0.1` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 v0.1` |
+| Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 · dev-<commit>` |
+| A version tag, like `v0.1` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 · v0.1` |
 
 To release a version:
 

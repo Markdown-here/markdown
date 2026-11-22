@@ -2,7 +2,7 @@
 
     python scripts/stamp_version.py v0.1
 
-Turns `footer: "Markdown 101 · ..."` into `footer: "Markdown 101 v0.1 · ..."`.
+Turns `footer: "Markdown 101 · ..."` into `footer: "Markdown 101 · v0.1 · ..."`.
 Run it in CI only: it edits files in place and the result isn't meant to be committed.
 """
 import re
@@ -20,7 +20,7 @@ def main():
     stamped = 0
     for p in sorted((ROOT / "course").rglob("*.md")):
         text = p.read_text(encoding="utf-8")
-        new, n = FOOTER.subn(rf"\1 {version}\2", text, count=1)
+        new, n = FOOTER.subn(rf"\1 · {version}\2", text, count=1)
         if n:
             p.write_text(new, encoding="utf-8", newline="\n")
             stamped += 1
