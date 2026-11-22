@@ -1387,10 +1387,10 @@
       "simon-carstensen"
     ],
     "integrations": [],
-    "state": "stale",
+    "state": "broken",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-22",
     "tags": [
       "tool",
       "web",

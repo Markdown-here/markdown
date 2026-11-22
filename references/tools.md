@@ -19,7 +19,7 @@ Editors, converters, libraries, and services. 35 entries. Schema: [README.md](RE
 | [html2text](tools/html2text.md) | Technology | stale | `#converter` `#python` `#open-source` | <https://github.com/aaronsw/html2text> |
 | [iA Writer](tools/ia-writer.md) | App | active | `#editor` `#windows` `#macos` `#ios` `#android` `#paid` | <https://ia.net/writer> |
 | [Joplin](tools/joplin.md) | App | active | `#notes` `#editor` `#windows` `#macos` `#linux` `#ios` `#android` `#open-source` | <https://joplinapp.org/> |
-| [Jottit](tools/jottit.md) | Service | stale | `#web` `#history` | <https://jottit.com/> |
+| [Jottit](tools/jottit.md) | Service | broken | `#web` `#history` | <https://jottit.com/> |
 | [Markdig](tools/markdig.md) | Technology | active | `#library` `#dotnet` `#open-source` `#microsoft` | <https://github.com/xoofx/markdig> |
 | [Markdoc](tools/markdoc.md) | Technology | active | `#framework` `#docs` `#open-source` | <https://markdoc.io/> |
 | [Markdown Monster](tools/markdown-monster.md) | App | draft | `#editor` `#windows` `#paid` | <https://markdownmonster.west-wind.com/> |

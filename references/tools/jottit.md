@@ -12,10 +12,10 @@ people:
   - simon-carstensen
 integrations:
   - 
-state: stale
+state: broken
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-22
 tags:
   - tool
   - web
@@ -38,6 +38,7 @@ A 2007 web service by Aaron Swartz and Simon Carstensen that made a website as e
 
 ## Notes
 
+- 2026-11-22: `jottit.com` times out. Marked `broken`.
 - Built with web.py.
 - Archived About page: <https://web.archive.org/web/20071011001501/http://jottit.com/about>
 - Archived news: <https://web.archive.org/web/20201127015603/http://news.jottit.com/>

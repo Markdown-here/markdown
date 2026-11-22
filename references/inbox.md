@@ -18,7 +18,6 @@ Things mentioned in my notes that aren't entries yet. Triage each into a proper 
 - [MD Studio](https://releases.jonbarnes.dev/md-studio/)
 - [MarkDEditor](https://github.com/bxute/MarkDEditor): WYSIWYG editor for Android
 - [mdNote](https://alekseychan.github.io/mdNote/): WYSIWYG editor for Android and Windows
-- [Quillnote](https://qosp.org/): Android, not WYSIWYG
 - [MarkText](https://github.com/marktext/marktext): Linux, Windows, macOS
 - Markor, JotterPad, Writer Plus: Android
 - Inkdrop, Taio, Squirrel CE
@@ -46,3 +45,9 @@ Things mentioned in my notes that aren't entries yet. Triage each into a proper 
 
 - [GitHub for beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/)
 - [CommonMark tutorial](https://commonmark.org/help/tutorial/)
+
+## Deprecated
+
+Dropped from triage. Links are kept as plain text so the link checker skips them.
+
+- Quillnote (`qosp.org`): Android, not WYSIWYG. Site unreachable on 2026-11-22.
