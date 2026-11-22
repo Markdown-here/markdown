@@ -3,7 +3,7 @@
 Curated, well-formed, AI-friendly references. **One Markdown file per entry**, using [HAL_md](https://github.com/thephm/hal_md)-style templates, so entries can move between this site and an Obsidian vault.
 
 | Section | Folder | Template | Generated list |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | Resources | [`resources/`](resources/) | [Resource.md](../templates/Resource.md) | [resources.md](resources.md) |
 | Tools | [`tools/`](tools/) | [Tool.md](../templates/Tool.md) | [tools.md](tools.md) |
 | People | [`people/`](people/) | [Person.md](../templates/Person.md) | [people.md](people.md) |
@@ -21,7 +21,7 @@ Everything is also exported to [`references.json`](references.json) for AI agent
 ## Common fields
 
 | Field | Required | Notes |
-|---|---|---|
+|:---|:---|:---|
 | `type` | yes | `Resource`, `App` (tools), `Person`, or `Organization`. First property, per HAL_md's OKF convention |
 | `slug` | yes | Unique ID, matches the filename |
 | `title` | yes* | Display name (*people use `first_name` + `last_name`) |
@@ -37,7 +37,7 @@ Each template also keeps its HAL_md-specific fields (`organizations`, `people`, 
 ## States
 
 | State | Meaning |
-|---|---|
+|:---|:---|
 | `draft` | Captured, not yet reviewed |
 | `active` | Reviewed and recommended |
 | `watch` | Interesting, keeping an eye on it |
@@ -63,3 +63,7 @@ Each template also keeps its HAL_md-specific fields (`organizations`, `people`, 
    ```
 
 A GitHub Action runs `--check` on every push, so broken entries and out-of-date lists fail the build.
+
+## Style
+
+- Left-align table columns (`|:---|`). Center a column only when its content is centered.

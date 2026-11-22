@@ -108,7 +108,7 @@ def render_list(folder, es):
         f"{intro} {len(es)} entries. Schema: [README.md](README.md).",
         "",
         "| Name | State | Tags | Link |",
-        "|---|---|---|---|",
+        "|:---|:---|:---|:---|",
     ]
     for e in sorted(es, key=lambda e: title_of(e).lower()):
         if e.get("state") == "retired":

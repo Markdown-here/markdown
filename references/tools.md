@@ -5,7 +5,7 @@
 Editors, converters, linters, and renderers. 5 entries. Schema: [README.md](README.md).
 
 | Name | State | Tags | Link |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | [markdownlint](tools/markdownlint.md) | active | `#linter` `#cli` `#library` `#open-source` | <https://github.com/DavidAnson/markdownlint> |
 | [Mermaid](tools/mermaid.md) | active | `#diagram` `#renderer` `#web` `#open-source` | <https://mermaid.js.org/> |
 | [Obsidian](tools/obsidian.md) | active | `#notes` `#editor` `#windows` `#macos` `#linux` `#ios` `#android` `#freemium` | <https://obsidian.md/> |

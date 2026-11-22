@@ -5,7 +5,7 @@
 Specs, guides, tutorials, and articles about Markdown. 5 entries. Schema: [README.md](README.md).
 
 | Name | State | Tags | Link |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | [CommonMark Spec](resources/commonmark-spec.md) | active | `#spec` `#free` `#open-source` | <https://spec.commonmark.org/> |
 | [GitHub Flavored Markdown Spec](resources/gfm-spec.md) | active | `#spec` `#free` | <https://github.github.com/gfm/> |
 | [llms.txt](resources/llms-txt.md) | watch | `#spec` `#ai` `#free` | <https://llmstxt.org/> |

@@ -7,7 +7,7 @@
 ## Agenda
 
 | Time | Segment | Key points |
-|---|---|---|
+|:---|:---|:---|
 | 0:00–0:03 | **Hook** | Same text shown raw vs rendered. "You already read Markdown every day": GitHub, Teams, Slack, ChatGPT/Claude answers |
 | 0:03–0:06 | **What and why** | 2004, Gruber + Swartz. Plain text, readable raw, portable, future-proof, diffable, AI-native |
 | 0:06–0:16 | **The core 80%** (live) | Headings, paragraphs, **bold**/*italic*, lists (bulleted, numbered, nested), links, images, `inline code`, fenced code blocks, blockquotes, horizontal rules |

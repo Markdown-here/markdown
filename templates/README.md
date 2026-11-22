@@ -3,7 +3,7 @@
 One template per reference type. They follow the [HAL_md templates](https://github.com/thephm/hal_md/tree/main/templates) so entries move freely between this site and a HAL_md / Obsidian vault, with a few site-specific fields added.
 
 | Template | `type` | HAL_md origin | Folder |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | [Resource.md](Resource.md) | `Resource` | `resource` tag (OKF) | `references/resources/` |
 | [Tool.md](Tool.md) | `App` + `tool` tag | [Product.md](https://github.com/thephm/hal_md/blob/main/templates/Product.md), OKF `tool=App` | `references/tools/` |
 | [Person.md](Person.md) | `Person` | [Person.md](https://github.com/thephm/hal_md/blob/main/templates/Person.md) | `references/people/` |

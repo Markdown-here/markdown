@@ -5,7 +5,7 @@
 Spec bodies, companies, and projects that shape Markdown. 3 entries. Schema: [README.md](README.md).
 
 | Name | State | Tags | Link |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | [CommonMark](organizations/commonmark.md) | active | `#spec` `#open-source` | <https://commonmark.org/> |
 | [GitHub](organizations/github.md) | active |  | <https://github.com/> |
 | [Microsoft](organizations/microsoft.md) | active |  | <https://www.microsoft.com/> |

@@ -5,7 +5,7 @@
 People who created, shaped, or teach Markdown. 3 entries. Schema: [README.md](README.md).
 
 | Name | State | Tags | Link |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | [Aaron Swartz](people/aaron-swartz.md) | active | `#deceased` | <https://en.wikipedia.org/wiki/Aaron_Swartz> |
 | [John Gruber](people/john-gruber.md) | active |  | <https://daringfireball.net/> |
 | [John MacFarlane](people/john-macfarlane.md) | active |  | <https://johnmacfarlane.net/> |
