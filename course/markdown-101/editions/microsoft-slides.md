@@ -161,13 +161,14 @@ An image is a link with a `!` in front. The text in `[ ]` is the alt text.
 
 ## Code
 
-Inline: `` `npm install` `` gives `npm install`
+Inline: `` `print()` `` gives `print()`
 
 A block: three backticks and a language name
 
 ````markdown
-```powershell
-Get-ChildItem *.md
+```python
+for name in ["Ana", "Ben"]:
+    print(f"Hello, {name}!")
 ```
 ````
 
