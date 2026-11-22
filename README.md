@@ -35,6 +35,7 @@ Every Markdown file in this repo starts with YAML frontmatter, and its **first f
 | `Context` | Background on an environment, like [work/](work/) |
 | `Exercise` | A course exercise: starter file or answer key |
 | `Cheatsheet` | A one-page handout |
+| `Reference` | A lookup page, like [what works where](work/markdown-support.md) |
 
 Reference entries and templates use their own types (`Resource`, `App`, `Person`, and so on): see [references/README.md](references/README.md). To add a new type, add it here and to `DOC_TYPES` in [`scripts/build_references.py`](scripts/build_references.py).
 
