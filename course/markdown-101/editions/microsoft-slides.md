@@ -73,7 +73,7 @@ Show the raw text of a real Copilot answer if you can (copy it into VS Code). "T
 ## Why bother?
 
 | | |
-|:---|:---|
+|---|---|
 | **Readable raw** | No app needed to understand it |
 | **Portable** | Any editor, any OS, OneDrive, GitHub, phones |
 | **Future-proof** | It's just text |
@@ -127,7 +127,7 @@ The blank line is the most important character in Markdown.
 ## Bold and italic
 
 | You type | You get |
-|:---|:---|
+|---|---|
 | `**bold**` | **bold** |
 | `*italic*` or `_italic_` | *italic* |
 | `***both***` | ***both*** |
@@ -194,7 +194,7 @@ Get-ChildItem *.md
 ## The core 80%
 
 | | |
-|:---|:---|
+|---|---|
 | Heading | `# Title` |
 | Bold, italic | `**bold**`, `*italic*` |
 | List | `- item`, `1. item` |
@@ -222,13 +222,13 @@ Level up (0:16-0:21).
 
 ```markdown
 | Owner | Task          | Due    |
-|:------|:--------------|:-------|
+|-------|---------------|--------|
 | Sam   | Update guide  | Fri    |
 | Alex  | Fix login bug | Mon    |
 ```
 
 | Owner | Task | Due |
-|:---|:---|:---|
+|---|---|---|
 | Sam | Update guide | Fri |
 | Alex | Fix login bug | Mon |
 
@@ -273,7 +273,7 @@ Switch to GitHub or VS Code (with a Mermaid extension) to show it rendered. Marp
 ## Same characters, different result
 
 | You type | Markdown | Teams chat |
-|:---|:---|:---|
+|---|---|---|
 | `*hello*` | *hello* | **hello** |
 | `_hello_` | *hello* | *hello* |
 | `` `hello` `` | `hello` | `hello` |

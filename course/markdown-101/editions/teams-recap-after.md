@@ -18,7 +18,7 @@ type: Exercise
 ## Action items
 
 | Owner | Task | Due |
-|:---|:---|:---|
+|---|---|---|
 | Sam | **Fix the login bug** | Monday |
 | Priya | Move the user guide to GitHub | Friday |
 | Alex | Redraw the architecture diagram in Mermaid | Friday |

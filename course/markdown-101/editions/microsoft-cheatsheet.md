@@ -16,7 +16,7 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 ## The core: works almost everywhere
 
 | You want | You type |
-|:---|:---|
+|---|---|
 | Heading | `# Title`, `## Section`, `### Subsection` |
 | Paragraph | Leave a **blank line** between paragraphs |
 | Bold | `**bold**` |
@@ -33,8 +33,8 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 ## Level up: in files, not chat
 
 | You want | You type |
-|:---|:---|
-| Table | `\| Name \| Due \|`, then `\|:---\|:---\|`, then one row per line |
+|---|---|
+| Table | `\| Name \| Due \|`, then `\|---\|---\|`, then one row per line |
 | Task list | `- [ ] to do` and `- [x] done` |
 | Strikethrough | `~~old~~` |
 | Diagram | A code block with the language `mermaid` (renders on GitHub, and in VS Code with an extension) |
@@ -42,7 +42,7 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 ## Teams is not Markdown
 
 | You type | In Markdown | In Teams chat |
-|:---|:---|:---|
+|---|---|---|
 | `*text*` | *italic* | **bold** |
 | `_text_` | *italic* | *italic* |
 | `` `text` `` | `code` | `code` |

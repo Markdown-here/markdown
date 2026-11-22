@@ -18,7 +18,7 @@ type: Exercise
 ## Action items
 
 | Owner | Task | Due |
-|:---|:---|:---|
+|---|---|---|
 | Tom | **Fix the contact form** | Friday |
 | Maria | Move the blog posts | March 20 |
 | Lin | Take team photos | March 25 |

@@ -9,7 +9,7 @@ Plain text with a few symbols. Save as `.md`.
 ## The core: works almost everywhere
 
 | You want | You type |
-|:---|:---|
+|---|---|
 | Heading | `# Title`, `## Section`, `### Subsection` |
 | Paragraph | Leave a **blank line** between paragraphs |
 | Bold | `**bold**` |
@@ -26,8 +26,8 @@ Plain text with a few symbols. Save as `.md`.
 ## Level up: GitHub Flavored Markdown
 
 | You want | You type |
-|:---|:---|
-| Table | `\| Name \| Due \|`, then `\|:---\|:---\|`, then one row per line |
+|---|---|
+| Table | `\| Name \| Due \|`, then `\|---\|---\|`, then one row per line |
 | Task list | `- [ ] to do` and `- [x] done` |
 | Strikethrough | `~~old~~` |
 | Diagram | A code block with the language `mermaid` |
