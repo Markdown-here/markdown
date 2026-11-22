@@ -207,9 +207,11 @@ Leave a **blank line above it**. Without one, the text above turns into a headin
 | Heading | `# Title` |
 | Bold, italic | `**bold**`, `*italic*` |
 | List | `- item`, `1. item` |
-| Link, image | `[text](url)`, `![alt](image.png)` |
+| Link | `[text](url)` |
+| Image | `![alt](image.png)` |
 | Code | `` `code` ``, three backticks |
 | Quote | `> quote` |
+| Divider | `---` |
 
 This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
