@@ -56,6 +56,8 @@ Comparisons: [Slidev vs Marp vs reveal.js](../../references/resources/slidev-vs-
 
 The reveal at the end works with Marp too: open the `.md` file and show that the whole deck is just Markdown.
 
+How to view, export, and present a Marp deck: [Marp: how to use it](../../references/tools/marp.md#how-to-use-it). Each edition adds its own setup, for example [presenting the Microsoft edition](editions/microsoft.md#presenting).
+
 ## Credibility boosters
 
 - Build the deck *in Markdown* and reveal that at the end, after Q&A, as the last thing people hear

@@ -45,6 +45,30 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 - [ ] Check whether an image-only `.pptx` is acceptable when sharing in Teams. If people need to edit it, try Marp's experimental editable export or [Quarto](../../../references/tools/quarto.md) **(verify)**
 - [ ] Put the cheat sheet and exercise files in a shared OneDrive or SharePoint folder
 
+## Presenting
+
+How to view and show the [deck](microsoft-slides.md). For Marp in general, see [Marp](../../../references/tools/marp.md#how-to-use-it).
+
+### Set up once
+
+1. In VS Code, open the Command Palette (`Ctrl+Shift+P`), choose **Git: Clone**, and paste `https://github.com/thephm/markdown`.
+2. Trust the folder when VS Code asks. Our purple theme only loads in a trusted folder.
+3. Install **Marp for VS Code** (`Ctrl+Shift+X`).
+4. Open `course/markdown-101/editions/microsoft-slides.md` and press `Ctrl+K V` to preview.
+
+### Present
+
+- Export to **HTML** (Marp button › **Export slide deck…**) and open it in **Edge**. Use presenter view: notes and the next slide on the laptop, slides on the big screen.
+- Backup: export to **PowerPoint**. The notes come along; the slide text can't be edited.
+- If the Marp extension isn't allowed, open a pre-exported HTML file in Edge.
+
+### On the day
+
+- Presenter notes are the `<!-- ... -->` comments in the deck: timings and what to say.
+- Live demo: switch to VS Code with the preview open.
+- Mermaid slide: switch to GitHub to show the diagram drawn.
+- Close: open `microsoft-slides.md` and scroll through it. The whole deck is one Markdown file.
+
 ## Edition-specific materials
 
 - [x] [Slide deck](microsoft-slides.md) in [Marp](../../../references/tools/marp.md), with presenter notes. Open it in VS Code with the Marp extension to preview, present, or export to PDF and PowerPoint. It follows the house flavor in [Which Markdown?](../../../work/README.md#which-markdown)

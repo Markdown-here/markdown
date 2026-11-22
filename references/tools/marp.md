@@ -43,6 +43,25 @@ The chosen slide tool for [Markdown 101](../../course/markdown-101/), because:
 - PowerPoint and PDF export fit a Microsoft 365 workplace: share the `.pptx` in Teams, or the PDF anywhere.
 - It's the simplest of the code-first slide tools to learn, which suits a course *about* simple Markdown.
 
+## How to use it
+
+1. Install **Marp for VS Code** (`marp-team.marp-vscode`).
+2. Start a Markdown file with `marp: true` in its frontmatter, and put `---` between slides.
+3. Preview it next to the source with `Ctrl+K V` (`Cmd+K V` on a Mac). The preview updates as you type.
+4. Add speaker notes as HTML comments: `<!-- say this -->`.
+5. Export with the Marp button at the top right of the editor: **Export slide deck…**
+
+| Format | Present it with | Speaker notes |
+|:---|:---|:---|
+| **HTML** | Any browser. Hover at the bottom for fullscreen and presenter view | Yes, in presenter view |
+| **PowerPoint** (`.pptx`) | PowerPoint | Yes, in the notes pane. Slides are images, so their text can't be edited |
+| **PDF** | Any PDF viewer, fullscreen | No |
+| **PNG** or **JPEG** | Anywhere images go | No |
+
+From the command line: `npx @marp-team/marp-cli slides.md --pdf` (or `--pptx`, `--html`).
+
+**Custom themes:** list the CSS file under `markdown.marp.themes` in `.vscode/settings.json`, then set `theme:` in the frontmatter. VS Code only loads it in a trusted workspace.
+
 ## Gotchas
 
 - Export needs a local Chrome, Edge, or Firefox. Edge is already on Windows.
