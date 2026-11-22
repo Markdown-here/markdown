@@ -98,11 +98,16 @@ Core 80% starts (0:06-0:16). Live demo in VS Code with preview open. Keep a stea
 
 ```markdown
 # Project Phoenix
+
 ## Goals
+
 ### Stretch goals
+
+Launch the beta by June.
 ```
 
 - One `#` per level, then a space
+- A blank line before and after each heading
 - One `# Title` per file, and don't skip levels
 
 ---
