@@ -137,19 +137,12 @@ The blank line is the most important character in Markdown.
 
 ## Lists: Bulleted
 
-<style scoped>
-p { margin: 0.3em 0; }
-pre { margin: 0.3em 0 0.6em; }
-li { margin: 0.05em 0; }
-</style>
-
 You type:
 
 ```markdown
 - Milk
 - Eggs
   - Free range
-- Bread
 ```
 
 You get:
@@ -157,7 +150,6 @@ You get:
 - Milk
 - Eggs
   - Free range
-- Bread
 
 <!--
 Point at "Free range": indent two spaces to nest a list.
