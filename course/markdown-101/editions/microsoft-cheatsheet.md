@@ -64,9 +64,9 @@ In Teams chats, stick to bold, italic, and code. **(verify)** every row in Teams
 
 ## VS Code extensions
 
-- **markdownlint** checks your style
-- **Marp for VS Code** makes slides from Markdown
-- A **Mermaid preview** extension draws diagrams **(verify names)**
+- [**markdownlint**](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) checks your style
+- [**Marp for VS Code**](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) makes slides from Markdown
+- [**Markdown Preview Mermaid Support**](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) draws diagrams
 
 ## Learn more
 
