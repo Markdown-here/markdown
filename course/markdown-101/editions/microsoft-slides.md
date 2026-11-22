@@ -300,6 +300,8 @@ Check every row in Teams before the session (prep checklist).
 - Tables, task lists, and diagrams work in **files**: GitHub, VS Code, Confluence via publishing
 - In **chat**, stick to bold, italic, and code
 
+> We will add **YAML frontmatter** standards for all our artifacts. This is the next course!
+
 ---
 
 ## Exercise: rescue the recap
