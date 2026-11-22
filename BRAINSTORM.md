@@ -55,14 +55,14 @@
 
 1. **Now:** Markdown 101 course + seed the references lists
 2. Pull in existing notes from `c:\notes`
-3. Validator script + CI (markdownlint + ID/field checks)
+3. ~~Validator script + CI~~ done; add markdownlint and link checks next
 4. Pick a site generator (Astro / VitePress / Docusaurus — decide later) and ship v0
 5. Playground, cheat sheet, flavor matrix
 6. AI layer: llms.txt, JSON export, MCP server
 
 ## Open questions
 
-- [ ] Share the HAL_md People and Organization templates so the entries here match
-- [ ] One big file per section, or one file per entry (with generated index)? Starting with one file per section; switch once there are ~100+ entries
+- [x] Match the HAL_md templates (done: one file per entry, `slug` as the ID)
+- [ ] Finish HAL_md's `tags` → `type` switch ([hal_md#56](https://github.com/thephm/hal_md/issues/56)); this repo already uses `type`
 - [ ] Site name / domain
 - [ ] Contributions from others? (PR template, contribution guide)

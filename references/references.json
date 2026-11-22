@@ -1,0 +1,335 @@
+[
+  {
+    "type": "Organization",
+    "slug": "commonmark",
+    "title": "CommonMark",
+    "aliases": [],
+    "url": "https://commonmark.org/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [
+      "john-macfarlane"
+    ],
+    "tags": [
+      "spec",
+      "open-source"
+    ],
+    "id": "organizations/commonmark",
+    "path": "references/organizations/commonmark.md"
+  },
+  {
+    "type": "Organization",
+    "slug": "github",
+    "title": "GitHub",
+    "aliases": [],
+    "url": "https://github.com/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [],
+    "tags": [],
+    "id": "organizations/github",
+    "path": "references/organizations/github.md"
+  },
+  {
+    "type": "Organization",
+    "slug": "microsoft",
+    "title": "Microsoft",
+    "aliases": [],
+    "url": "https://www.microsoft.com/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [],
+    "tags": [],
+    "id": "organizations/microsoft",
+    "path": "references/organizations/microsoft.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Aaron",
+    "last_name": "Swartz",
+    "aliases": [],
+    "slug": "aaron-swartz",
+    "url": "https://en.wikipedia.org/wiki/Aaron_Swartz",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [
+      "deceased"
+    ],
+    "id": "people/aaron-swartz",
+    "title": "Aaron Swartz",
+    "path": "references/people/aaron-swartz.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "John",
+    "last_name": "Gruber",
+    "aliases": [],
+    "slug": "john-gruber",
+    "url": "https://daringfireball.net/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/john-gruber",
+    "title": "John Gruber",
+    "path": "references/people/john-gruber.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "John",
+    "last_name": "MacFarlane",
+    "aliases": [],
+    "slug": "john-macfarlane",
+    "url": "https://johnmacfarlane.net/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [
+      "commonmark"
+    ],
+    "tags": [],
+    "id": "people/john-macfarlane",
+    "title": "John MacFarlane",
+    "path": "references/people/john-macfarlane.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "commonmark-spec",
+    "title": "CommonMark Spec",
+    "url": "https://spec.commonmark.org/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [
+      "john-macfarlane"
+    ],
+    "organizations": [
+      "commonmark"
+    ],
+    "tags": [
+      "spec",
+      "free",
+      "open-source"
+    ],
+    "id": "resources/commonmark-spec",
+    "path": "references/resources/commonmark-spec.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "daring-fireball-markdown",
+    "title": "Markdown (Daring Fireball)",
+    "url": "https://daringfireball.net/projects/markdown/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "tags": [
+      "spec",
+      "free"
+    ],
+    "id": "resources/daring-fireball-markdown",
+    "path": "references/resources/daring-fireball-markdown.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "gfm-spec",
+    "title": "GitHub Flavored Markdown Spec",
+    "url": "https://github.github.com/gfm/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [],
+    "organizations": [
+      "github"
+    ],
+    "tags": [
+      "spec",
+      "free"
+    ],
+    "id": "resources/gfm-spec",
+    "path": "references/resources/gfm-spec.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "llms-txt",
+    "title": "llms.txt",
+    "url": "https://llmstxt.org/",
+    "state": "watch",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [],
+    "organizations": [],
+    "tags": [
+      "spec",
+      "ai",
+      "free"
+    ],
+    "id": "resources/llms-txt",
+    "path": "references/resources/llms-txt.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "markdown-guide",
+    "title": "Markdown Guide",
+    "url": "https://www.markdownguide.org/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "people": [],
+    "organizations": [],
+    "tags": [
+      "guide",
+      "cheatsheet",
+      "free"
+    ],
+    "id": "resources/markdown-guide",
+    "path": "references/resources/markdown-guide.md"
+  },
+  {
+    "type": "App",
+    "slug": "markdownlint",
+    "title": "markdownlint",
+    "aliases": [],
+    "url": "https://github.com/DavidAnson/markdownlint",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "tags": [
+      "tool",
+      "linter",
+      "cli",
+      "library",
+      "open-source"
+    ],
+    "id": "tools/markdownlint",
+    "path": "references/tools/markdownlint.md"
+  },
+  {
+    "type": "App",
+    "slug": "mermaid",
+    "title": "Mermaid",
+    "aliases": [],
+    "url": "https://mermaid.js.org/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "tags": [
+      "tool",
+      "diagram",
+      "renderer",
+      "web",
+      "open-source"
+    ],
+    "id": "tools/mermaid",
+    "path": "references/tools/mermaid.md"
+  },
+  {
+    "type": "App",
+    "slug": "obsidian",
+    "title": "Obsidian",
+    "aliases": [],
+    "url": "https://obsidian.md/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "tags": [
+      "tool",
+      "notes",
+      "editor",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "freemium"
+    ],
+    "id": "tools/obsidian",
+    "path": "references/tools/obsidian.md"
+  },
+  {
+    "type": "App",
+    "slug": "pandoc",
+    "title": "Pandoc",
+    "aliases": [],
+    "url": "https://pandoc.org/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "people": [
+      "john-macfarlane"
+    ],
+    "integrations": [],
+    "tags": [
+      "tool",
+      "converter",
+      "cli",
+      "windows",
+      "macos",
+      "linux",
+      "open-source"
+    ],
+    "id": "tools/pandoc",
+    "path": "references/tools/pandoc.md"
+  },
+  {
+    "type": "App",
+    "slug": "vs-code",
+    "title": "Visual Studio Code",
+    "aliases": [],
+    "url": "https://code.visualstudio.com/",
+    "state": "active",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [
+      "microsoft"
+    ],
+    "people": [],
+    "integrations": [],
+    "tags": [
+      "tool",
+      "editor",
+      "windows",
+      "macos",
+      "linux",
+      "web",
+      "free"
+    ],
+    "id": "tools/vs-code",
+    "path": "references/tools/vs-code.md"
+  }
+]

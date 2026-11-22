@@ -1,51 +1,40 @@
 # References
 
-Curated, well-formed, AI-friendly reference lists.
+Curated, well-formed, AI-friendly references. **One Markdown file per entry**, using [HAL_md](https://github.com/thephm/hal_md)-style templates, so entries can move between this site and an Obsidian vault.
 
-| List | ID prefix | File |
-|---|---|---|
-| Resources | `res-` | [resources.md](resources.md) |
-| Tools | `tool-` | [tools.md](tools.md) |
-| People | `per-` | [people.md](people.md) |
-| Organizations | `org-` | [organizations.md](organizations.md) |
+| Section | Folder | Template | Generated list |
+|---|---|---|---|
+| Resources | [`resources/`](resources/) | [Resource.md](../templates/Resource.md) | [resources.md](resources.md) |
+| Tools | [`tools/`](tools/) | [Tool.md](../templates/Tool.md) | [tools.md](tools.md) |
+| People | [`people/`](people/) | [Person.md](../templates/Person.md) | [people.md](people.md) |
+| Organizations | [`organizations/`](organizations/) | [Organization.md](../templates/Organization.md) | [organizations.md](organizations.md) |
 
-## Entry schema
+Everything is also exported to [`references.json`](references.json) for AI agents and the site.
 
-Each entry is an H3 heading preceded by an HTML anchor, then a field list:
+## Unique ID and deep link
 
-```markdown
-<a id="tool-0001"></a>
+- The **`slug`** is the unique ID: lowercase, hyphenated, and the same as the filename (`pandoc` → `tools/pandoc.md`).
+- The **ID** is `<section>/<slug>`, e.g. `tools/pandoc`. That's the deep link in the repo, and it'll be the site URL (`/tools/pandoc`).
+- **Slugs are permanent.** Never rename or reuse one. To retire an entry, set `state: retired` and keep the file.
+- Cross-references use slugs: `people: [john-macfarlane]`, `organizations: [commonmark]`. The build fails if a slug doesn't exist.
 
-### Obsidian
-
-- **ID:** `tool-0001`
-- **URL:** <https://obsidian.md>
-- **State:** active
-- **Source:** personal use
-- **Added:** 2026-11-22
-- **Tags:** #editor #notes #windows #macos #linux #ios #android
-
-One or two sentences on what it is and why it's worth knowing.
-```
-
-### Fields
+## Common fields
 
 | Field | Required | Notes |
 |---|---|---|
-| ID | yes | `<prefix>-<4 digits>`, lowercase, permanent, never reused |
-| URL | yes | Canonical link, in `<angle brackets>` |
-| State | yes | See states below |
-| Source | yes | Where the reference came from (e.g. `personal use`, `c:\notes`, a person's ID, a URL) |
-| Added | yes | ISO date `YYYY-MM-DD` |
-| Updated | no | ISO date of last meaningful change |
-| Tags | no | Space-separated `#tags` (see tag vocabulary) |
+| `type` | yes | `Resource`, `App` (tools), `Person`, or `Organization`. First property, per HAL_md's OKF convention |
+| `slug` | yes | Unique ID, matches the filename |
+| `title` | yes* | Display name (*people use `first_name` + `last_name`) |
+| `url` | yes | Canonical link |
+| `state` | yes | See states below |
+| `source` | yes | Where it came from: `personal use`, `c:\notes`, a slug like `people/john-gruber`, or a URL |
+| `added` | yes | `YYYY-MM-DD` |
+| `updated` | no | `YYYY-MM-DD` of the last meaningful change |
+| `tags` | no | List, without `#`. Obsidian shows them as `#tags` |
 
-### Deep links
+Each template also keeps its HAL_md-specific fields (`organizations`, `people`, `integrations`, `skills`, and so on) and body sections (`## Summary`, `## Bio`, `## References`, `## Positions`, and so on).
 
-The `<a id="…">` anchor is the deep link and never changes, even if the title does:
-`references/tools.md#tool-0001`. (Heading-slug anchors break when a title is edited; explicit IDs don't.)
-
-### States
+## States
 
 | State | Meaning |
 |---|---|
@@ -54,11 +43,23 @@ The `<a id="…">` anchor is the deep link and never changes, even if the title 
 | `watch` | Interesting, keeping an eye on it |
 | `stale` | Unmaintained or outdated, kept for context |
 | `broken` | Link is dead, needs attention |
-| `retired` | Removed from recommendations; ID is kept forever |
+| `retired` | No longer recommended, hidden from lists; slug kept forever |
 
-### Tag vocabulary
+## Tag vocabulary
 
-- **Platform:** `#windows` `#macos` `#linux` `#ios` `#android` `#web` `#cli`
-- **Kind:** `#editor` `#notes` `#converter` `#linter` `#renderer` `#static-site` `#diagram` `#library`
-- **Resource type:** `#spec` `#guide` `#tutorial` `#cheatsheet` `#video` `#book` `#article`
-- **Cost:** `#free` `#paid` `#freemium` `#open-source`
+- **Platform:** `windows` `macos` `linux` `ios` `android` `web` `cli`
+- **Kind (tools):** `tool` (always) `editor` `notes` `converter` `linter` `renderer` `static-site` `diagram` `library`
+- **Resource type:** `spec` `guide` `tutorial` `cheatsheet` `video` `book` `article` `ai`
+- **Cost:** `free` `paid` `freemium` `open-source`
+
+## Adding an entry
+
+1. Copy the template from [`templates/`](../templates/) into the right folder as `<slug>.md`.
+2. Fill in the frontmatter and body.
+3. Run the build script, which checks every entry and regenerates the lists and JSON:
+
+   ```bash
+   python scripts/build_references.py
+   ```
+
+A GitHub Action runs `--check` on every push, so broken entries and out-of-date lists fail the build.
