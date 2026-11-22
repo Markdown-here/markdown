@@ -209,30 +209,22 @@ for name in ["Ana", "Ben"]:
 
 ## Longer quotes
 
-<style scoped>
-pre { font-size: 17px; }
-blockquote { font-size: 22px; }
-</style>
-
 ```markdown
-> The five steps to effective retrospectives: Set the stage. Gather data. Generate insights.
-> Decide what to do. Close the retrospective.
+> A network is something you have, not something you "do".
 >
-> The output of a retrospective meeting should be a small number of experiments that the
-> team agrees to execute during the course of the next cycle.
+> Build it before you need it.
 >
-> Jim Benson
+> Keith Ferrazzi
 ```
 
-> The five steps to effective retrospectives: Set the stage. Gather data. Generate insights. Decide what to do. Close the retrospective.
+> A network is something you have, not something you "do".
 >
-> The output of a retrospective meeting should be a small number of experiments that the team agrees to execute during the course of the next cycle.
+> Build it before you need it.
 >
-> Jim Benson
+> Keith Ferrazzi
 
 <!--
 Point at the lines with just `>`: they keep the blank lines inside the quote. Without them, the quote ends there.
-Check the attribution (verify).
 -->
 ---
 
