@@ -203,6 +203,8 @@ for name in ["Ana", "Ben"]:
 > "A bad system will beat a good person every time." - W. Edwards Deming
 ```
 
+Renders as:
+
 > "A bad system will beat a good person every time." - W. Edwards Deming
 
 ---
@@ -216,6 +218,8 @@ From *Never Eat Alone* by Keith Ferrazzi (2005):
 >
 > Build it before you need it.
 ```
+
+Renders as:
 
 > A network is something you have, not something you "do".
 >
