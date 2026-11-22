@@ -185,7 +185,8 @@ Point at "Free range": indent two spaces to nest a list.
 
 [Markdown Guide](https://www.markdownguide.org/)
 
-The text in `[ ]` is the label people click. The URL goes in `( )`.
+- The text in `[]` is the label people click
+- The URL goes in `()`
 
 ---
 
@@ -203,9 +204,8 @@ The text in `[ ]` is the label people click. The URL goes in `( )`.
 ![Team photo](https://example.com/images/team.png)
 ```
 
-The `!` shows the image in the doc instead of linking to it.
-
-The text in `[ ]` is the alt text.
+- The `!` shows the image in the doc instead of linking to it
+- The text in `[]` is the alt text
 
 ---
 
