@@ -158,9 +158,13 @@ Indent two spaces to nest.
 [Markdown Guide](https://www.markdownguide.org/)
 
 ![Team photo](images/team.png)
+
+![Team photo](https://example.com/images/team.png)
 ```
 
 An image is a link with a `!` in front. The text in `[ ]` is the alt text.
+
+Use a path for an image next to your file, or a full URL for one on the web.
 
 ---
 
