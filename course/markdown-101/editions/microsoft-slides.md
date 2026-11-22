@@ -251,8 +251,10 @@ The columns don't need to line up. VS Code can format them for you.
 
 ```mermaid
 flowchart LR
-    A[Write in VS Code] --> B[Review on GitHub]
-    B --> C[Read in Confluence]
+    A[Write in VS Code] --> B[Commit and push]
+    B --> C[Review on GitHub]
+    C --> D[GitHub Action publishes]
+    D --> E[Read in Confluence]
 ```
 
 GitHub draws this as a diagram. Change a word, the diagram updates.
@@ -261,6 +263,7 @@ GitHub draws this as a diagram. Change a word, the diagram updates.
 
 <!--
 Switch to GitHub or VS Code (with a Mermaid extension) to show it rendered. Marp doesn't draw Mermaid, which is a nice reminder that flavors differ.
+The GitHub Action that publishes to Confluence is the workflow this diagram describes (verify it's set up before you promise it).
 -->
 
 ---
