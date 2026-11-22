@@ -201,22 +201,39 @@ for name in ["Ana", "Ben"]:
 
 ```markdown
 > "A bad system will beat a good person every time." - W. Edwards Deming
-
-> Write it once.
->
-> Read it anywhere.
 ```
 
 > "A bad system will beat a good person every time." - W. Edwards Deming
 
-> Write it once.
+---
+
+## Longer quotes
+
+<style scoped>
+pre { font-size: 17px; }
+blockquote { font-size: 22px; }
+</style>
+
+```markdown
+> The five steps to effective retrospectives: Set the stage. Gather data. Generate insights.
+> Decide what to do. Close the retrospective.
 >
-> Read it anywhere.
+> The output of a retrospective meeting should be a small number of experiments that the
+> team agrees to execute during the course of the next cycle.
+>
+> Jim Benson
+```
+
+> The five steps to effective retrospectives: Set the stage. Gather data. Generate insights. Decide what to do. Close the retrospective.
+>
+> The output of a retrospective meeting should be a small number of experiments that the team agrees to execute during the course of the next cycle.
+>
+> Jim Benson
 
 <!--
-Point at the line with just `>`: it keeps the blank line inside the quote. Without it, the quote ends there.
+Point at the lines with just `>`: they keep the blank lines inside the quote. Without them, the quote ends there.
+Check the attribution (verify).
 -->
-
 ---
 
 ## Dividers
@@ -237,6 +254,8 @@ Leave a **blank line above it**. Without one, the text above turns into a headin
 
 ## The core 80%
 
+These work almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
+
 | | |
 |---|---|
 | Heading | `# Title` |
@@ -247,8 +266,6 @@ Leave a **blank line above it**. Without one, the text above turns into a headin
 | Code | `` `code` ``, three backticks |
 | Quote | `> quote` |
 | Divider | `---` |
-
-This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
 ---
 
