@@ -205,10 +205,26 @@ This works almost everywhere: GitHub, VS Code, Copilot, OneDrive, slides.
 
 # Level up
 
-Tables, task lists, diagrams
+Task lists, tables, diagrams
 
 <!--
 Level up (0:16-0:21).
+-->
+
+---
+
+## Task lists
+
+```markdown
+- [x] Book the room
+- [ ] Send the agenda
+- [ ] Order coffee
+```
+
+GitHub shows these as checkboxes you can tick.
+
+<!--
+Show this rendered on GitHub, not on the slide.
 -->
 
 ---
@@ -228,22 +244,6 @@ Level up (0:16-0:21).
 | Alex | Fix login bug | Mon |
 
 The columns don't need to line up. VS Code can format them for you.
-
----
-
-## Task lists
-
-```markdown
-- [x] Book the room
-- [ ] Send the agenda
-- [ ] Order coffee
-```
-
-GitHub shows these as checkboxes you can tick.
-
-<!--
-Show this rendered on GitHub, not on the slide.
--->
 
 ---
 

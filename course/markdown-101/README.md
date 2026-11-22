@@ -24,7 +24,7 @@ The core course below is tool-neutral. An edition keeps the same structure and t
 | 0:00–0:03 | **Hook** | Same text shown raw vs rendered. "You already use Markdown": chat apps, GitHub READMEs, AI chatbot answers |
 | 0:03–0:06 | **What and why** | 2004, Gruber + Swartz. Plain text, readable raw, portable, future-proof, diffable, AI-native |
 | 0:06–0:16 | **The core 80%** (live) | Headings, paragraphs, **bold**/*italic*, lists (bulleted, numbered, nested), links, images, `inline code`, fenced code blocks, blockquotes, horizontal rules |
-| 0:16–0:21 | **Level up** | Tables, task lists `- [ ]`, Mermaid diagram teaser. Flavors: CommonMark vs GFM vs chat-app formatting |
+| 0:16–0:21 | **Level up** | Task lists `- [ ]`, tables, Mermaid diagram teaser. Flavors: CommonMark vs GFM vs chat-app formatting |
 | 0:21–0:26 | **Exercise** | Rewrite a messy plain-text meeting note into well-structured Markdown (starter file provided) |
 | 0:26–0:27 | **Wrap** | Cheat sheet handout, top tools and resources, where to go next |
 | 0:27–0:29 | **Q&A** | Questions come before the close, so the audience doesn't get the last word |

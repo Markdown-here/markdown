@@ -39,8 +39,8 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 
 | You want | You type |
 |---|---|
-| Table | `\| A \| B \|` then `\|---\|---\|` |
 | Task list | `- [ ] to do`, `- [x] done` |
+| Table | `\| A \| B \|` then `\|---\|---\|` |
 | Strikethrough | `~~old~~` |
 | Diagram | ` ```mermaid ` code block |
 
