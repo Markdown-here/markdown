@@ -34,6 +34,8 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 - [ ] Confirm attendees can create `.md` files in OneDrive and that the web preview renders them **(verify)**
 - [ ] Pick a Copilot prompt for the hook and the exercise, and test it on the day (answers vary)
 - [ ] Have a draw.io diagram from a real Confluence page, redrawn in Mermaid, for the level-up
+- [ ] Confirm the [Marp for VS Code](../../../references/tools/marp.md) extension (`marp-team.marp-vscode`) is allowed on work laptops, and that PDF and PPTX export work with Edge **(verify)**
+- [ ] Check whether an image-only `.pptx` is acceptable when sharing in Teams. If people need to edit it, try Marp's experimental editable export or [Quarto](../../../references/tools/quarto.md) **(verify)**
 - [ ] Put the cheat sheet and exercise files in a shared OneDrive or SharePoint folder
 
 ## Edition-specific materials

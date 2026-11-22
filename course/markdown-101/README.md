@@ -28,11 +28,27 @@ The core course below is tool-neutral. An edition keeps the same structure and t
 
 Shared by all editions unless an edition says otherwise.
 
-- [ ] Slides (written in Markdown, naturally — Marp or reveal.js)
+- [ ] Slides (written in Markdown, naturally, with [Marp](../../references/tools/marp.md); see [Slide tool](#slide-tool))
 - [ ] `cheatsheet.md`: one page, printable
 - [ ] `exercise-before.md` / `exercise-after.md`: the meeting-notes rewrite
 - [ ] Demo script with exact keystrokes so the live part stays on time
 - [ ] "Next steps" page linking to [references](../../references/) by ID
+
+## Slide tool
+
+**Decision: [Marp](../../references/tools/marp.md).** The deck is one plain Markdown file, edited and previewed in VS Code with the Marp extension and exported to PDF and PowerPoint.
+
+| Tool | Source | Editor | Export | Verdict |
+|:---|:---|:---|:---|:---|
+| [Marp](../../references/tools/marp.md) | Plain Markdown, `---` between slides | VS Code extension, live preview | HTML, PDF, PPTX (images by default) | **Chosen.** Simplest, and the source reads fine on GitHub and in OneDrive |
+| [Quarto](../../references/tools/quarto.md) | Markdown plus Quarto syntax | VS Code extension | reveal.js, editable PPTX, PDF | Runner-up. Use it if an editable PowerPoint becomes a must |
+| [Slidev](../../references/tools/slidev.md) | Markdown plus Vue | Any, runs a dev server | Web, PDF, PPTX, PNG | Too heavy: a Node project per deck |
+| [reveal.js](../../references/tools/reveal-js.md) | HTML with Markdown inside | Any | Web; PDF via print or DeckTape | Most control, but not plain Markdown |
+| [remark](../../references/tools/remark.md) | Markdown inside one HTML file | Any | Web | Simple, but barely maintained |
+
+Comparisons: [Slidev vs Marp vs reveal.js](../../references/resources/slidev-vs-marp-vs-revealjs.md), [Marp vs reveal.js with the same content](../../references/resources/marp-vs-revealjs-classmethod.md).
+
+The reveal at the end works with Marp too: open the `.md` file and show that the whole deck is just Markdown.
 
 ## Credibility boosters
 

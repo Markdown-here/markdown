@@ -50,7 +50,7 @@ Each template also keeps its HAL_md-specific fields (`organizations`, `people`, 
 ## Tag vocabulary
 
 - **Platform:** `windows` `macos` `linux` `ios` `android` `web` `cli`
-- **Kind (tools):** `tool` (always) `editor` `notes` `converter` `linter` `renderer` `static-site` `diagram` `library`
+- **Kind (tools):** `tool` (always) `editor` `notes` `converter` `linter` `renderer` `static-site` `diagram` `slides` `library`
 - **Resource type:** `spec` `guide` `tutorial` `cheatsheet` `video` `book` `article` `ai`
 - **Cost:** `free` `paid` `freemium` `open-source`
 

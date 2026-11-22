@@ -33,7 +33,7 @@ Things mentioned in my notes that aren't entries yet. Triage each into a proper 
 ## Publishing and docs
 
 - Static sites and docs: MkDocs, Docusaurus, VuePress, Jekyll, Hugo, Read the Docs, GitBook, daux.io
-- Slides: remark, mdp, landslide
+- Slides: mdp, landslide, Deckset (macOS only)
 - Books: Leanpub
 - Websites from a Dropbox folder: blot.im
 - Flavors and related formats: PHP Markdown Extra, Kramdown, Redcarpet, R Markdown, Fountain, CriticMarkup

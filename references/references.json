@@ -853,6 +853,25 @@
     "path": "references/resources/markdown-yaml-cheat-sheet.md"
   },
   {
+    "type": "Article",
+    "slug": "marp-vs-revealjs-classmethod",
+    "title": "I compared Marp and Reveal.js with the same content",
+    "url": "https://dev.classmethod.jp/en/articles/marp-vs-revealjs-markdown-presentation-tools-comparison/",
+    "people": [],
+    "organizations": [],
+    "date": "",
+    "state": "draft",
+    "source": "https://www.pkgpulse.com/guides/slidev-vs-marp-vs-revealjs-code-first-presentations-2026",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "slides"
+    ],
+    "id": "resources/marp-vs-revealjs-classmethod",
+    "path": "references/resources/marp-vs-revealjs-classmethod.md"
+  },
+  {
     "type": "Post",
     "slug": "opening-md-files-on-android",
     "title": "Opening .md files on Android",
@@ -950,6 +969,26 @@
     ],
     "id": "resources/r-markdown",
     "path": "references/resources/r-markdown.md"
+  },
+  {
+    "type": "Article",
+    "slug": "slidev-vs-marp-vs-revealjs",
+    "title": "Slidev vs Marp vs reveal.js: code-first presentations (2026)",
+    "url": "https://www.pkgpulse.com/guides/slidev-vs-marp-vs-revealjs-code-first-presentations-2026",
+    "people": [],
+    "organizations": [],
+    "date": 2026,
+    "state": "draft",
+    "source": "personal use",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "slides",
+      "guide"
+    ],
+    "id": "resources/slidev-vs-marp-vs-revealjs",
+    "path": "references/resources/slidev-vs-marp-vs-revealjs.md"
   },
   {
     "type": "Article",
@@ -1547,6 +1586,40 @@
   },
   {
     "type": "App",
+    "slug": "marp",
+    "title": "Marp",
+    "aliases": [
+      "Markdown Presentation Ecosystem",
+      "Marp for VS Code",
+      "Marp CLI"
+    ],
+    "url": "https://marp.app/",
+    "organizations": [],
+    "people": [],
+    "integrations": [
+      "vs-code"
+    ],
+    "state": "active",
+    "source": "https://www.pkgpulse.com/guides/slidev-vs-marp-vs-revealjs-code-first-presentations-2026",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "slides",
+      "editor",
+      "converter",
+      "windows",
+      "macos",
+      "linux",
+      "cli",
+      "free",
+      "open-source"
+    ],
+    "id": "tools/marp",
+    "path": "references/tools/marp.md"
+  },
+  {
+    "type": "App",
     "slug": "mermaid",
     "title": "Mermaid",
     "aliases": [],
@@ -1736,6 +1809,88 @@
     ],
     "id": "tools/powertoys-file-explorer",
     "path": "references/tools/powertoys-file-explorer.md"
+  },
+  {
+    "type": "App",
+    "slug": "quarto",
+    "title": "Quarto",
+    "aliases": [],
+    "url": "https://quarto.org/",
+    "organizations": [],
+    "people": [],
+    "integrations": [
+      "vs-code",
+      "pandoc",
+      "reveal-js"
+    ],
+    "state": "watch",
+    "source": "https://quarto.org/docs/presentations/revealjs/",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "slides",
+      "converter",
+      "static-site",
+      "windows",
+      "macos",
+      "linux",
+      "cli",
+      "free",
+      "open-source"
+    ],
+    "id": "tools/quarto",
+    "path": "references/tools/quarto.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "remark",
+    "title": "remark (slideshow)",
+    "aliases": [
+      "remark.js"
+    ],
+    "url": "https://remarkjs.com/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "stale",
+    "source": "references/inbox.md",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "slides",
+      "library",
+      "web",
+      "free",
+      "open-source"
+    ],
+    "id": "tools/remark",
+    "path": "references/tools/remark.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "reveal-js",
+    "title": "reveal.js",
+    "aliases": [],
+    "url": "https://revealjs.com/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "watch",
+    "source": "https://www.pkgpulse.com/guides/slidev-vs-marp-vs-revealjs-code-first-presentations-2026",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "slides",
+      "library",
+      "web",
+      "free",
+      "open-source"
+    ],
+    "id": "tools/reveal-js",
+    "path": "references/tools/reveal-js.md"
   },
   {
     "type": "App",
