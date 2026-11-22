@@ -2,18 +2,20 @@
 
 **Goal:** Everyone leaves able to write a clean README, meeting notes, or chat message in Markdown, and knows where to learn more.
 
-**Format:** Live, hands-on. Attendees type along in any editor with a preview (VS Code `Ctrl+Shift+V`, Obsidian, or a GitHub/Teams/Slack message box).
+**Format:** Live, hands-on. Attendees type along in VS Code (`Ctrl+Shift+V` for preview), or Notepad or OneDrive if they have nothing installed.
+
+**Audience:** a Microsoft shop. See [work context](../../work/README.md) for the tools people use and what the course leads into.
 
 ## Agenda
 
 | Time | Segment | Key points |
 |:---|:---|:---|
-| 0:00–0:03 | **Hook** | Same text shown raw vs rendered. "You already read Markdown every day": GitHub, Teams, Slack, ChatGPT/Claude answers |
+| 0:00–0:03 | **Hook** | Same text shown raw vs rendered. "You already use Markdown": `code` in Teams chat, GitHub READMEs, Copilot and ChatGPT answers |
 | 0:03–0:06 | **What and why** | 2004, Gruber + Swartz. Plain text, readable raw, portable, future-proof, diffable, AI-native |
 | 0:06–0:16 | **The core 80%** (live) | Headings, paragraphs, **bold**/*italic*, lists (bulleted, numbered, nested), links, images, `inline code`, fenced code blocks, blockquotes, horizontal rules |
-| 0:16–0:21 | **Level up** | Tables, task lists `- [ ]`, strikethrough, Mermaid diagram teaser. Flavors: CommonMark vs GFM |
+| 0:16–0:21 | **Level up** | Tables, task lists `- [ ]`, Mermaid diagram ("goodbye draw.io?"). Flavors: why `*bold*` in Teams is *italic* in Markdown |
 | 0:21–0:27 | **Exercise** | Rewrite a messy plain-text meeting note into well-structured Markdown (starter file provided) |
-| 0:27–0:30 | **Wrap** | Cheat sheet handout, top 3 tools, top 3 resources, where to go next, Q&A |
+| 0:27–0:30 | **Wrap** | Cheat sheet handout, top tools and resources, teaser: "write docs in Git, read them in Confluence", Q&A |
 
 ## Materials to build
 

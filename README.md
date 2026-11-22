@@ -12,6 +12,7 @@ AI-first, human-gorgeous. Everything here is plain Markdown with stable IDs, so 
 | [course/markdown-101/](course/markdown-101/) | 30-minute Markdown 101 course (first deliverable) |
 | [references/](references/) | The curated reference lists: Resources, Tools, People, Organizations |
 | [templates/](templates/) | Entry templates, based on [HAL_md](https://github.com/thephm/hal_md) |
+| [work/](work/) | Work-specific context: tools, constraints, docs-as-code to Confluence plan |
 | [scripts/](scripts/) | `build_references.py`: checks every entry, generates the lists and `references.json` |
 
 ## Reference IDs
