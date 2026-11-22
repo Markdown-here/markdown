@@ -50,6 +50,36 @@
     "path": "references/organizations/microsoft.md"
   },
   {
+    "type": "Organization",
+    "slug": "stripe",
+    "title": "Stripe",
+    "aliases": [],
+    "url": "https://stripe.com/",
+    "people": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [],
+    "id": "organizations/stripe",
+    "path": "references/organizations/stripe.md"
+  },
+  {
+    "type": "Organization",
+    "slug": "wired",
+    "title": "Wired",
+    "aliases": [],
+    "url": "https://www.wired.com/",
+    "people": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [],
+    "id": "organizations/wired",
+    "path": "references/organizations/wired.md"
+  },
+  {
     "type": "Person",
     "first_name": "Aaron",
     "last_name": "Swartz",
@@ -67,6 +97,159 @@
     "id": "people/aaron-swartz",
     "title": "Aaron Swartz",
     "path": "references/people/aaron-swartz.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Angela",
+    "last_name": "Alcorn",
+    "aliases": [],
+    "slug": "angela-alcorn",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/angela-alcorn",
+    "title": "Angela Alcorn",
+    "path": "references/people/angela-alcorn.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Bakari",
+    "last_name": "Chavanu",
+    "aliases": [],
+    "slug": "bakari-chavanu",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/bakari-chavanu",
+    "title": "Bakari Chavanu",
+    "path": "references/people/bakari-chavanu.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Ben",
+    "last_name": "Balter",
+    "aliases": [],
+    "slug": "ben-balter",
+    "url": "https://ben.balter.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/ben-balter",
+    "title": "Ben Balter",
+    "path": "references/people/ben-balter.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Bob",
+    "last_name": "German",
+    "aliases": [],
+    "slug": "bob-german",
+    "url": "https://bob1german.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/bob-german",
+    "title": "Bob German",
+    "path": "references/people/bob-german.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Chikhna",
+    "last_name": "Diouf",
+    "aliases": [],
+    "slug": "chikhna-diouf",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/chikhna-diouf",
+    "title": "Chikhna Diouf",
+    "path": "references/people/chikhna-diouf.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "David",
+    "last_name": "Sparks",
+    "aliases": [],
+    "slug": "david-sparks",
+    "url": "https://www.macsparky.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/david-sparks",
+    "title": "David Sparks",
+    "path": "references/people/david-sparks.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Eddie",
+    "last_name": "Smith",
+    "aliases": [],
+    "slug": "eddie-smith",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/eddie-smith",
+    "title": "Eddie Smith",
+    "path": "references/people/eddie-smith.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Fletcher",
+    "last_name": "Penney",
+    "aliases": [],
+    "slug": "fletcher-penney",
+    "url": "https://fletcherpenney.net/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/fletcher-penney",
+    "title": "Fletcher Penney",
+    "path": "references/people/fletcher-penney.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Hans-Martin",
+    "last_name": "Ramsl",
+    "aliases": [],
+    "slug": "hans-martin-ramsl",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/hans-martin-ramsl",
+    "title": "Hans-Martin Ramsl",
+    "path": "references/people/hans-martin-ramsl.md"
   },
   {
     "type": "Person",
@@ -103,6 +286,171 @@
     "id": "people/john-macfarlane",
     "title": "John MacFarlane",
     "path": "references/people/john-macfarlane.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Justin",
+    "last_name": "Pot",
+    "aliases": [],
+    "slug": "justin-pot",
+    "url": "https://justinpot.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/justin-pot",
+    "title": "Justin Pot",
+    "path": "references/people/justin-pot.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Matt",
+    "last_name": "Cone",
+    "aliases": [],
+    "slug": "matt-cone",
+    "url": "https://www.mattcone.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/matt-cone",
+    "title": "Matt Cone",
+    "path": "references/people/matt-cone.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Matt",
+    "last_name": "Gemmell",
+    "aliases": [],
+    "slug": "matt-gemmell",
+    "url": "https://mattgemmell.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/matt-gemmell",
+    "title": "Matt Gemmell",
+    "path": "references/people/matt-gemmell.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Peter",
+    "last_name": "Conrad",
+    "aliases": [],
+    "slug": "peter-conrad",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/peter-conrad",
+    "title": "Peter Conrad",
+    "path": "references/people/peter-conrad.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Scott",
+    "last_name": "Gilbertson",
+    "aliases": [],
+    "slug": "scott-gilbertson",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/scott-gilbertson",
+    "title": "Scott Gilbertson",
+    "path": "references/people/scott-gilbertson.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "Simon",
+    "last_name": "Carstensen",
+    "aliases": [],
+    "slug": "simon-carstensen",
+    "url": "https://simonbc.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/simon-carstensen",
+    "title": "Simon Carstensen",
+    "path": "references/people/simon-carstensen.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "V.",
+    "last_name": "Subhash",
+    "aliases": [],
+    "slug": "v-subhash",
+    "url": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/v-subhash",
+    "title": "V. Subhash",
+    "path": "references/people/v-subhash.md"
+  },
+  {
+    "type": "Person",
+    "first_name": "William",
+    "last_name": "Dyer",
+    "aliases": [
+      "Bill Dyer"
+    ],
+    "slug": "william-dyer",
+    "url": "http://www.dyrobooks.com/",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "organizations": [],
+    "tags": [],
+    "id": "people/william-dyer",
+    "title": "William Dyer",
+    "path": "references/people/william-dyer.md"
+  },
+  {
+    "type": "Book",
+    "slug": "commonmark-ready-reference",
+    "title": "CommonMark Ready Reference",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "v-subhash"
+    ],
+    "organizations": [
+      "commonmark"
+    ],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/commonmark-ready-reference",
+    "path": "references/resources/commonmark-ready-reference.md"
   },
   {
     "type": "Resource",
@@ -148,6 +496,49 @@
     "path": "references/resources/daring-fireball-markdown.md"
   },
   {
+    "type": "Post",
+    "slug": "dive-into-markdown",
+    "title": "Dive Into Markdown",
+    "url": "https://daringfireball.net/2004/03/dive_into_markdown",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2004-03-19",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "history"
+    ],
+    "id": "resources/dive-into-markdown",
+    "path": "references/resources/dive-into-markdown.md"
+  },
+  {
+    "type": "Article",
+    "slug": "getting-started-with-markdown",
+    "title": "Getting Started With Markdown",
+    "url": "https://itsfoss.com/markdown-guide/",
+    "people": [
+      "william-dyer"
+    ],
+    "organizations": [],
+    "date": "2021-04-27",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "beginner",
+      "cheatsheet"
+    ],
+    "id": "resources/getting-started-with-markdown",
+    "path": "references/resources/getting-started-with-markdown.md"
+  },
+  {
     "type": "Resource",
     "slug": "gfm-spec",
     "title": "GitHub Flavored Markdown Spec",
@@ -166,6 +557,77 @@
     ],
     "id": "resources/gfm-spec",
     "path": "references/resources/gfm-spec.md"
+  },
+  {
+    "type": "Article",
+    "slug": "how-to-use-markdown",
+    "title": "How to Use Markdown",
+    "url": "https://www.wired.com/story/how-to-use-markdown/",
+    "people": [
+      "justin-pot"
+    ],
+    "organizations": [
+      "wired"
+    ],
+    "date": "2025-07-01",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "beginner"
+    ],
+    "id": "resources/how-to-use-markdown",
+    "path": "references/resources/how-to-use-markdown.md"
+  },
+  {
+    "type": "Article",
+    "slug": "introducing-markdown",
+    "title": "Introducing Markdown",
+    "url": "https://daringfireball.net/2004/03/introducing_markdown",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2004-03-15",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "history"
+    ],
+    "id": "resources/introducing-markdown",
+    "path": "references/resources/introducing-markdown.md"
+  },
+  {
+    "type": "Book",
+    "slug": "learning-markdown",
+    "title": "Learning Markdown",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "bakari-chavanu",
+      "justin-pot",
+      "angela-alcorn"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/learning-markdown",
+    "path": "references/resources/learning-markdown.md"
   },
   {
     "type": "Resource",
@@ -187,6 +649,148 @@
     "path": "references/resources/llms-txt.md"
   },
   {
+    "type": "Book",
+    "slug": "macsparky-markdown-field-guide",
+    "title": "The MacSparky Markdown Field Guide",
+    "subtitle": "",
+    "url": "https://www.macsparky.com/markdown/",
+    "people": [
+      "david-sparks",
+      "eddie-smith"
+    ],
+    "organizations": [],
+    "year": 2013,
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book",
+      "macos",
+      "ios"
+    ],
+    "id": "resources/macsparky-markdown-field-guide",
+    "path": "references/resources/macsparky-markdown-field-guide.md"
+  },
+  {
+    "type": "Post",
+    "slug": "marcia-marcia-markdown",
+    "title": "Marcia, Marcia, Markdown",
+    "url": "https://daringfireball.net/2004/03/marcia_marcia_markdown",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2004-03-25",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "history"
+    ],
+    "id": "resources/marcia-marcia-markdown",
+    "path": "references/resources/marcia-marcia-markdown.md"
+  },
+  {
+    "type": "Post",
+    "slug": "markdown-1-0",
+    "title": "Markdown 1.0",
+    "url": "https://daringfireball.net/2004/08/markdown_10",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2004-08",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "history"
+    ],
+    "id": "resources/markdown-1-0",
+    "path": "references/resources/markdown-1-0.md"
+  },
+  {
+    "type": "Book",
+    "slug": "markdown-101-ramsl",
+    "title": "Markdown 101",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "hans-martin-ramsl"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/markdown-101-ramsl",
+    "path": "references/resources/markdown-101-ramsl.md"
+  },
+  {
+    "type": "Article",
+    "slug": "markdown-best-practices-microsoft",
+    "title": "Markdown best practices (PowerShell docs)",
+    "url": "https://learn.microsoft.com/en-us/powershell/scripting/community/contributing/general-markdown",
+    "people": [],
+    "organizations": [
+      "microsoft"
+    ],
+    "date": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "style-guide",
+      "microsoft"
+    ],
+    "id": "resources/markdown-best-practices-microsoft",
+    "path": "references/resources/markdown-best-practices-microsoft.md"
+  },
+  {
+    "type": "Book",
+    "slug": "markdown-dreams",
+    "title": "Markdown Dreams",
+    "subtitle": "",
+    "url": "https://www.goodreads.com/book/show/62330915-markdown-dreams",
+    "people": [
+      "peter-conrad"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/markdown-dreams",
+    "path": "references/resources/markdown-dreams.md"
+  },
+  {
     "type": "Resource",
     "slug": "markdown-guide",
     "title": "Markdown Guide",
@@ -195,7 +799,9 @@
     "source": "personal use",
     "added": "2026-11-22",
     "updated": "",
-    "people": [],
+    "people": [
+      "matt-cone"
+    ],
     "organizations": [],
     "tags": [
       "guide",
@@ -204,6 +810,646 @@
     ],
     "id": "resources/markdown-guide",
     "path": "references/resources/markdown-guide.md"
+  },
+  {
+    "type": "Article",
+    "slug": "markdown-licensing",
+    "title": "Markdown Licensing",
+    "url": "https://daringfireball.net/2004/12/markdown_licensing",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2004-12-17",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "history"
+    ],
+    "id": "resources/markdown-licensing",
+    "path": "references/resources/markdown-licensing.md"
+  },
+  {
+    "type": "Article",
+    "slug": "markdown-yaml-cheat-sheet",
+    "title": "Markdown & YAML Cheat Sheet",
+    "url": "https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/",
+    "people": [],
+    "organizations": [],
+    "date": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "cheatsheet",
+      "yaml"
+    ],
+    "id": "resources/markdown-yaml-cheat-sheet",
+    "path": "references/resources/markdown-yaml-cheat-sheet.md"
+  },
+  {
+    "type": "Post",
+    "slug": "opening-md-files-on-android",
+    "title": "Opening .md files on Android",
+    "url": "https://www.mixplorer.com/",
+    "people": [],
+    "organizations": [],
+    "date": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "android",
+      "how-to"
+    ],
+    "id": "resources/opening-md-files-on-android",
+    "path": "references/resources/opening-md-files-on-android.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "org-mode",
+    "title": "Org mode",
+    "url": "https://orgmode.org/",
+    "people": [],
+    "organizations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "format"
+    ],
+    "id": "resources/org-mode",
+    "path": "references/resources/org-mode.md"
+  },
+  {
+    "type": "Video",
+    "slug": "power-automate-markdown-to-html",
+    "title": "Convert Markdown to HTML with Power Automate",
+    "url": "https://www.youtube.com/watch?v=_ZnFOkbAcCo",
+    "people": [],
+    "organizations": [
+      "microsoft"
+    ],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "video",
+      "microsoft"
+    ],
+    "id": "resources/power-automate-markdown-to-html",
+    "path": "references/resources/power-automate-markdown-to-html.md"
+  },
+  {
+    "type": "Book",
+    "slug": "professional-markdown",
+    "title": "Professional Markdown",
+    "subtitle": "",
+    "url": "https://www.amazon.ca/dp/1661669638",
+    "people": [
+      "chikhna-diouf"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/professional-markdown",
+    "path": "references/resources/professional-markdown.md"
+  },
+  {
+    "type": "Resource",
+    "slug": "r-markdown",
+    "title": "r/Markdown",
+    "url": "https://www.reddit.com/r/Markdown/",
+    "people": [],
+    "organizations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "community"
+    ],
+    "id": "resources/r-markdown",
+    "path": "references/resources/r-markdown.md"
+  },
+  {
+    "type": "Article",
+    "slug": "the-eternal-truth-of-markdown",
+    "title": "The Eternal Truth of Markdown",
+    "url": "https://www.wired.com/story/the-eternal-truth-of-markdown/",
+    "people": [
+      "scott-gilbertson"
+    ],
+    "organizations": [
+      "wired"
+    ],
+    "date": "2024-06-24",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article"
+    ],
+    "id": "resources/the-eternal-truth-of-markdown",
+    "path": "references/resources/the-eternal-truth-of-markdown.md"
+  },
+  {
+    "type": "Book",
+    "slug": "the-markdown-guide-book",
+    "title": "The Markdown Guide",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "matt-cone"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/the-markdown-guide-book",
+    "path": "references/resources/the-markdown-guide-book.md"
+  },
+  {
+    "type": "Post",
+    "slug": "unordered-lists-in-markdown",
+    "title": "Unordered Lists in Markdown",
+    "url": "https://daringfireball.net/2017/07/unordered_lists_in_markdown",
+    "people": [
+      "john-gruber"
+    ],
+    "organizations": [],
+    "date": "2017-07-26",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article"
+    ],
+    "id": "resources/unordered-lists-in-markdown",
+    "path": "references/resources/unordered-lists-in-markdown.md"
+  },
+  {
+    "type": "Book",
+    "slug": "using-markdown",
+    "title": "Using Markdown",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "william-dyer"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/using-markdown",
+    "path": "references/resources/using-markdown.md"
+  },
+  {
+    "type": "Article",
+    "slug": "what-is-markdown-vivaldi",
+    "title": "What Is Markdown and Why Should You Care",
+    "url": "https://vivaldi.com/blog/markdown-in-vivaldi-notes/",
+    "people": [],
+    "organizations": [],
+    "date": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "beginner"
+    ],
+    "id": "resources/what-is-markdown-vivaldi",
+    "path": "references/resources/what-is-markdown-vivaldi.md"
+  },
+  {
+    "type": "Article",
+    "slug": "whats-up-with-markdown",
+    "title": "What's Up With Markdown",
+    "url": "https://bob1german.com/2021/05/04/whats-up-with-markdown/",
+    "people": [
+      "bob-german"
+    ],
+    "organizations": [],
+    "date": "2021-05-04",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "article",
+      "microsoft"
+    ],
+    "id": "resources/whats-up-with-markdown",
+    "path": "references/resources/whats-up-with-markdown.md"
+  },
+  {
+    "type": "Book",
+    "slug": "writing-in-markdown",
+    "title": "Writing in Markdown",
+    "subtitle": "",
+    "url": "",
+    "people": [
+      "matt-gemmell"
+    ],
+    "organizations": [],
+    "year": "",
+    "isbn": "",
+    "format": "ebook",
+    "read": "",
+    "rating": "",
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "book"
+    ],
+    "id": "resources/writing-in-markdown",
+    "path": "references/resources/writing-in-markdown.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "yaml",
+    "title": "YAML",
+    "url": "https://yaml.org/",
+    "people": [],
+    "organizations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "spec",
+      "yaml"
+    ],
+    "id": "resources/yaml",
+    "path": "references/resources/yaml.md"
+  },
+  {
+    "type": "App",
+    "slug": "babelmark",
+    "title": "Babelmark 3",
+    "aliases": [],
+    "url": "https://babelmark.github.io/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "web",
+      "free"
+    ],
+    "id": "tools/babelmark",
+    "path": "references/tools/babelmark.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "cl-cmark",
+    "title": "cl-cmark",
+    "aliases": [],
+    "url": "https://github.com/hiphish/cl-cmark",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "lisp",
+      "open-source"
+    ],
+    "id": "tools/cl-cmark",
+    "path": "references/tools/cl-cmark.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "codemirror",
+    "title": "CodeMirror 6",
+    "aliases": [],
+    "url": "https://codemirror.net/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "editor",
+      "javascript",
+      "open-source"
+    ],
+    "id": "tools/codemirror",
+    "path": "references/tools/codemirror.md"
+  },
+  {
+    "type": "App",
+    "slug": "dillinger",
+    "title": "Dillinger",
+    "aliases": [],
+    "url": "https://dillinger.io/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "web",
+      "free"
+    ],
+    "id": "tools/dillinger",
+    "path": "references/tools/dillinger.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "easymark",
+    "title": "EasyMark",
+    "aliases": [],
+    "url": "https://github.com/Shouheng88/EasyMark",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "stale",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "android",
+      "java",
+      "open-source"
+    ],
+    "id": "tools/easymark",
+    "path": "references/tools/easymark.md"
+  },
+  {
+    "type": "App",
+    "slug": "ghostwriter",
+    "title": "ghostwriter",
+    "aliases": [],
+    "url": "https://ghostwriter.kde.org/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "windows",
+      "linux",
+      "open-source"
+    ],
+    "id": "tools/ghostwriter",
+    "path": "references/tools/ghostwriter.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "html2text",
+    "title": "html2text",
+    "aliases": [],
+    "url": "https://github.com/aaronsw/html2text",
+    "organizations": [],
+    "people": [
+      "aaron-swartz"
+    ],
+    "integrations": [],
+    "state": "stale",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "converter",
+      "python",
+      "open-source"
+    ],
+    "id": "tools/html2text",
+    "path": "references/tools/html2text.md"
+  },
+  {
+    "type": "App",
+    "slug": "ia-writer",
+    "title": "iA Writer",
+    "aliases": [],
+    "url": "https://ia.net/writer",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "windows",
+      "macos",
+      "ios",
+      "android",
+      "paid"
+    ],
+    "id": "tools/ia-writer",
+    "path": "references/tools/ia-writer.md"
+  },
+  {
+    "type": "App",
+    "slug": "joplin",
+    "title": "Joplin",
+    "aliases": [],
+    "url": "https://joplinapp.org/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "notes",
+      "editor",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "open-source"
+    ],
+    "id": "tools/joplin",
+    "path": "references/tools/joplin.md"
+  },
+  {
+    "type": "Service",
+    "slug": "jottit",
+    "title": "Jottit",
+    "aliases": [],
+    "url": "https://jottit.com/",
+    "organizations": [],
+    "people": [
+      "aaron-swartz",
+      "simon-carstensen"
+    ],
+    "integrations": [],
+    "state": "stale",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "web",
+      "history"
+    ],
+    "id": "tools/jottit",
+    "path": "references/tools/jottit.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "markdig",
+    "title": "Markdig",
+    "aliases": [],
+    "url": "https://github.com/xoofx/markdig",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "dotnet",
+      "open-source",
+      "microsoft"
+    ],
+    "id": "tools/markdig",
+    "path": "references/tools/markdig.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "markdoc",
+    "title": "Markdoc",
+    "aliases": [],
+    "url": "https://markdoc.io/",
+    "organizations": [
+      "stripe"
+    ],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "framework",
+      "docs",
+      "open-source"
+    ],
+    "id": "tools/markdoc",
+    "path": "references/tools/markdoc.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "markdown-it",
+    "title": "markdown-it",
+    "aliases": [],
+    "url": "https://github.com/markdown-it/markdown-it",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "javascript",
+      "open-source"
+    ],
+    "id": "tools/markdown-it",
+    "path": "references/tools/markdown-it.md"
+  },
+  {
+    "type": "App",
+    "slug": "markdown-monster",
+    "title": "Markdown Monster",
+    "aliases": [],
+    "url": "https://markdownmonster.west-wind.com/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "windows",
+      "paid"
+    ],
+    "id": "tools/markdown-monster",
+    "path": "references/tools/markdown-monster.md"
   },
   {
     "type": "App",
@@ -230,6 +1476,77 @@
   },
   {
     "type": "App",
+    "slug": "markitdown",
+    "title": "MarkItDown",
+    "aliases": [],
+    "url": "https://github.com/microsoft/markitdown",
+    "organizations": [
+      "microsoft"
+    ],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "converter",
+      "cli",
+      "library",
+      "python",
+      "open-source",
+      "microsoft",
+      "ai"
+    ],
+    "id": "tools/markitdown",
+    "path": "references/tools/markitdown.md"
+  },
+  {
+    "type": "App",
+    "slug": "markwhen",
+    "title": "Markwhen",
+    "aliases": [],
+    "url": "https://markwhen.com/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "diagram",
+      "web"
+    ],
+    "id": "tools/markwhen",
+    "path": "references/tools/markwhen.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "markwon",
+    "title": "Markwon",
+    "aliases": [],
+    "url": "https://github.com/noties/Markwon",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "android",
+      "open-source"
+    ],
+    "id": "tools/markwon",
+    "path": "references/tools/markwon.md"
+  },
+  {
+    "type": "App",
     "slug": "mermaid",
     "title": "Mermaid",
     "aliases": [],
@@ -250,6 +1567,96 @@
     ],
     "id": "tools/mermaid",
     "path": "references/tools/mermaid.md"
+  },
+  {
+    "type": "App",
+    "slug": "mineru",
+    "title": "MinerU",
+    "aliases": [],
+    "url": "https://github.com/opendatalab/MinerU",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "converter",
+      "open-source",
+      "ai"
+    ],
+    "id": "tools/mineru",
+    "path": "references/tools/mineru.md"
+  },
+  {
+    "type": "App",
+    "slug": "mixplorer",
+    "title": "MiXplorer",
+    "aliases": [],
+    "url": "https://www.mixplorer.com/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "android",
+      "free"
+    ],
+    "id": "tools/mixplorer",
+    "path": "references/tools/mixplorer.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "multimarkdown",
+    "title": "MultiMarkdown",
+    "aliases": [],
+    "url": "https://fletcherpenney.net/multimarkdown/",
+    "organizations": [],
+    "people": [
+      "fletcher-penney"
+    ],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "flavor",
+      "converter",
+      "open-source"
+    ],
+    "id": "tools/multimarkdown",
+    "path": "references/tools/multimarkdown.md"
+  },
+  {
+    "type": "Technology",
+    "slug": "node-pandoc",
+    "title": "node-pandoc",
+    "aliases": [],
+    "url": "https://www.npmjs.com/package/node-pandoc",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "library",
+      "javascript",
+      "converter",
+      "open-source"
+    ],
+    "id": "tools/node-pandoc",
+    "path": "references/tools/node-pandoc.md"
   },
   {
     "type": "App",
@@ -307,6 +1714,99 @@
   },
   {
     "type": "App",
+    "slug": "powertoys-file-explorer",
+    "title": "PowerToys File Explorer add-ons",
+    "aliases": [],
+    "url": "https://learn.microsoft.com/windows/powertoys/file-explorer",
+    "organizations": [
+      "microsoft"
+    ],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "windows",
+      "renderer",
+      "free",
+      "microsoft"
+    ],
+    "id": "tools/powertoys-file-explorer",
+    "path": "references/tools/powertoys-file-explorer.md"
+  },
+  {
+    "type": "App",
+    "slug": "slidev",
+    "title": "Slidev",
+    "aliases": [],
+    "url": "https://sli.dev/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "draft",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "slides",
+      "web",
+      "open-source"
+    ],
+    "id": "tools/slidev",
+    "path": "references/tools/slidev.md"
+  },
+  {
+    "type": "App",
+    "slug": "stackedit",
+    "title": "StackEdit",
+    "aliases": [],
+    "url": "https://stackedit.io/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "web",
+      "free"
+    ],
+    "id": "tools/stackedit",
+    "path": "references/tools/stackedit.md"
+  },
+  {
+    "type": "App",
+    "slug": "typora",
+    "title": "Typora",
+    "aliases": [],
+    "url": "https://typora.io/",
+    "organizations": [],
+    "people": [],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "editor",
+      "windows",
+      "macos",
+      "linux",
+      "paid"
+    ],
+    "id": "tools/typora",
+    "path": "references/tools/typora.md"
+  },
+  {
+    "type": "App",
     "slug": "vs-code",
     "title": "Visual Studio Code",
     "aliases": [],
@@ -331,5 +1831,29 @@
     ],
     "id": "tools/vs-code",
     "path": "references/tools/vs-code.md"
+  },
+  {
+    "type": "App",
+    "slug": "word-to-markdown",
+    "title": "Word to Markdown",
+    "aliases": [],
+    "url": "https://word2md.com/",
+    "organizations": [],
+    "people": [
+      "ben-balter"
+    ],
+    "integrations": [],
+    "state": "active",
+    "source": "c:\notes",
+    "added": "2026-11-22",
+    "updated": "",
+    "tags": [
+      "tool",
+      "converter",
+      "web",
+      "open-source"
+    ],
+    "id": "tools/word-to-markdown",
+    "path": "references/tools/word-to-markdown.md"
   }
 ]

@@ -18,14 +18,17 @@ ROOT = Path(__file__).resolve().parent.parent
 REFS = ROOT / "references"
 
 SECTIONS = {
-    # folder: (page title, expected type, intro)
-    "resources": ("Resources", "Resource", "Specs, guides, tutorials, and articles about Markdown."),
-    "tools": ("Tools", "App", "Editors, converters, linters, and renderers."),
-    "people": ("People", "Person", "People who created, shaped, or teach Markdown."),
-    "organizations": ("Organizations", "Organization", "Spec bodies, companies, and projects that shape Markdown."),
+    # folder: (page title, allowed types, intro)
+    "resources": ("Resources", {"Resource", "Book", "Article", "Post", "Video", "Technology"},
+                  "Books, specs, guides, articles, and videos about Markdown."),
+    "tools": ("Tools", {"App", "Technology", "Service"}, "Editors, converters, libraries, and services."),
+    "people": ("People", {"Person"}, "People who created, shaped, or teach Markdown."),
+    "organizations": ("Organizations", {"Organization"}, "Spec bodies, companies, and projects that shape Markdown."),
 }
+# Types that often have no single canonical URL.
+URL_OPTIONAL = {"Person", "Book"}
 STATES = {"draft", "active", "watch", "stale", "broken", "retired"}
-REQUIRED = ["type", "slug", "url", "state", "source", "added"]
+REQUIRED = ["type", "slug", "state", "source", "added"]
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 FM_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
 
@@ -62,7 +65,7 @@ def title_of(e):
 
 def collect():
     errors, entries = [], {}
-    for folder, (_, expected_type, _) in SECTIONS.items():
+    for folder, (_, allowed_types, _) in SECTIONS.items():
         entries[folder] = []
         for path in sorted((REFS / folder).glob("*.md")):
             e = load(path, errors)
@@ -72,8 +75,10 @@ def collect():
             for field in REQUIRED:
                 if not e.get(field):
                     errors.append(f"{where}: missing required field `{field}`")
-            if e.get("type") and e["type"] != expected_type:
-                errors.append(f"{where}: type `{e['type']}` should be `{expected_type}`")
+            if e.get("type") and e["type"] not in allowed_types:
+                errors.append(f"{where}: type `{e['type']}` should be one of {sorted(allowed_types)}")
+            if not e.get("url") and e.get("type") not in URL_OPTIONAL:
+                errors.append(f"{where}: missing required field `url`")
             slug = e.get("slug", "")
             if slug and not SLUG_RE.match(str(slug)):
                 errors.append(f"{where}: slug `{slug}` must be lowercase-hyphenated")
@@ -107,14 +112,15 @@ def render_list(folder, es):
         "",
         f"{intro} {len(es)} entries. Schema: [README.md](README.md).",
         "",
-        "| Name | State | Tags | Link |",
-        "|:---|:---|:---|:---|",
+        "| Name | Type | State | Tags | Link |",
+        "|:---|:---|:---|:---|:---|",
     ]
     for e in sorted(es, key=lambda e: title_of(e).lower()):
         if e.get("state") == "retired":
             continue
         tags = " ".join(f"`#{t}`" for t in e.get("tags", []) if t != "tool")
-        lines.append(f"| [{title_of(e)}]({e['_path']}) | {e.get('state', '')} | {tags} | <{e.get('url', '')}> |")
+        link = f"<{e['url']}>" if e.get("url") else ""
+        lines.append(f"| [{title_of(e)}]({e['_path']}) | {e.get('type', '')} | {e.get('state', '')} | {tags} | {link} |")
     return "\n".join(lines) + "\n"
 
 

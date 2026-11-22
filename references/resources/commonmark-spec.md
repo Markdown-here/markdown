@@ -29,4 +29,6 @@ The rigorous, unambiguous specification of Markdown that most modern parsers aim
 
 ## Notes
 
--
+- [Tutorial](https://commonmark.org/help/tutorial/), [dingus to try it](https://spec.commonmark.org/dingus/), and [forum](https://talk.commonmark.org/).
+- The spec's intro sums up Markdown's design goal: readability. A Markdown document should be publishable as-is, as plain text.
+- Book: [CommonMark Ready Reference](commonmark-ready-reference.md).

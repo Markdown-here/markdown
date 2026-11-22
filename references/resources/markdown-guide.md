@@ -8,7 +8,7 @@ source: personal use
 added: 2026-11-22
 updated: 
 people:
-  - 
+  - matt-cone
 organizations:
   - 
 tags:
@@ -29,4 +29,4 @@ Friendly, comprehensive guide covering basic and extended syntax, with a cheat s
 
 ## Notes
 
--
+- Also a book: [The Markdown Guide](the-markdown-guide-book.md).

@@ -28,4 +28,5 @@ CommonMark plus GitHub's extensions: tables, task lists, strikethrough, and auto
 
 ## Notes
 
--
+- 2022-10-16: first heard about GFM.
+- Also used by GitLab and iA Writer, per [Professional Markdown](professional-markdown.md).

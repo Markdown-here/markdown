@@ -33,6 +33,8 @@ Teams chat converts a few Markdown-like patterns as you type, but it isn't real 
 - `` `code` `` works the same as everywhere else.
 - `*bold*` gives **bold**, where Markdown would give *italic*. I haven't tested `**bold**` and `_italic_` yet.
 
+Microsoft documents what Teams supports: [Use Markdown formatting in Teams](https://support.microsoft.com/en-us/office/use-markdown-formatting-in-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772). **(verify)** against what we see.
+
 Why, as far as I can tell: chat apps (Teams, Slack, WhatsApp) each have their own lightweight "chat formatting" with single-asterisk bold, which predates or ignores CommonMark. **(verify)** with a quick test of every shortcut in Teams.
 
 **Use this in the course.** It's a perfect, familiar example of "Markdown flavors": same characters, different result.
@@ -95,3 +97,10 @@ These points became the [Microsoft edition](../course/markdown-101/editions/micr
 - Use **Teams** as the flavors example.
 - Use a **Mermaid** diagram in the level-up segment and mention where it's going: GitHub, Confluence, and replacing draw.io.
 - End with a teaser: "Next: write docs in Git, read them in Confluence."
+
+## Useful references
+
+- [What's Up With Markdown](../references/resources/whats-up-with-markdown.md): where Markdown already works across Microsoft 365 (Teams, SharePoint Markdown web part, Adaptive Cards, Power Automate)
+- [Markdown best practices (PowerShell docs)](../references/resources/markdown-best-practices-microsoft.md): Microsoft's own Markdown style guide, enforced with markdownlint. A ready-made house style
+- [MarkItDown](../references/tools/markitdown.md): Microsoft's Office-to-Markdown converter, handy for migrating Word and Confluence exports
+- [PowerToys File Explorer add-ons](../references/tools/powertoys-file-explorer.md): preview `.md` files in Windows

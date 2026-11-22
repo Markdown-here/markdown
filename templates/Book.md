@@ -1,5 +1,5 @@
 ---
-type: Resource
+type: Book
 slug: 
 title: 
 subtitle: 

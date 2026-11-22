@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Collaborated with John Gruber on the design of the original Markdown syntax. [1]
+> Collaborated with John Gruber on the design of the original Markdown syntax, and was its first beta tester. [1]
 
 ## References
 
@@ -29,6 +29,8 @@ tags:
 ## Products
 
 - [Markdown](../resources/daring-fireball-markdown.md)
+- [html2text](../tools/html2text.md)
+- [Jottit](../tools/jottit.md)
 
 ## Positions
 

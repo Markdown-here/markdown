@@ -29,6 +29,7 @@ tags:
 ## Products
 
 - [Markdown](../resources/daring-fireball-markdown.md)
+- Posts: [Introducing Markdown](../resources/introducing-markdown.md), [Dive Into Markdown](../resources/dive-into-markdown.md), [Marcia, Marcia, Markdown](../resources/marcia-marcia-markdown.md), [Markdown 1.0](../resources/markdown-1-0.md), [Markdown Licensing](../resources/markdown-licensing.md), [Unordered Lists in Markdown](../resources/unordered-lists-in-markdown.md)
 
 ## Positions
 

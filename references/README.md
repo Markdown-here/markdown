@@ -9,6 +9,8 @@ Curated, well-formed, AI-friendly references. **One Markdown file per entry**, u
 | People | [`people/`](people/) | [Person.md](../templates/Person.md) | [people.md](people.md) |
 | Organizations | [`organizations/`](organizations/) | [Organization.md](../templates/Organization.md) | [organizations.md](organizations.md) |
 
+Not yet triaged: [inbox.md](inbox.md).
+
 Everything is also exported to [`references.json`](references.json) for AI agents and the site.
 
 ## Unique ID and deep link
@@ -22,10 +24,10 @@ Everything is also exported to [`references.json`](references.json) for AI agent
 
 | Field | Required | Notes |
 |:---|:---|:---|
-| `type` | yes | `Resource`, `App` (tools), `Person`, or `Organization`. First property, per HAL_md's OKF convention |
+| `type` | yes | First property, per HAL_md's OKF convention. Resources: `Resource`, `Book`, `Article`, `Post`, `Video`, `Technology`. Tools: `App`, `Technology`, `Service`. Plus `Person` and `Organization` |
 | `slug` | yes | Unique ID, matches the filename |
 | `title` | yes* | Display name (*people use `first_name` + `last_name`) |
-| `url` | yes | Canonical link |
+| `url` | yes* | Canonical link (*optional for `Person` and `Book`) |
 | `state` | yes | See states below |
 | `source` | yes | Where it came from: `personal use`, `c:\notes`, a slug like `people/john-gruber`, or a URL |
 | `added` | yes | `YYYY-MM-DD` |
@@ -62,13 +64,13 @@ Each template also keeps its HAL_md-specific fields (`organizations`, `people`, 
    python scripts/build_references.py
    ```
 
-A GitHub Action runs `--check` on every push, so broken entries and out-of-date lists fail the build.
+A GitHub Action runs `--check` on every push, so broken entries and out-of-date lists fail the build. Another Action checks every link on each push to `main` and weekly, so dead links show up as a failed run; mark those entries `state: broken`.
 
 ## Books
 
-Books are Resources with the `book` tag, using [Book.md](../templates/Book.md):
+Books use `type: Book` and the `book` tag, using [Book.md](../templates/Book.md):
 
-- `people` lists the authors' slugs, `organizations` the publisher's.
+- `people` lists the authors' slugs, `organizations` the publisher's. (In a HAL_md vault, book notes put the author in `slug`; here `slug` is always the entry's own ID.)
 - `read` is the date you finished it (`YYYY-MM-DD`), `rating` is 1–5, `format` is `ebook`, `print`, or `audio`.
 - Your notes go in the body: **Summary**, **Key takeaways**, **Quotes**, **Notes**.
 
