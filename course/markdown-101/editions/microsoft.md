@@ -31,7 +31,7 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 | 0:21–0:26 | **Exercise** | Turn a messy Teams-meeting recap into Markdown. Bonus: ask Copilot to do it, then review what it wrote |
 | 0:26–0:27 | **Wrap** | Link to this course on GitHub, cheat sheet in the repo, VS Code extensions to install |
 | 0:27–0:29 | **Q&A** | Before the close, never after it |
-| 0:29–0:30 | **Close** | "You type `*this*`, you get *this*. That's Markdown!" |
+| 0:29–0:30 | **Close** | Reveal the deck is one Markdown file |
 
 ## Prep checklist
 
@@ -67,6 +67,7 @@ How to view and show the [deck](microsoft-slides.md). For Marp in general, see [
 - Presenter notes are the `<!-- ... -->` comments in the deck: timings and what to say.
 - Live demo: switch to VS Code with the preview open.
 - Mermaid slide: switch to GitHub to show the diagram drawn.
+- Close: open `microsoft-slides.md` and scroll through it. The whole deck is one Markdown file.
 
 ## Edition-specific materials
 

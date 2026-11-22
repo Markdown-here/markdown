@@ -30,6 +30,8 @@ Presenter notes: welcome, 30 minutes, hands-on. Ask everyone to open VS Code, No
 - Every **GitHub** README is a Markdown file
 - In **Teams**, you type `` `code` `` and it turns into `code`
 
+You type `*this*`, you get *this*. **That's Markdown!**
+
 <!--
 Hook (0:00-0:03). Live: show a Copilot answer. Then send a Teams message with backticks.
 -->
@@ -485,10 +487,8 @@ If nobody asks, seed one: "A common question is: does this work in Confluence?"
 
 # One more thing
 
-You type `*this*`, you get *this*.
-
-**That's Markdown!**
+This whole deck's content is from **one Markdown file**.
 
 <!--
-Close (0:29-0:30). Say it, then stop. No "any other questions?" after this.
+Close (0:29-0:30). Open microsoft-slides.md in VS Code and scroll through it, then stop. No "any other questions?" after this.
 -->
