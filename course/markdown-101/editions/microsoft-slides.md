@@ -104,8 +104,8 @@ Core 80% starts (0:06-0:16). Live demo in VS Code with preview open. Keep a stea
 Launch the beta by June.
 ```
 
-- One `#` per level, then a space
-- A blank line before and after each heading
+- `#` for heading level 1, `##` for level 2, `###` for level 3
+- A space after the `#`, and a blank line before and after
 - One `# Title` per file, and don't skip levels
 
 ---
