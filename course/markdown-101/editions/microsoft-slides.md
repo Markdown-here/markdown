@@ -197,7 +197,7 @@ for name in ["Ana", "Ben"]:
 
 ---
 
-## Quotes
+## Quote
 
 ```markdown
 > "A bad system will beat a good person every time." - W. Edwards Deming
@@ -207,21 +207,19 @@ for name in ["Ana", "Ben"]:
 
 ---
 
-## Longer quotes
+## Multi-line quotes
+
+From *Never Eat Alone* by Keith Ferrazzi (2005):
 
 ```markdown
 > A network is something you have, not something you "do".
 >
 > Build it before you need it.
->
-> Keith Ferrazzi
 ```
 
 > A network is something you have, not something you "do".
 >
 > Build it before you need it.
->
-> Keith Ferrazzi
 
 <!--
 Point at the lines with just `>`: they keep the blank lines inside the quote. Without them, the quote ends there.
