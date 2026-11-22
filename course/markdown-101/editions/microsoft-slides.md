@@ -210,13 +210,13 @@ Point at "Free range": indent two spaces to nest a list.
 
 ## Images
 
-**Image next to your file**
+**Image in a local folder**
 
 ```markdown
 ![Team photo](images/team.png)
 ```
 
-**Image on the web**
+**Image on the Web**
 
 ```markdown
 ![Team photo](https://example.com/images/team.png)
