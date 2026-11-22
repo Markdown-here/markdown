@@ -306,10 +306,10 @@ Open `teams-recap-before.md` from the shared folder.
 
 **Bonus:** ask Copilot to do it, then check what it got wrong.
 
-6 minutes. Go!
+5 minutes. Go!
 
 <!--
-Exercise (0:21-0:27). Walk around or watch chat. Show one or two results, then teams-recap-after.md.
+Exercise (0:21-0:26). Walk around or watch chat. Show one or two results, then teams-recap-after.md.
 -->
 
 ---
@@ -319,23 +319,10 @@ Exercise (0:21-0:27). Walk around or watch chat. Show one or two results, then t
 - **Cheat sheet**: in the shared OneDrive folder
 - **VS Code extensions**: markdownlint, a Mermaid preview, Marp
 - **Learn more**: [markdownguide.org](https://www.markdownguide.org/), [commonmark.org/help](https://commonmark.org/help/)
+- **Next session**: write docs in Git, read them in Confluence
 
 <!--
-Wrap (0:27-0:30).
--->
-
----
-
-<!-- _class: lead -->
-
-# One more thing
-
-This whole deck is **one Markdown file**.
-
-Next: write docs in Git, read them in Confluence.
-
-<!--
-Open microsoft-slides.md in VS Code and scroll through it. Then Q&A.
+Wrap (0:26-0:27). Quick, then straight into questions.
 -->
 
 ---
@@ -344,3 +331,24 @@ Open microsoft-slides.md in VS Code and scroll through it. Then Q&A.
 <!-- _paginate: false -->
 
 # Questions?
+
+<!--
+Q&A (0:27-0:29). Questions come BEFORE the close, so the last thing people hear is the takeaway, not a random question.
+Stop at 0:29 even if hands are up: "Let's take the rest after. One last thing..."
+If nobody asks, seed one: "A common question is: does this work in Confluence?"
+-->
+
+---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# One more thing
+
+This whole deck is **one Markdown file**.
+
+Write your next meeting note in Markdown.
+
+<!--
+Close (0:29-0:30). Open microsoft-slides.md in VS Code and scroll through it, then say the call to action and stop. No "any other questions?" after this.
+-->
