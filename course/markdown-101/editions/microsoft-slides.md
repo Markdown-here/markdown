@@ -299,9 +299,8 @@ The meeting is on Tuesday.
 Next up: the budget.
 ```
 
-`---` on its own line draws a line between sections.
-
-Leave a **blank line above it**. Without one, the text above turns into a heading.
+- `---` on its own line draws a line between sections
+- Leave a **blank line above it**, or the text above turns into a heading
 
 ---
 
