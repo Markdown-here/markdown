@@ -12,6 +12,7 @@ AI-first, human-gorgeous. Everything here is plain Markdown with stable IDs, so 
 
 | Path | What |
 |:---|:---|
+| [RELEASING.md](RELEASING.md) | How to publish a new version (MOP) |
 | [BRAINSTORM.md](BRAINSTORM.md) | The big idea list: site sections, AI-first features, roadmap |
 | [course/markdown-101/](course/markdown-101/) | 30-minute Markdown 101 course (first deliverable) |
 | [references/](references/) | The curated reference lists: Resources, Tools, People, Organizations |
@@ -30,7 +31,7 @@ The course is built into PDF, HTML, and PowerPoint by the [Course workflow](.git
 | Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 · dev-<commit>` |
 | A version tag, like `v0.1` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 · v0.1` |
 
-To release a version:
+To release a version (step by step, including one-time setup on an Android phone: [RELEASING.md](RELEASING.md)):
 
 ```bash
 git tag v0.1
