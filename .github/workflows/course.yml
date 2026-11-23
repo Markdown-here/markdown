@@ -31,6 +31,8 @@ jobs:
       - run: pip install pyyaml
 
       - run: npm ci
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: "true" # CI doesn't render diagrams, so skip Chrome for Mermaid
 
       - name: Stamp version into footers
         run: |

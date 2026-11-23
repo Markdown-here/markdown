@@ -30,5 +30,6 @@ Write like a person who knows the subject, not like an AI.
 - Mark anything untested at work with **(verify)**.
 - Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits the repo in its footer. Render it and look at it before calling it done.
 - Slides are one file per slide (`type: Slide`) in `slides/` folders. Deck files (`deck.yml`, `*-deck.yml`) set the order. Edit slide files, never the built deck in `dist/`. Slide IDs (file names) are permanent. See [course/markdown-101/extending.md](course/markdown-101/extending.md).
+- Diagrams: edit `media/<name>.mmd`, run `npm run media`, and commit the `.mmd` and the `.svg` together.
 - Never commit generated files (PDF, HTML, PowerPoint). The Course workflow builds them, and version tags publish releases. Pushing a tag is a push: ask first.
 - Beginner-facing tables use plain `---` separators, no alignment colons.

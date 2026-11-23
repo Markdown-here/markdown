@@ -1,0 +1,17 @@
+{
+  "theme": "base",
+  "look": "classic",
+  "themeVariables": {
+    "fontFamily": "Inter, Segoe UI, Arial, sans-serif",
+    "fontSize": "20px",
+    "primaryColor": "#f1ebfd",
+    "primaryBorderColor": "#6b3fd4",
+    "primaryTextColor": "#221a3a",
+    "textColor": "#221a3a",
+    "lineColor": "#6b3fd4",
+    "edgeLabelBackground": "#fbfaf7"
+  },
+  "flowchart": {
+    "wrappingWidth": 400
+  }
+}

@@ -1,8 +1,9 @@
 name: Links
 
+# Weekly only, not on every push: websites go down or block checkers,
+# and that shouldn't turn ordinary commits red. Run it by hand from the
+# Actions tab when you add a lot of links.
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: "17 6 * * 1" # weekly, Monday
   workflow_dispatch:

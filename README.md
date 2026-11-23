@@ -39,7 +39,7 @@ git push origin v0.1
 
 Versions have two parts, `v<major>.<minor>`: bump the major number for a restructured course and the minor number for everything else, like new slides, sections, or fixes. Stay on `v0.x` until the course is ready to call 1.0.
 
-To build locally: `npm install`, then `npm run build`. Files land in `dist/`.
+To build locally: `npm install`, then `npm run build`. Files land in `dist/`. After editing a diagram in `media/`, run `npm run media` to update its SVG.
 
 ## Document types
 
