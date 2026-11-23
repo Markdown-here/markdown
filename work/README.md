@@ -27,7 +27,7 @@ A Microsoft shop.
 | Copilot (M365 and GitHub) | Everyone, developers | Answers are written in Markdown | GitHub Copilot also reads instructions from Markdown files like `.github/copilot-instructions.md` |
 | Teams chat | Everyone | Partial, its own rules | See below |
 | Loop | Me, some others | Typing shortcuts **(verify)** | I'm moving to Confluence because others live there |
-| OneDrive | Everyone | Native since 2026: create, view, and edit `.md` files in the browser and the iPhone app (*Add New* › *Markdown Document*) | Works today |
+| OneDrive | Everyone | Native since 2026: create, view, and edit `.md` files in the browser (*+ Create or upload* › *Markdown document*) and the iPhone app (*Add New* › *Markdown Document*) | Works today |
 | SharePoint | Everyone | Same `.md` editor as OneDrive, plus a Markdown web part for pages | **(verify)** it's turned on for us |
 | Notepad (Windows 11) | Everyone | Basic Markdown formatting in recent versions **(verify)** | Zero-install option for the course |
 

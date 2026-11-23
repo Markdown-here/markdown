@@ -51,7 +51,7 @@ The same Markdown can look different in each app we use. This page compares them
 ### OneDrive
 
 - Since 2026, `.md` files open in a built-in editor in the browser. It has View, Edit, and Split modes, and a formatting toolbar.
-- To create one: *Create or upload* › *Markdown* on the web, or *Add New* › *Markdown Document* in the iPhone app (tested).
+- To create one: *+ Create or upload* › *Markdown document* on the web, or *Add New* › *Markdown Document* in the iPhone app (tested).
 - Reports say tables, checkboxes, links, and highlighted code blocks render. Nothing says Mermaid or frontmatter do. **(verify)**
 - Your organization's admins may be able to block it. **(verify)** that it's turned on for us.
 

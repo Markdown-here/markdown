@@ -8,7 +8,7 @@ Create a file called `notes.md` in any of these:
 
 - **VS Code**: open preview side by side with `Ctrl+K V`
 - **Notepad** on Windows 11
-- **OneDrive** app or Web: *Add New* › *Markdown Document*
+- **OneDrive** on the web: *+ Create or upload* › *Markdown document*. In the app: *Add New* › *Markdown Document*
 
 Type along. Typos are fine.
 

@@ -14,7 +14,7 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 |:---|:---|
 | **VS Code** | Main demo editor. Split view: source left, preview right (`Ctrl+K V`) |
 | **Notepad** (Windows 11) | "Nothing to install" option, with basic Markdown formatting **(verify)** |
-| **OneDrive** | *Add New* › *Markdown Document* creates an `.md` file (confirmed in the iPhone app), so anyone can follow along from a phone or browser |
+| **OneDrive** | *+ Create or upload* › *Markdown document* on the web, or *Add New* › *Markdown Document* in the iPhone app, creates an `.md` file, so anyone can follow along from a phone or browser |
 | **Teams chat** | The hook and the flavors example |
 | **Copilot** | Proof that Markdown is everywhere: its answers are Markdown |
 | **GitHub** | Where Markdown renders fully, including Mermaid |
@@ -38,7 +38,8 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 - [ ] Test every Teams formatting shortcut: `*x*`, `**x**`, `_x_`, `~x~`, `` `x` ``, lists, quotes **(verify)**
 - [ ] Confirm the Notepad version on work laptops supports Markdown formatting **(verify)**
 - [x] OneDrive iPhone app has *Add New* › *Markdown Document*
-- [ ] Check the same option exists in OneDrive on the web and on work accounts, and that the preview renders Markdown **(verify)**
+- [x] OneDrive on the web has *+ Create or upload* › *Markdown document*
+- [ ] Check the option exists on work accounts, and that the preview renders Markdown **(verify)**
 - [ ] Pick a Copilot prompt for the hook and the exercise, and test it on the day (answers vary)
 - [ ] Have a draw.io diagram from a real Confluence page, redrawn in Mermaid, for the level-up
 - [ ] Confirm the [Marp for VS Code](../../../references/tools/marp.md) extension (`marp-team.marp-vscode`) is allowed on work laptops, and that PDF and PPTX export work with Edge **(verify)**

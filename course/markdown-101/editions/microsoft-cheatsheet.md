@@ -14,7 +14,7 @@ Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Ma
 ## Where to write it
 
 - **VS Code:** preview with `Ctrl+Shift+V`, side by side with `Ctrl+K V`
-- **OneDrive:** *Add New* › *Markdown Document*
+- **OneDrive:** *+ Create or upload* › *Markdown document*
 - **Notepad** on Windows 11 **(verify)**
 - **Copilot:** ask it to "answer in Markdown" or "turn this into Markdown"
 
