@@ -8,10 +8,10 @@ people:
 organizations:
   - 
 date: 
-state: draft
-source: https://www.pkgpulse.com/guides/slidev-vs-marp-vs-revealjs-code-first-presentations-2026
+state: broken
+source: web search
 added: 2026-11-22
-updated: 
+updated: 2026-11-23
 tags:
   - article
   - slides
@@ -29,7 +29,7 @@ DevelopersIO (Classmethod) builds the same deck in [Marp](../tools/marp.md) and 
 
 ## Notes
 
-- The original is in Japanese. An English version was published at `dev.classmethod.jp/en/...` but returned 404 on 2026-11-22. Use your browser's translate.
+- 2026-11-23: marked `broken`. Both the Japanese URL and the English one (`dev.classmethod.jp/en/...`) return 404 to our link checker. The entry was added from search results without opening the page, so the summary above is unconfirmed and the article may not exist at this address. **(verify)** in a browser before using it.
 
 ## References
 

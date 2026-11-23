@@ -52,7 +52,7 @@ Shared by all editions unless an edition says otherwise.
 | [reveal.js](../../references/tools/reveal-js.md) | HTML with Markdown inside | Any | Web; PDF via print or DeckTape | Most control, but not plain Markdown |
 | [remark](../../references/tools/remark.md) | Markdown inside one HTML file | Any | Web | Simple, but barely maintained |
 
-Comparisons: [Slidev vs Marp vs reveal.js](../../references/resources/slidev-vs-marp-vs-revealjs.md), [Marp vs reveal.js with the same content](../../references/resources/marp-vs-revealjs-classmethod.md).
+Comparison: [Slidev vs Marp vs reveal.js](../../references/resources/slidev-vs-marp-vs-revealjs.md).
 
 The reveal at the end works with Marp too: open the built `.md` file and show that the whole deck is just Markdown.
 
