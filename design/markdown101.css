@@ -231,7 +231,7 @@ section.cheatsheet {
   justify-content: flex-start;
   font-size: 14.5px;
   line-height: 1.38;
-  padding: 128px 30px 34px;
+  padding: 140px 30px 34px;
   column-count: 2;
   column-gap: 26px;
   column-fill: balance;
@@ -257,7 +257,7 @@ section.cheatsheet h1 {
 
 section.cheatsheet h1 + p {
   position: absolute;
-  top: 84px;
+  top: 96px;
   left: 30px;
   right: 30px;
   margin: 0;
