@@ -47,14 +47,17 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 
 ## Presenting
 
-How to view and show the [deck](microsoft-slides.md). For Marp in general, see [Marp](../../../references/tools/marp.md#how-to-use-it).
+How to view and show the [deck](microsoft-deck.yml). For Marp in general, see [Marp](../../../references/tools/marp.md#how-to-use-it).
 
 ### Set up once
 
 1. In VS Code, open the Command Palette (`Ctrl+Shift+P`), choose **Git: Clone**, and paste `https://github.com/thephm/markdown`.
 2. Trust the folder when VS Code asks. Our purple theme only loads in a trusted folder.
 3. Install **Marp for VS Code** (`Ctrl+Shift+X`).
-4. Open `course/markdown-101/editions/microsoft-slides.md` and press `Ctrl+K V` to preview.
+4. Install [Python](https://www.python.org/downloads/) and [Node.js](https://nodejs.org/), then in the VS Code terminal run `pip install pyyaml` and `npm install`.
+5. Run `npm run decks`, open `dist/markdown-101-microsoft.md`, and press `Ctrl+K V` to preview. Run `npm run decks` again after editing a slide.
+
+No setup at all: download the HTML, PDF, or PowerPoint from the latest [release](https://github.com/thephm/markdown/releases) or [build](https://github.com/thephm/markdown/actions/workflows/course.yml).
 
 ### Present
 
@@ -67,11 +70,11 @@ How to view and show the [deck](microsoft-slides.md). For Marp in general, see [
 - Presenter notes are the `<!-- ... -->` comments in the deck: timings and what to say.
 - Live demo: switch to VS Code with the preview open.
 - Mermaid slide: switch to GitHub to show the diagram drawn.
-- Close: open `microsoft-slides.md` and scroll through it. The whole deck is one Markdown file.
+- Close: open `dist/markdown-101-microsoft.md` and scroll through it. The whole deck is one Markdown file.
 
 ## Edition-specific materials
 
-- [x] [Slide deck](microsoft-slides.md) in [Marp](../../../references/tools/marp.md), with presenter notes. Open it in VS Code with the Marp extension to preview, present, or export to PDF and PowerPoint. It follows the house flavor in [Which Markdown?](../../../work/README.md#which-markdown)
+- [x] [Slide deck](microsoft-deck.yml) in [Marp](../../../references/tools/marp.md), with presenter notes: the core deck plus the slides in [microsoft-slides/](microsoft-slides/). See [Presenting](#presenting) to preview and export it. It follows the house flavor in [Which Markdown?](../../../work/README.md#which-markdown)
 - [x] [`teams-recap-before.md`](teams-recap-before.md): a realistic, messy meeting recap (no real names or projects), with the answer key [`teams-recap-after.md`](teams-recap-after.md)
 - [ ] Mermaid version of a familiar draw.io diagram
 - [x] [Cheat sheet variant](microsoft-cheatsheet.md) with a "Teams vs Markdown" box

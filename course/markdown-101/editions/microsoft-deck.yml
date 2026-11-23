@@ -1,0 +1,13 @@
+type: Deck
+# Markdown 101, Microsoft edition: the core deck with Microsoft 365 examples.
+# A slide in microsoft-slides/ with the same name as a core slide replaces it.
+output: markdown-101-microsoft
+extends: ../deck.yml
+frontmatter:
+  description: 30-minute hands-on Markdown course, Microsoft edition
+slide_dirs: [microsoft-slides]
+insert:
+  - after: hook
+    slides: [what-copilot-sends]
+  - after: flavors
+    slides: [our-standard]

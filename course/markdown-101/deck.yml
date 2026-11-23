@@ -1,0 +1,44 @@
+type: Deck
+# Markdown 101, tool-neutral. Build: python scripts/build_deck.py course/markdown-101/deck.yml
+output: markdown-101
+frontmatter:
+  marp: true
+  footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
+  theme: markdown101
+  paginate: true
+  size: "16:9"
+  title: Markdown 101
+  description: 30-minute hands-on Markdown course
+slide_dirs: [slides]
+slides:
+  # Hook, and what and why (0:00-0:06)
+  - title
+  - hook
+  - what-is-markdown
+  - why-markdown
+  # The core 80%, live (0:06-0:16)
+  - follow-along
+  - headings
+  - paragraphs
+  - bold-italic
+  - lists-bulleted
+  - lists-numbered
+  - links
+  - images
+  - code-inline
+  - code-block
+  - quote
+  - multi-line-quotes
+  - dividers
+  - core-80
+  # Level up (0:16-0:21)
+  - level-up
+  - task-lists
+  - tables
+  - diagrams
+  - flavors
+  # Exercise, wrap, Q&A, close (0:21-0:30)
+  - exercise
+  - keep-going
+  - questions
+  - closing

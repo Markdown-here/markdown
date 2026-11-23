@@ -14,3 +14,4 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml
       - run: python scripts/build_references.py --check
+      - run: python scripts/build_deck.py course/markdown-101/deck.yml course/markdown-101/editions/microsoft-deck.yml --check

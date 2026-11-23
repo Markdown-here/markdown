@@ -3,7 +3,8 @@
   "private": true,
   "description": "Build the Markdown 101 slides and handouts with Marp, using the theme in design/",
   "scripts": {
-    "slides": "marp --no-stdin course/markdown-101/editions/microsoft-slides.md --html -o dist/markdown-101-slides.html && marp --no-stdin course/markdown-101/editions/microsoft-slides.md --pdf -o dist/markdown-101-slides.pdf && marp --no-stdin course/markdown-101/editions/microsoft-slides.md --pptx -o dist/markdown-101-slides.pptx",
+    "decks": "python scripts/build_deck.py course/markdown-101/deck.yml course/markdown-101/editions/microsoft-deck.yml",
+    "slides": "npm run decks && marp --no-stdin dist/markdown-101.md dist/markdown-101-microsoft.md && marp --no-stdin dist/markdown-101.md dist/markdown-101-microsoft.md --pdf && marp --no-stdin dist/markdown-101.md dist/markdown-101-microsoft.md --pptx",
     "handouts": "marp --no-stdin course/markdown-101/cheatsheet.md --pdf -o dist/markdown-cheatsheet.pdf && marp --no-stdin course/markdown-101/editions/microsoft-cheatsheet.md --pdf -o dist/markdown-cheatsheet-microsoft.pdf",
     "build": "npm run slides && npm run handouts"
   },

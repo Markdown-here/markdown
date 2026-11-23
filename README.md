@@ -52,6 +52,8 @@ Every Markdown file in this repo starts with YAML frontmatter, and its **first f
 | `Brainstorm` | Idea lists |
 | `Course` | A course or course edition |
 | `Presentation` | A slide deck ([Marp](references/tools/marp.md)) |
+| `Slide` | One slide. Decks are built from these: see [Extending Markdown 101](course/markdown-101/extending.md) |
+| `Guide` | How-to instructions |
 | `List` | A generated list of references |
 | `Inbox` | Items waiting for triage |
 | `Context` | Background on an environment, like [work/](work/) |

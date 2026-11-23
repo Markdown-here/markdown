@@ -12,7 +12,7 @@ One look for everything we share: slides and one-page handouts. Purple and amber
 
 ## Use it
 
-Start a Markdown file with:
+Start a Markdown file with the block below. For a slide deck, put the same settings under `frontmatter:` in its deck file instead (see [Extending Markdown 101](../course/markdown-101/extending.md)).
 
 ```yaml
 ---

@@ -1,4 +1,4 @@
-"""Stamp a version into the footer of every Marp file before a build.
+"""Stamp a version into the footer of every deck and Marp file before a build.
 
     python scripts/stamp_version.py v0.1
 
@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FOOTER = re.compile(r'^(footer: "Markdown 101)( ·)', re.M)
+FOOTER = re.compile(r'^(\s*footer: "Markdown 101)( ·)', re.M)
 
 
 def main():
@@ -18,7 +18,8 @@ def main():
         sys.exit(__doc__)
     version = sys.argv[1]
     stamped = 0
-    for p in sorted((ROOT / "course").rglob("*.md")):
+    files = list((ROOT / "course").rglob("*.md")) + list((ROOT / "course").rglob("*.yml"))
+    for p in sorted(files):
         text = p.read_text(encoding="utf-8")
         new, n = FOOTER.subn(rf"\1 · {version}\2", text, count=1)
         if n:
