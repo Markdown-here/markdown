@@ -29,4 +29,4 @@ set CHROME_PATH=C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 npm run media
 ```
 
-Generated files (PDF, HTML, PowerPoint) don't go here. The [Course workflow](../.github/workflows/course.yml) builds them; see [Releases](../README.md#releases).
+Generated files (PDF, HTML, PowerPoint) don't go here. The [Course workflow](../.github/workflows/course.yml) builds them; see [Releases](../docs/building.md#releases).

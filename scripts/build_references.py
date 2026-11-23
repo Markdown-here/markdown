@@ -29,7 +29,7 @@ SECTIONS = {
 URL_OPTIONAL = {"Person", "Book"}
 STATES = {"draft", "active", "watch", "stale", "broken", "retired"}
 REQUIRED = ["type", "slug", "state", "source", "added"]
-# Types for documents that aren't reference entries. We define these; see README.md.
+# Types for documents that aren't reference entries. We define these; see docs/conventions.md.
 DOC_TYPES = {"Readme", "Instructions", "Brainstorm", "Course", "Presentation", "List", "Inbox", "Context", "Exercise", "Cheatsheet", "Reference", "Slide", "Guide"}
 TEMPLATE_TYPES = {"Resource", "Book", "App", "Person", "Organization"}
 SKIP_DIRS = {".git", "node_modules"}
