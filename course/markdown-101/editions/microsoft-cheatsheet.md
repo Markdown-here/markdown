@@ -9,14 +9,14 @@ class: cheatsheet
 
 # Markdown cheat sheet: Microsoft edition
 
-Plain text with a few symbols. Save as `.md`. Our standard is GitHub Flavored Markdown.
+Plain text with a few symbols. Save as `.md`. Our standard is [GitHub Flavored Markdown](https://github.github.com/gfm/).
 
 ## Where to write it
 
-- **VS Code:** preview with `Ctrl+Shift+V`, side by side with `Ctrl+K V`
+- **Copilot:** prompt "answer in Markdown" or "turn into Markdown"
 - **OneDrive:** *+ Create or upload* › *Markdown document*
-- **Notepad** on Windows 11 **(verify)**
-- **Copilot:** ask it to "answer in Markdown" or "turn this into Markdown"
+- **Notepad** on Windows 11
+- **VS Code:** preview with `Ctrl+Shift+V`, side by side with `Ctrl+K V`
 
 ## The core: works everywhere
 

@@ -13,7 +13,7 @@ Same structure and timing as the [core course](../README.md), tuned for a workpl
 | Tool | Role in the session |
 |:---|:---|
 | **VS Code** | Main demo editor. Split view: source left, preview right (`Ctrl+K V`) |
-| **Notepad** (Windows 11) | "Nothing to install" option, with basic Markdown formatting **(verify)** |
+| **Notepad** (Windows 11) | "Nothing to install" option, with basic Markdown formatting |
 | **OneDrive** | *+ Create or upload* › *Markdown document* on the web, or *Add New* › *Markdown Document* in the iPhone app, creates an `.md` file, so anyone can follow along from a phone or browser |
 | **Teams chat** | The hook and the flavors example |
 | **Copilot** | Proof that Markdown is everywhere: its answers are Markdown |
