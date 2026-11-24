@@ -112,14 +112,53 @@
       {{- $folder := path.Base $target.path -}}
       {{- $intro := "" -}}
       {{- with findRESubmatch `(?m)^(.+?) \d+ entries\.` $content 1 -}}{{- $intro = index (index . 0) 1 -}}{{- end -}}
+      {{- $refs := resources.Get "src/references/references.json" | transform.Unmarshal -}}
+      {{- /* Published entries, and each person's or organization's work: the
+           entries that name them in their `people` or `organizations` field */ -}}
+      {{- $published := dict -}}
+      {{- $work := dict -}}
+      {{- range $refs -}}
+        {{- if not (in $hide .state) -}}
+          {{- $e := . -}}
+          {{- $published = merge $published (dict $e.id true) -}}
+          {{- range $field := slice "people" "organizations" -}}
+            {{- range index $e $field -}}
+              {{- with . -}}
+                {{- $key := printf "%s/%s" $field . -}}
+                {{- $list := index $work $key | default slice -}}
+                {{- $work = merge $work (dict $key ($list | append (printf "[%s](/%s/)" $e.title $e.id))) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
       {{- $rows := slice -}}
-      {{- range (resources.Get "src/references/references.json" | transform.Unmarshal) -}}
+      {{- range $refs -}}
         {{- if and (hasPrefix .id (printf "%s/" $folder)) (not (in $hide .state)) -}}
-          {{- $entry := partial "parse.html" (resources.Get (printf "src/%s" .path)).Content -}}
-          {{- /* Keep link text, drop the link: it's relative to the entry's own file */ -}}
-          {{- $summary := partial "summary.html" $entry.body | replaceRE `\[([^\]]+)\]\([^)]*\)` "$1" -}}
+          {{- $e := . -}}
+          {{- $entry := partial "parse.html" (resources.Get (printf "src/%s" $e.path)).Content -}}
+          {{- $summary := partial "summary.html" $entry.body -}}
+          {{- /* Links in a summary are relative to the entry's own file: point
+               them at the site page, or keep just the text if there isn't one */ -}}
+          {{- range findRESubmatch `\[([^\]]+)\]\(([^)\s]+)\)` $summary -1 -}}
+            {{- $whole := index . 0 -}}
+            {{- $text := index . 1 -}}
+            {{- $url := index . 2 -}}
+            {{- $new := $text -}}
+            {{- if findRE `^[a-z][a-z0-9+.-]*:` $url 1 -}}
+              {{- $new = $whole -}}
+            {{- else -}}
+              {{- $linked := partial "site-path.html" (path.Join (path.Dir $e.path) (index (split $url "#") 0)) -}}
+              {{- if and $linked (index $published $linked.path) -}}{{- $new = printf "[%s](/%s/)" $text $linked.path -}}{{- end -}}
+            {{- end -}}
+            {{- $summary = replace $summary $whole $new -}}
+          {{- end -}}
+          {{- with index $work $e.id -}}
+            {{- $label := cond (eq $folder "people") "Work" "Related" -}}
+            {{- $summary = printf "%s<br>**%s:** %s" $summary $label (delimit . ", ") -}}
+          {{- end -}}
           {{- $summary = replace $summary "|" "\\|" -}}
-          {{- $rows = $rows | append (dict "sort" (lower .title) "row" (printf "| [%s](/%s/) | %s |" .title .id $summary)) -}}
+          {{- $rows = $rows | append (dict "sort" (lower $e.title) "row" (printf "| [%s](/%s/) | %s |" $e.title $e.id $summary)) -}}
         {{- end -}}
       {{- end -}}
       {{- $column := cond (eq $folder "people") "Who they are" "What it is" -}}
