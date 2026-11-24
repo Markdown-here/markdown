@@ -72,3 +72,7 @@
 .content :hover > .subheading-anchor,
 .content :hover > span:target + .subheading-anchor,
 .content .subheading-anchor:focus-visible { opacity: 1; }
+
+/* All tags page: a compact multi-column list */
+.content ul.mdh-tags { list-style: none; padding: 0; margin-inline-start: 0; columns: 12rem; column-gap: 1.5rem; }
+.content ul.mdh-tags li { margin: 0; padding: 0.15rem 0; break-inside: avoid; }
