@@ -52,6 +52,7 @@ menu:
     - { name: People, pageRef: /people, weight: 4 }
     - { name: Organizations, pageRef: /organizations, weight: 5 }
     - { name: Search, weight: 7, params: { type: search } }
+    - { name: Light or dark, weight: 9, params: { type: theme-toggle } }
     - { name: GitHub, weight: 8, url: "https://github.com/Markdown-here/markdown", params: { icon: github } }
 
 params:
@@ -119,7 +120,7 @@ params:
     width: wide
   theme:
     default: system
-    displayToggle: true
+    displayToggle: false # the switch is in the top bar (menu above) instead
   footer:
     enable: true
     displayCopyright: false
