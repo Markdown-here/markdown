@@ -48,7 +48,7 @@
     {{- end -}}
   {{- end }}
   {{- with .GetTerms "tags" }}
-  <dt>Tags</dt><dd>{{ range $i, $t := . }}{{ if $i }} {{ end }}<a class="mdh-tag" href="{{ $t.RelPermalink }}">#{{ $t.LinkTitle }}</a>{{ end }}</dd>
+  <dt>Tags</dt><dd>{{ range $i, $t := . }}{{ if $i }} {{ end }}<a class="mdh-tag" href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</dd>
   {{- end }}
 </dl>
 {{- end -}}

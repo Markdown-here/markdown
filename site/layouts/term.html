@@ -1,4 +1,4 @@
-{{- /* One tag, like /tags/article/: a table like the reference lists (name and
+{{- /* One tag, like /tags/article/ (no "#": tags show as pills elsewhere): a table like the reference lists (name and
    summary, with its links), so it looks like the rest of the site. Replaces Hextra's blog-style term page. */ -}}
 {{ define "main" }}
   <div class="hx:mx-auto hx:flex hextra-max-page-width">
@@ -7,8 +7,8 @@
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
         <div class="content">
-          <h1>#{{ .Title }}</h1>
-          <p>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "entry" "entries" }} tagged <code>#{{ .Title }}</code>. <a href="{{ (site.GetPage "/tags").RelPermalink }}">All tags</a></p>
+          <h1>{{ .Title }}</h1>
+          <p>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "entry" "entries" }} with this tag. <a href="{{ (site.GetPage "/tags").RelPermalink }}">All tags</a></p>
           <table>
             <thead><tr><th>Name</th><th>What it is</th></tr></thead>
             <tbody>
