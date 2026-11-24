@@ -1,5 +1,5 @@
-{{- /* One tag, like /tags/article/: a table like the reference lists, so it
-   looks like the rest of the site. Replaces Hextra's blog-style term page. */ -}}
+{{- /* One tag, like /tags/article/: a table like the reference lists (name and
+   summary, with its links), so it looks like the rest of the site. Replaces Hextra's blog-style term page. */ -}}
 {{ define "main" }}
   <div class="hx:mx-auto hx:flex hextra-max-page-width">
     {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
@@ -10,13 +10,12 @@
           <h1>#{{ .Title }}</h1>
           <p>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "entry" "entries" }} tagged <code>#{{ .Title }}</code>. <a href="{{ (site.GetPage "/tags").RelPermalink }}">All tags</a></p>
           <table>
-            <thead><tr><th>Name</th><th>What it is</th><th>In</th></tr></thead>
+            <thead><tr><th>Name</th><th>What it is</th></tr></thead>
             <tbody>
               {{- range sort .Pages "Title" }}
               <tr>
                 <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-                <td>{{ .Params.description | replaceRE `\[([^\]]+)\]\([^)]*\)` "$1" | markdownify }}</td>
-                <td><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></td>
+                <td>{{ .Params.summary | markdownify }}</td>
               </tr>
               {{- end }}
             </tbody>

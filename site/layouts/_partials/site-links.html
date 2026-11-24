@@ -1,0 +1,27 @@
+{{- /*
+  Turn the links in a piece of Markdown from a reference entry into site
+  links. They're written relative to the entry's own file, like
+  [Pandoc](../tools/pandoc.md), so they work on GitHub; on the site they
+  become /tools/pandoc/. A link to an entry that isn't published keeps just
+  its text. Web links stay as they are.
+
+  Takes a dict: text (the Markdown), source (the entry's repo path), and
+  published (a dict of published entry IDs, like "tools/pandoc").
+*/ -}}
+{{- $text := .text -}}
+{{- $source := .source -}}
+{{- $published := .published -}}
+{{- range findRESubmatch `\[([^\]]+)\]\(([^)\s]+)\)` $text -1 -}}
+  {{- $whole := index . 0 -}}
+  {{- $label := index . 1 -}}
+  {{- $url := index . 2 -}}
+  {{- $new := $label -}}
+  {{- if findRE `^[a-z][a-z0-9+.-]*:` $url 1 -}}
+    {{- $new = $whole -}}
+  {{- else -}}
+    {{- $linked := partial "site-path.html" (path.Join (path.Dir $source) (index (split $url "#") 0)) -}}
+    {{- if and $linked (index $published $linked.path) -}}{{- $new = printf "[%s](/%s/)" $label $linked.path -}}{{- end -}}
+  {{- end -}}
+  {{- $text = replace $text $whole $new -}}
+{{- end -}}
+{{- return $text -}}

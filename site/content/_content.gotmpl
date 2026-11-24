@@ -16,6 +16,12 @@
 {{- $repo := site.Params.repo -}}
 {{- $branch := site.Params.branch -}}
 {{- $hide := site.Params.hideStates | default slice -}}
+{{- $refs := resources.Get "src/references/references.json" | transform.Unmarshal -}}
+{{- /* Published reference entries, by ID like "tools/pandoc" */ -}}
+{{- $published := dict -}}
+{{- range $refs -}}
+  {{- if not (in $hide .state) -}}{{- $published = merge $published (dict .id true) -}}{{- end -}}
+{{- end -}}
 
 {{- /* 1. Courses */ -}}
 {{- $lessonWeights := dict -}}
@@ -112,33 +118,13 @@
       {{- $folder := path.Base $target.path -}}
       {{- $intro := "" -}}
       {{- with findRESubmatch `(?m)^(.+?) \d+ entries\.` $content 1 -}}{{- $intro = index (index . 0) 1 -}}{{- end -}}
-      {{- $refs := resources.Get "src/references/references.json" | transform.Unmarshal -}}
-      {{- /* Published entries, to know which summary links have a page */ -}}
-      {{- $published := dict -}}
-      {{- range $refs -}}
-        {{- if not (in $hide .state) -}}{{- $published = merge $published (dict .id true) -}}{{- end -}}
-      {{- end -}}
       {{- $rows := slice -}}
       {{- range $refs -}}
         {{- if and (hasPrefix .id (printf "%s/" $folder)) (not (in $hide .state)) -}}
           {{- $e := . -}}
           {{- $entry := partial "parse.html" (resources.Get (printf "src/%s" $e.path)).Content -}}
           {{- $summary := partial "summary.html" $entry.body -}}
-          {{- /* Links in a summary are relative to the entry's own file: point
-               them at the site page, or keep just the text if there isn't one */ -}}
-          {{- range findRESubmatch `\[([^\]]+)\]\(([^)\s]+)\)` $summary -1 -}}
-            {{- $whole := index . 0 -}}
-            {{- $text := index . 1 -}}
-            {{- $url := index . 2 -}}
-            {{- $new := $text -}}
-            {{- if findRE `^[a-z][a-z0-9+.-]*:` $url 1 -}}
-              {{- $new = $whole -}}
-            {{- else -}}
-              {{- $linked := partial "site-path.html" (path.Join (path.Dir $e.path) (index (split $url "#") 0)) -}}
-              {{- if and $linked (index $published $linked.path) -}}{{- $new = printf "[%s](/%s/)" $text $linked.path -}}{{- end -}}
-            {{- end -}}
-            {{- $summary = replace $summary $whole $new -}}
-          {{- end -}}
+          {{- $summary = partial "site-links.html" (dict "text" $summary "source" $e.path "published" $published) -}}
           {{- $summary = replace $summary "|" "\\|" -}}
           {{- $rows = $rows | append (dict "sort" (lower $e.title) "row" (printf "| [%s](/%s/) | %s |" $e.title $e.id $summary)) -}}
         {{- end -}}
@@ -179,7 +165,13 @@
     {{- range $fm.tags -}}{{- with . -}}{{- $tags = $tags | append . -}}{{- end -}}{{- end -}}
 
     {{- $params := merge $fm (dict "source" $repoPath "docType" $docType "tags" $tags) -}}
-    {{- with $description -}}{{- $params = merge $params (dict "description" .) -}}{{- end -}}
+    {{- with $description -}}
+      {{- /* description: plain text for search engines; summary: with site links, for tag pages */ -}}
+      {{- $params = merge $params (dict
+        "description" (. | replaceRE `\[([^\]]+)\]\([^)]*\)` "$1" | replaceRE "[`*]" "")
+        "summary" (partial "site-links.html" (dict "text" . "source" $repoPath "published" $published))
+      ) -}}
+    {{- end -}}
     {{- $.AddPage (dict
       "path" $target.path
       "kind" $target.kind
