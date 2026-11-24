@@ -6,6 +6,12 @@
   --primary-lightness: 54%;
 }
 
+/* Links in dark mode: Hextra uses primary-600 in both modes, which is 2.4:1
+   on the dark background. This lighter purple is 8.9:1. */
+.dark .content :where(a):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  color: hsl(258 63% 79%);
+}
+
 /* Download box and reference facts, from _partials/custom/content-begin.html */
 .mdh-box {
   border: 1px solid hsl(258 40% 85%);
