@@ -7,6 +7,5 @@ jottit\.com
 dev\.classmethod\.jp/(en/)?articles/marp-vs-revealjs-markdown-presentation-tools-comparison
 # Local preview address in docs/website.md
 localhost
-# Not live until the domain and the org move are done (docs/website-setup.md). Remove after.
+# Not live until the domain is connected (docs/website-setup.md, part 3). Remove after.
 markdown\.here
-github\.com/Markdown-here

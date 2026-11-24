@@ -49,7 +49,7 @@ GitHub organization names can't contain a dot, so the organization's address is 
    ```
 
    Your fine-grained token is for `thephm/markdown` only. Make a new one for `Markdown-here/markdown` (see [Release a version](../RELEASING.md#2-make-a-github-token)). If the organization asks to approve tokens, approve it under the organization's **Settings › Personal access tokens › Pending requests**.
-4. **Update the links in the repo:** about a dozen files still say `github.com/thephm/markdown`, including the slide footers and two places in `hugo.yaml` (`repo` and the GitHub menu item). Ask Claude to change them, or search the repo for `thephm/markdown`.
+4. **Update the links in the repo:** search the repo for `thephm/markdown` and change each one to `Markdown-here/markdown`, including the slide footers and two places in `hugo.yaml` (`repo` and the GitHub menu item).
 
 ## 3. Connect markdown.here
 

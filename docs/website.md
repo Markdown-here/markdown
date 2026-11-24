@@ -160,7 +160,7 @@ Pull requests run the same build and checks, but don't publish.
 
 ## Downloads
 
-Each course's intro page links to its slides and cheat sheet on the [latest release](https://github.com/thephm/markdown/releases/latest). The [Course workflow](../.github/workflows/course.yml) builds them when you tag a version (see [Release a version](../RELEASING.md)). Until the first version is tagged, the download links don't work. The list of files is in each course's `_index.md` in `site/content/courses/`.
+Each course's intro page links to its slides and cheat sheet on the [latest release](https://github.com/Markdown-here/markdown/releases/latest). The [Course workflow](../.github/workflows/course.yml) builds them when you tag a version (see [Release a version](../RELEASING.md)). Until the first version is tagged, the download links don't work. The list of files is in each course's `_index.md` in `site/content/courses/`.
 
 ## Upgrade
 

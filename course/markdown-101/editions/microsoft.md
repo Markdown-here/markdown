@@ -52,13 +52,13 @@ How to view and show the [deck](microsoft-deck.yml). For Marp in general, see [M
 
 ### Set up once
 
-1. In VS Code, open the Command Palette (`Ctrl+Shift+P`), choose **Git: Clone**, and paste `https://github.com/thephm/markdown`.
+1. In VS Code, open the Command Palette (`Ctrl+Shift+P`), choose **Git: Clone**, and paste `https://github.com/Markdown-here/markdown`.
 2. Trust the folder when VS Code asks. Our purple theme only loads in a trusted folder.
 3. Install **Marp for VS Code** (`Ctrl+Shift+X`).
 4. Install [Python](https://www.python.org/downloads/) and [Node.js](https://nodejs.org/), then in the VS Code terminal run `pip install pyyaml` and `npm install`.
 5. Run `npm run decks`, open `dist/markdown-101-microsoft.md`, and press `Ctrl+K V` to preview. Run `npm run decks` again after editing a slide.
 
-No setup at all: download the HTML, PDF, or PowerPoint from the latest [release](https://github.com/thephm/markdown/releases) or [build](https://github.com/thephm/markdown/actions/workflows/course.yml).
+No setup at all: download the HTML, PDF, or PowerPoint from the latest [release](https://github.com/Markdown-here/markdown/releases) or [build](https://github.com/Markdown-here/markdown/actions/workflows/course.yml).
 
 ### Present
 

@@ -16,7 +16,7 @@ Learn Markdown, try it, and find everything else worth knowing about it.
 | [Cheat sheet: Microsoft edition](course/markdown-101/editions/microsoft-cheatsheet.md) | The same, plus Teams and VS Code tips |
 | [Exercise: before](course/markdown-101/exercise-before.md) and [after](course/markdown-101/exercise-after.md) | Turn a messy meeting note into clean Markdown |
 
-The slides and handouts are also available as PDF and PowerPoint on the [Releases](https://github.com/thephm/markdown/releases) page.
+The slides and handouts are also available as PDF and PowerPoint on the [Releases](https://github.com/Markdown-here/markdown/releases) page.
 
 ## Look things up
 

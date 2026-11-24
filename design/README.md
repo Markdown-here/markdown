@@ -19,7 +19,7 @@ Start a Markdown file with the block below. For a slide deck, put the same setti
 type: Presentation    # or Cheatsheet
 marp: true
 theme: markdown101
-footer: "Markdown 101 · [github.com/thephm/markdown](https://github.com/thephm/markdown)"
+footer: "Markdown 101 · [github.com/Markdown-here/markdown](https://github.com/Markdown-here/markdown)"
 ---
 ```
 

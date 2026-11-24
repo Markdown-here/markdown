@@ -73,7 +73,7 @@ The build stops with an error if a deck points at a slide that doesn't exist. Th
 GitHub doesn't allow a private fork of a public repo. Make a new private repo and bring this one in as a submodule, so your slides and ours stay separate:
 
 ```bash
-git submodule add https://github.com/thephm/markdown upstream
+git submodule add https://github.com/Markdown-here/markdown upstream
 ```
 
 ```text

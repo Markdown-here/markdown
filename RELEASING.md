@@ -49,7 +49,8 @@ On github.com, go to **Settings › Developer settings › Fine-grained tokens �
 | Setting | Value |
 |:---|:---|
 | Expiration | Your choice. You'll redo this section when it expires |
-| Repository access | Only select repositories: `thephm/markdown` |
+| Resource owner | `Markdown-here` (the organization, not your account) |
+| Repository access | Only select repositories: `Markdown-here/markdown` |
 | Contents | Read and write |
 | Workflows | Read and write |
 
@@ -80,7 +81,7 @@ cd ~/storage/shared/github
 ```
 
 ```bash
-git clone https://github.com/thephm/markdown.git
+git clone https://github.com/Markdown-here/markdown.git
 ```
 
 ```bash
@@ -123,8 +124,8 @@ Expect `* [new tag] v0.5 -> v0.5`.
 
 ### 3. Verify
 
-1. Open <https://github.com/thephm/markdown/actions/workflows/course.yml>. A run for `v0.5` appears within a minute. Wait for it to turn green.
-2. Open <https://github.com/thephm/markdown/releases/latest>. It should be `v0.5`, with these assets:
+1. Open <https://github.com/Markdown-here/markdown/actions/workflows/course.yml>. A run for `v0.5` appears within a minute. Wait for it to turn green.
+2. Open <https://github.com/Markdown-here/markdown/releases/latest>. It should be `v0.5`, with these assets:
 
 | File | What |
 |:---|:---|
@@ -161,9 +162,9 @@ Don't reuse `v0.5` afterwards.
 | `gh auth login --with-token` seems stuck | It's waiting for the token, with no prompt | Paste the token, Enter, then Ctrl+D |
 | `fatal: detected dubious ownership` | Android storage doesn't track file owners | `git config --global --add safe.directory /storage/emulated/0/github/markdown` |
 | `git push` asks for a username and password | git isn't using the `gh` sign-in | `gh auth setup-git`, then push again |
-| `Permission to thephm/markdown.git denied` (403) | The token can't write to the repo | Edit the token at <https://github.com/settings/personal-access-tokens>: add the repo, set Contents and Workflows to Read and write |
+| `Permission to Markdown-here/markdown.git denied` (403) | The token can't write to the repo | Edit the token at <https://github.com/settings/personal-access-tokens>: add the repo, set Contents and Workflows to Read and write |
 | Push fails with 401 or 403 after working before | The token expired | Make a new token (setup step 2), then redo setup step 3 |
 | `tag 'v0.5' already exists` | You tagged before, or picked a used number | Run `git tag` and pick the next free number |
 | The release has no files | The build failed | Open the run under **Actions › Course** and read the failed step |
 
-Tags can't be pushed from Claude Code cloud sessions: the session's connection to GitHub refuses them. Use this procedure, or create the release in a browser at <https://github.com/thephm/markdown/releases/new>.
+Tags can't be pushed from Claude Code cloud sessions: the session's connection to GitHub refuses them. Use this procedure, or create the release in a browser at <https://github.com/Markdown-here/markdown/releases/new>.

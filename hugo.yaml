@@ -54,7 +54,7 @@ menu:
     - { name: Organizations, pageRef: /organizations, parent: references, weight: 4 }
     - { name: What works where, pageRef: /microsoft-atlassian, weight: 3 }
     - { name: Search, weight: 4, params: { type: search } }
-    - { name: GitHub, weight: 5, url: "https://github.com/thephm/markdown", params: { icon: github } }
+    - { name: GitHub, weight: 5, url: "https://github.com/Markdown-here/markdown", params: { icon: github } }
 
 params:
   description: Learn Markdown, try it, and find everything else worth knowing about it.
@@ -63,7 +63,7 @@ params:
   # Where the source lives. Used for downloads, the footer, and links to files
   # that aren't web pages. If the repo moves, change it here and in the GitHub
   # menu item above.
-  repo: https://github.com/thephm/markdown
+  repo: https://github.com/Markdown-here/markdown
   branch: main
 
   # Courses: each deck becomes a lesson, one page per slide, in deck order.
