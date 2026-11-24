@@ -122,7 +122,8 @@
           {{- $rows = $rows | append (dict "sort" (lower .title) "row" (printf "| [%s](/%s/) | %s |" .title .id $summary)) -}}
         {{- end -}}
       {{- end -}}
-      {{- $lines := slice $intro "" "| Name | What it is |" "|---|---|" -}}
+      {{- $column := cond (eq $folder "people") "Who they are" "What it is" -}}
+      {{- $lines := slice $intro "" (printf "| Name | %s |" $column) "|---|---|" -}}
       {{- /* Pages pinned to this list with `list:` in params.pages */ -}}
       {{- range $key, $page := site.Params.pages -}}
         {{- if eq $page.list $folder -}}

@@ -1,10 +1,13 @@
 {{- /*
   The first paragraph under `## Summary` (or `## Bio` for people) in a
-  reference entry, on one line. Empty if there isn't one.
+  reference entry, on one line, without the quote marker (people's bios are
+  quotes) or citation numbers. Empty if there isn't one.
 */ -}}
 {{- $summary := "" -}}
 {{- with findRESubmatch `(?s)\n## (?:Summary|Bio)\n+(.+?)(?:\n\n|\n#|\z)` (printf "\n%s" .) 1 -}}
-  {{- $summary = index (index . 0) 1 | replaceRE `\s*\n\s*` " " | strings.TrimSpace -}}
+  {{- $summary = index (index . 0) 1 | replaceRE `(?m)^\s*>\s?` "" | replaceRE `\s*\n\s*` " " | strings.TrimSpace -}}
+  {{- /* Drop citation markers like [1] that point into the entry's References */ -}}
+  {{- $summary = $summary | replaceRE `\s*\[\^?\d+\]([^(]|$)` "$1" | strings.TrimSpace -}}
   {{- if or (eq $summary "-") (hasPrefix $summary "- ") -}}{{- $summary = "" -}}{{- end -}}
 {{- end -}}
 {{- return $summary -}}
