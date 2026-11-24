@@ -8,7 +8,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "people": [
       "john-macfarlane"
     ],
@@ -28,7 +28,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "people": [],
     "tags": [],
     "id": "organizations/github",
@@ -43,7 +43,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "people": [],
     "tags": [],
     "id": "organizations/microsoft",
@@ -59,7 +59,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [],
     "id": "organizations/stripe",
     "path": "references/organizations/stripe.md"

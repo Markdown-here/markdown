@@ -8,7 +8,7 @@ url: https://github.com/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 people:
   - 
 tags:
@@ -19,7 +19,7 @@ tags:
 
 ## Summary
 
-Maintains GitHub Flavored Markdown, likely the most widely used Markdown dialect.
+Maintains [GitHub Flavored Markdown](../resources/gfm-spec.md), likely the most widely used Markdown dialect.
 
 ## References
 

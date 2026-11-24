@@ -8,7 +8,7 @@ url: https://www.microsoft.com/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 people:
   - 
 tags:
@@ -19,7 +19,7 @@ tags:
 
 ## Summary
 
-Maker of Visual Studio Code, one of the most popular Markdown editors.
+Maker of [Visual Studio Code](../tools/vs-code.md), one of the most popular Markdown editors.
 
 ## References
 

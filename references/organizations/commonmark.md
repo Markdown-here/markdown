@@ -8,7 +8,7 @@ url: https://commonmark.org/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 people:
   - john-macfarlane
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Summary
 
-Community effort that produced a standard, unambiguous Markdown spec and reference implementations.
+Community effort that produced a standard, unambiguous [Markdown spec](../resources/commonmark-spec.md) and reference implementations.
 
 ## References
 

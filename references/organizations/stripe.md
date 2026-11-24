@@ -10,7 +10,7 @@ people:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - 
 ---
@@ -19,7 +19,7 @@ tags:
 
 ## Summary
 
-Payments company that created Markdoc to power its public docs.
+Payments company that created [Markdoc](../tools/markdoc.md) to power its public docs.
 
 ## References
 
