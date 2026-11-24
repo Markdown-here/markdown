@@ -87,7 +87,7 @@ Under `pages` in `hugo.yaml`, keyed by the file's repo path:
 
 ```yaml
   pages:
-    course/markdown-101/exercise-before.md: { title: "Practice: the messy note", after: exercise, order: 1 }
+    course/markdown-101/exercise-before.md: { title: "Example: before", after: exercise, order: 1 }
     course/markdown-101/cheatsheet.md: { weight: 100000 }
 ```
 

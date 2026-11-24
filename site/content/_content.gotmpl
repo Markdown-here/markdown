@@ -101,7 +101,7 @@
       {{- $weight = add $base ($extra.order | default 1) -}}
     {{- end -}}
 
-    {{- /* Practice files: the raw file, then how it renders */ -}}
+    {{- /* Example files: the raw file, then how it renders */ -}}
     {{- if eq $docType "Exercise" -}}
       {{- $raw := strings.Trim $body "\n" -}}
       {{- $content = printf "Copy this into your editor, or [download the file](%s/raw/%s/%s).\n\n<div class=\"mdh-exercise\">\n\n`````markdown\n%s\n`````\n\n</div>\n\n<details>\n<summary>See how it renders</summary>\n\n%s\n\n</details>\n" $repo $branch $repoPath $raw $raw -}}
