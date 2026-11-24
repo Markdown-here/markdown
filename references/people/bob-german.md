@@ -9,9 +9,9 @@ url: https://bob1german.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
-  - 
+  - microsoft
 tags:
   - 
 ---

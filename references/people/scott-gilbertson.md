@@ -9,9 +9,9 @@ url:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
-  - 
+  - wired
 tags:
   - 
 ---
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Writer at Wired; author of *The Eternal Truth of Markdown*.
+> Writer at [Wired](../organizations/wired.md); author of *The Eternal Truth of Markdown*.
 
 ## References
 
