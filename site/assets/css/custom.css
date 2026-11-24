@@ -51,3 +51,24 @@
 /* Table headers line up with their column. Browsers center them by default;
    a column marked :---: in Markdown still centers (it gets a style attribute). */
 .content table th:not([style]) { text-align: start; }
+
+/* Heading links: a chain-link icon on hover instead of "#", which looks like
+   Markdown heading syntax on a site that teaches Markdown. Hextra also kept
+   the mark on the section you jumped to; now it only shows on hover or focus. */
+.content .subheading-anchor:after {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  padding: 0;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.content .subheading-anchor { color: #9ca3af; }
+.content span:target + .subheading-anchor { opacity: 0; }
+.content :hover > .subheading-anchor,
+.content :hover > span:target + .subheading-anchor,
+.content .subheading-anchor:focus-visible { opacity: 1; }
