@@ -3,15 +3,9 @@
 {{- /* Course downloads, from `downloads` in params.pages (hugo.yaml). The Course
    workflow builds them and attaches them to each release. */ -}}
 {{- with .Params.downloads -}}
-<div class="mdh-box">
-  <p><strong>Download</strong></p>
-  <ul>
-    {{- range . }}
-    <li><a href="{{ site.Params.repo }}/releases/latest/download/{{ .file }}">{{ .label }}</a></li>
-    {{- end }}
-  </ul>
-  <p class="mdh-muted">From the <a href="{{ site.Params.repo }}/releases/latest">latest release</a>.</p>
-</div>
+<p class="mdh-box"><strong>Download:</strong>
+  {{- range $i, $d := . }}{{ if $i }} ·{{ end }} <a href="{{ site.Params.repo }}/releases/latest/download/{{ $d.file }}">{{ $d.label }}</a>{{ end }}
+</p>
 {{- end -}}
 
 {{- /* Reference entries: the facts from the frontmatter */ -}}
