@@ -155,7 +155,7 @@ Push to `main`. That's all.
 1. On GitHub, open **Actions › Website**. A run appears within a minute.
 2. When it turns green, the change is live. Refresh [markdown.here](https://markdown.here/).
 
-If it turns red, open the run and click the step with the ❌. The table below covers the usual causes.
+If it turns red, open the run and click the step with the red X. The table below covers the usual causes.
 
 Pull requests run the same build and checks, but don't publish.
 

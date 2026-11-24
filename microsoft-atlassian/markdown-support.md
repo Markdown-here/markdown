@@ -12,33 +12,33 @@ The same Markdown can look different in each app we use. This page compares them
 
 | | Write Markdown? | Where | Flavor |
 |:---|:---|:---|:---|
-| **GitHub** | ✅ Files, issues, pull requests | Browser | Full GFM, plus Mermaid |
-| **VS Code** | ✅ `.md` files, with live preview | Desktop | CommonMark plus GFM tables and strikethrough. More through extensions |
-| **OneDrive** | ✅ `.md` files: view, edit, or split view | Browser, iPhone, Android | Native since 2026. Flavor not documented **(verify)** |
-| **SharePoint** | ✅ `.md` files in libraries, and the Markdown web part on pages | Browser | Files: same editor as OneDrive. Web part: [Marked.js](https://marked.js.org/) |
+| **GitHub** | ✔️ Files, issues, pull requests | Browser | Full GFM, plus Mermaid |
+| **VS Code** | ✔️ `.md` files, with live preview | Desktop | CommonMark plus GFM tables and strikethrough. More through extensions |
+| **OneDrive** | ✔️ `.md` files: view, edit, or split view | Browser, iPhone, Android | Native since 2026. Flavor not documented **(verify)** |
+| **SharePoint** | ✔️ `.md` files in libraries, and the Markdown web part on pages | Browser | Files: same editor as OneDrive. Web part: [Marked.js](https://marked.js.org/) |
 | **Teams chat** | ⚠️ Typing shortcuts only | Desktop and web. Mobile can show it but not create it | Its own "Markdown-style" rules |
 | **Confluence Cloud** | ⚠️ Typing shortcuts, and pasting sometimes | Browser | None. Pages are stored in Confluence's own format |
 
 ## Feature by feature
 
-✅ works · ⚠️ works differently · ❌ doesn't work · ❓ not confirmed
+✔️ works · ⚠️ works differently · ✖️ doesn't work · ❓ not confirmed
 
 | Feature | You type | GitHub | VS Code | OneDrive and SharePoint files | SharePoint web part | Teams chat | Confluence Cloud |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| Headings | `# Title` | ✅ | ✅ | ✅ | ✅ | ✅ Levels 1 to 3 | ⚠️ As you type ❓ |
-| Bold | `**bold**` | ✅ | ✅ | ✅ | ✅ | ⚠️ Use `*bold*` | ⚠️ As you type ❓ |
-| Italic | `*italic*` | ✅ | ✅ | ✅ | ✅ | ⚠️ Use `_italic_` | ⚠️ `_italic_` as you type ❓ |
-| Strikethrough | `~~text~~` | ✅ | ✅ | ❓ | ✅ ❓ | ⚠️ Use `~text~` | ⚠️ As you type ❓ |
-| Lists | `- item`, `1. item` | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ As you type ❓ |
-| Links | `[text](url)` | ✅ | ✅ | ✅ | ✅ | ✅ | ❓ |
-| Images | `![alt](file.png)` | ✅ | ✅ | ✅ | ✅ | ❌ Paste the image instead | ❌ Insert the image instead |
-| Inline code | `` `code` `` | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ As you type ❓ |
-| Code block | Three backticks | ✅ Highlighted | ✅ Highlighted | ✅ Highlighted | ✅ | ✅ | ⚠️ As you type ❓ |
-| Blockquote | `> quote` | ✅ | ✅ | ✅ ❓ | ✅ | ✅ | ⚠️ As you type ❓ |
-| Table | Pipes and dashes | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ Use the table button |
-| Task list | `- [ ] task` | ✅ Tickable | ⚠️ Shows boxes, can't tick ❓ | ✅ Checkboxes | ✅ ❓ | ❌ | ⚠️ `[]` as you type makes a Confluence task ❓ |
-| Mermaid diagram | ` ```mermaid ` | ✅ | ⚠️ With an extension | ❓ Not mentioned | ❌ Needs a third-party web part | ❌ | ⚠️ With a Marketplace app ❓ |
-| Frontmatter | `---` block at the top | ⚠️ Shown as a table | ✅ Hidden in the preview | ❓ | ❓ | ❌ | ❌ |
+| Headings | `# Title` | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ Levels 1 to 3 | ⚠️ As you type ❓ |
+| Bold | `**bold**` | ✔️ | ✔️ | ✔️ | ✔️ | ⚠️ Use `*bold*` | ⚠️ As you type ❓ |
+| Italic | `*italic*` | ✔️ | ✔️ | ✔️ | ✔️ | ⚠️ Use `_italic_` | ⚠️ `_italic_` as you type ❓ |
+| Strikethrough | `~~text~~` | ✔️ | ✔️ | ❓ | ✔️ ❓ | ⚠️ Use `~text~` | ⚠️ As you type ❓ |
+| Lists | `- item`, `1. item` | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ⚠️ As you type ❓ |
+| Links | `[text](url)` | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❓ |
+| Images | `![alt](file.png)` | ✔️ | ✔️ | ✔️ | ✔️ | ✖️ Paste the image instead | ✖️ Insert the image instead |
+| Inline code | `` `code` `` | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ⚠️ As you type ❓ |
+| Code block | Three backticks | ✔️ Highlighted | ✔️ Highlighted | ✔️ Highlighted | ✔️ | ✔️ | ⚠️ As you type ❓ |
+| Blockquote | `> quote` | ✔️ | ✔️ | ✔️ ❓ | ✔️ | ✔️ | ⚠️ As you type ❓ |
+| Table | Pipes and dashes | ✔️ | ✔️ | ✔️ | ✔️ | ✖️ | ✖️ Use the table button |
+| Task list | `- [ ] task` | ✔️ Tickable | ⚠️ Shows boxes, can't tick ❓ | ✔️ Checkboxes | ✔️ ❓ | ✖️ | ⚠️ `[]` as you type makes a Confluence task ❓ |
+| Mermaid diagram | ` ```mermaid ` | ✔️ | ⚠️ With an extension | ❓ Not mentioned | ✖️ Needs a third-party web part | ✖️ | ⚠️ With a Marketplace app ❓ |
+| Frontmatter | `---` block at the top | ⚠️ Shown as a table | ✔️ Hidden in the preview | ❓ | ❓ | ✖️ | ✖️ |
 
 ## Notes per app
 

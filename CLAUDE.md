@@ -18,7 +18,7 @@ Write like a person who knows the subject, not like an AI.
 - **Plain, specific words.** No "delve", "seamless", "leverage", "robust", "unlock", "elevate", "empower", "game-changer", "landscape" (unless it means page orientation), "journey", "in today's fast-paced world".
 - **No filler.** No intros that restate the title, no "In conclusion", no "It's not just X, it's Y", no lists padded to three items.
 - **Short sentences, active voice.** Say what something does and why it matters to the reader.
-- **Light formatting.** Bold for the few words that matter, not every other phrase. Emoji only when they carry meaning, like a ✅ / ❌ legend.
+- **Light formatting.** Bold for the few words that matter, not every other phrase. Emoji only when they carry meaning, like a ✔️ / ✖️ legend. Not the colored ✅ / ❌.
 - **No hype.** Don't claim things we haven't checked. Mark them **(verify)**.
 
 ## Conventions
