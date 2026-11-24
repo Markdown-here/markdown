@@ -56,7 +56,7 @@ menu:
     - { name: GitHub, weight: 8, url: "https://github.com/Markdown-here/markdown", params: { icon: github } }
 
 params:
-  description: Learn Markdown, try it, and find everything else worth knowing about it.
+  description: Learn Markdown and find everything else worth knowing about it.
   images: [/images/social-card.png] # preview image when a page is shared
 
   # Where the source lives. Used for downloads, the footer, and links to files

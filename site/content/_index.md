@@ -2,10 +2,10 @@
 type: Readme
 title: Markdown.here
 layout: hextra-home
-description: Learn Markdown, try it, and find everything else worth knowing about it.
+description: Learn Markdown and find everything else worth knowing about it.
 ---
 
-<div class="hx:mt-6 hx:mb-6">
+<div class="mdh-hero hx:mb-6">
 {{< hextra/hero-headline >}}
   Learn Markdown here
 {{< /hextra/hero-headline >}}
@@ -13,7 +13,7 @@ description: Learn Markdown, try it, and find everything else worth knowing abou
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Learn Markdown, try it, and find everything else worth knowing about it.
+  Learn Markdown and find everything else worth knowing about it.
 {{< /hextra/hero-subtitle >}}
 </div>
 

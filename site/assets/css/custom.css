@@ -43,3 +43,7 @@
 /* Markdown headings inside code examples: the default grey is too faint */
 .chroma .gh, .chroma .gu { color: #3e1f8f; font-weight: 600; }
 .dark .chroma .gh, .dark .chroma .gu { color: #c9b8f7; }
+
+/* Home page: Hextra leaves a tall gap above the headline */
+.mdh-hero { margin-top: -1.5rem; }
+@media (max-width: 767px) { .mdh-hero { margin-top: -1rem; } }
