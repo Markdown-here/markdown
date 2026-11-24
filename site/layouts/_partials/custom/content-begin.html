@@ -21,7 +21,8 @@
   {{- with .Params.url }}
   <dt>Link</dt><dd><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd>
   {{- end }}
-  {{- with .Params.docType }}<dt>Type</dt><dd>{{ . }}</dd>{{ end }}
+  {{- /* Type, unless it only repeats the section (Resource, Person, Organization) */ -}}
+  {{- with .Params.docType }}{{ if not (in (slice "Resource" "Person" "Organization") .) }}<dt>Type</dt><dd>{{ . }}</dd>{{ end }}{{ end }}
   {{- /* The state is for curators, except stale: worth a warning before you install it */ -}}
   {{- if eq .Params.state "stale" }}<dt>Note</dt><dd>Unmaintained or outdated. Listed for context.</dd>{{ end }}
   {{- range $field := slice "people" "organizations" -}}
