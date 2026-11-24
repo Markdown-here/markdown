@@ -9,7 +9,7 @@ url: https://simonbc.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Co-creator of Jottit with Aaron Swartz.
+> Co-creator of Jottit with [Aaron Swartz](aaron-swartz.md).
 
 ## References
 

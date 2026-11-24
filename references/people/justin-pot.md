@@ -9,7 +9,7 @@ url: https://justinpot.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Tech writer; co-author of *Learning Markdown* and author of Wired's *How to Use Markdown*.
+> Tech writer; co-author of *[Learning Markdown](../resources/learning-markdown.md)* and author of [Wired](../organizations/wired.md)'s *[How to Use Markdown](../resources/how-to-use-markdown.md)*.
 
 ## References
 

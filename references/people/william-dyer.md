@@ -9,7 +9,7 @@ url: http://www.dyrobooks.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Programmer and analyst who restores old texts; author of *Using Markdown*. Writes as Bill Dyer on It's FOSS.
+> Programmer and analyst who restores old texts; author of *[Using Markdown](../resources/using-markdown.md)*. Writes as Bill Dyer on It's FOSS.
 
 ## References
 

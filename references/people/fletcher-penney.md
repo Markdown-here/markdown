@@ -9,7 +9,7 @@ url: https://fletcherpenney.net/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Creator of MultiMarkdown.
+> Creator of [MultiMarkdown](../tools/multimarkdown.md).
 
 ## References
 

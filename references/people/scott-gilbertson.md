@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Writer at [Wired](../organizations/wired.md); author of *The Eternal Truth of Markdown*.
+> Writer at [Wired](../organizations/wired.md); author of *[The Eternal Truth of Markdown](../resources/the-eternal-truth-of-markdown.md)*.
 
 ## References
 

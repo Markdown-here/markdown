@@ -9,7 +9,7 @@ url: https://ben.balter.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Creator of Word to Markdown.
+> Creator of [Word to Markdown](../tools/word-to-markdown.md).
 
 ## References
 

@@ -9,7 +9,7 @@ url:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Author of *Professional Markdown*.
+> Author of *[Professional Markdown](../resources/professional-markdown.md)*.
 
 ## References
 

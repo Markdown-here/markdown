@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Microsoft 365 developer advocate; author of *What's Up With Markdown*.
+> Microsoft 365 developer advocate; author of *[What's Up With Markdown](../resources/whats-up-with-markdown.md)*.
 
 ## References
 

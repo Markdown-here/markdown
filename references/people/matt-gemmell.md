@@ -9,7 +9,7 @@ url: https://mattgemmell.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Writer; author of *Writing in Markdown*.
+> Writer; author of *[Writing in Markdown](../resources/writing-in-markdown.md)*.
 
 ## References
 

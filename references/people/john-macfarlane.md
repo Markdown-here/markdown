@@ -9,7 +9,7 @@ url: https://johnmacfarlane.net/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - commonmark
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Philosophy professor, author of Pandoc, and editor of the CommonMark spec. [1]
+> Philosophy professor, author of [Pandoc](../tools/pandoc.md), and editor of the [CommonMark spec](../resources/commonmark-spec.md). [1]
 
 ## References
 

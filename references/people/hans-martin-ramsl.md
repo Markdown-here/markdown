@@ -9,7 +9,7 @@ url:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Author of *Markdown 101*.
+> Author of *[Markdown 101](../resources/markdown-101-ramsl.md)*.
 
 ## References
 

@@ -9,7 +9,7 @@ url:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Co-author of *Learning Markdown* (MakeUseOf).
+> Co-author of *[Learning Markdown](../resources/learning-markdown.md)* (MakeUseOf).
 
 ## References
 

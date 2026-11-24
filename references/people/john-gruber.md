@@ -9,7 +9,7 @@ url: https://daringfireball.net/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Writer of Daring Fireball and creator of Markdown (2004). [1]
+> Writer of Daring Fireball and creator of [Markdown](../resources/daring-fireball-markdown.md) (2004). [1]
 
 ## References
 

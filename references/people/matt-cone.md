@@ -9,7 +9,7 @@ url: https://www.mattcone.com/
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Technical writer; creator of the Markdown Guide website and book.
+> Technical writer; creator of the [Markdown Guide](../resources/markdown-guide.md) website and [book](../resources/the-markdown-guide-book.md).
 
 ## References
 

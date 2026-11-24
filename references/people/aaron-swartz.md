@@ -9,7 +9,7 @@ url: https://en.wikipedia.org/wiki/Aaron_Swartz
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ## Bio
 
-> Collaborated with John Gruber on the design of the original Markdown syntax, and was its first beta tester. [1]
+> Collaborated with [John Gruber](john-gruber.md) on the design of the original Markdown syntax, and was its first beta tester. [1]
 
 ## References
 
