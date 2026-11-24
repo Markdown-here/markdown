@@ -1,13 +1,14 @@
-# The markdown.here website. Hugo builds it from the Markdown already in this
-# repo: nothing here is a copy. How it works: docs/website.md.
+# The markdown.here website, for people learning Markdown. Hugo builds it from
+# the Markdown already in this repo: nothing here is a copy.
+# How it works: docs/website.md.
 
 baseURL: https://markdown.here/
 title: Markdown.here
 locale: en
 enableRobotsTXT: true
 titleCaseStyle: none # keep tags as written: #cli, not #Cli
-disableAliases: true
-resourceDir: .hugo-resources # build cache, not committed # reference entries use `aliases` for other names, not redirects
+disableAliases: true # reference entries use `aliases` for other names, not redirects
+resourceDir: .hugo-resources # build cache, not committed
 
 taxonomies:
   tag: tags
@@ -20,7 +21,7 @@ outputs:
 markup:
   goldmark:
     renderer:
-      unsafe: true # keep HTML comments and inline HTML from the source files
+      unsafe: true # allow inline HTML from the source files
   highlight:
     noClasses: false
 
@@ -31,18 +32,16 @@ module:
   imports:
     - path: github.com/imfing/hextra
   mounts:
-    # Site-only files: home page, templates, styles
+    # Site-only files: home page, course intros, templates, styles
     - { source: site/content, target: content }
     - { source: site/layouts, target: layouts }
     - { source: site/assets, target: assets }
     - { source: site/static, target: static }
-    # The source Markdown. site/content/_content.gotmpl turns it into pages,
-    # using `params.sources` below.
+    # The source files. site/content/_content.gotmpl turns them into pages,
+    # using `courses` and `sources` below.
     - { source: course, target: assets/src/course }
     - { source: references, target: assets/src/references }
     - { source: microsoft-atlassian, target: assets/src/microsoft-atlassian }
-    - { source: docs, target: assets/src/docs }
-    - { source: RELEASING.md, target: assets/src/RELEASING.md }
     - { source: media, target: static/media, files: ["*.svg", "*.png", "*.jpg"] }
 
 menu:
@@ -53,28 +52,38 @@ menu:
     - { name: Tools, pageRef: /tools, parent: references, weight: 2 }
     - { name: People, pageRef: /people, parent: references, weight: 3 }
     - { name: Organizations, pageRef: /organizations, parent: references, weight: 4 }
-    - { name: About the lists, pageRef: /references, parent: references, weight: 5 }
-    - { name: At work, pageRef: /microsoft-atlassian, weight: 3 }
-    - { name: Contribute, pageRef: /contribute, weight: 4 }
-    - { name: Search, weight: 5, params: { type: search } }
-    - { name: GitHub, weight: 6, url: "https://github.com/thephm/markdown", params: { icon: github } }
+    - { name: What works where, pageRef: /microsoft-atlassian, weight: 3 }
+    - { name: Search, weight: 4, params: { type: search } }
+    - { name: GitHub, weight: 5, url: "https://github.com/thephm/markdown", params: { icon: github } }
 
 params:
   description: Learn Markdown, try it, and find everything else worth knowing about it.
   images: [/images/social-card.png] # preview image when a page is shared
 
-  # Where the source lives. Used for "Edit this page", downloads, and links to
-  # files that aren't web pages, like deck.yml. If the repo moves, change it
-  # here, in `editURL.base` below, and in the GitHub menu item above.
+  # Where the source lives. Used for downloads, the footer, and links to files
+  # that aren't web pages. If the repo moves, change it here and in the GitHub
+  # menu item above.
   repo: https://github.com/thephm/markdown
   branch: main
 
-  # Which repo files become pages, and where. First match wins. A README.md, or
-  # a file mapped to <folder>/README.md, becomes that folder's index page.
-  # Files that match nothing, or contain a `skip` folder, aren't published.
+  # Courses: each deck becomes a lesson, one page per slide, in deck order.
+  # Slides marked `<!-- _class: lead -->` or `break` (title, questions,
+  # closing, section dividers) are for live sessions and are left out.
+  # Speaker notes are left out too. The course's intro page is in site/content.
+  courses:
+    - { deck: course/markdown-101/deck.yml, path: courses/markdown-101 }
+    - { deck: course/markdown-101/editions/microsoft-deck.yml, path: courses/markdown-101-microsoft }
+
+  # Other files that become pages, and where. First match wins. A file mapped
+  # to <folder>/README.md becomes that folder's main page. Anything not listed
+  # here stays on GitHub only: course plans, contributor docs, templates.
   sources:
-    - { from: course/, to: courses/ }
-    - { from: references/README.md, to: references/README.md }
+    - { from: course/markdown-101/cheatsheet.md, to: courses/markdown-101/cheatsheet.md }
+    - { from: course/markdown-101/exercise-before.md, to: courses/markdown-101/exercise-before.md }
+    - { from: course/markdown-101/exercise-after.md, to: courses/markdown-101/exercise-after.md }
+    - { from: course/markdown-101/editions/microsoft-cheatsheet.md, to: courses/markdown-101-microsoft/cheatsheet.md }
+    - { from: course/markdown-101/editions/teams-recap-before.md, to: courses/markdown-101-microsoft/teams-recap-before.md }
+    - { from: course/markdown-101/editions/teams-recap-after.md, to: courses/markdown-101-microsoft/teams-recap-after.md }
     - { from: references/resources.md, to: resources/README.md }
     - { from: references/tools.md, to: tools/README.md }
     - { from: references/people.md, to: people/README.md }
@@ -83,49 +92,23 @@ params:
     - { from: references/tools/, to: tools/ }
     - { from: references/people/, to: people/ }
     - { from: references/organizations/, to: organizations/ }
-    - { from: microsoft-atlassian/, to: microsoft-atlassian/ }
-    - { from: docs/, to: contribute/ }
-    - { from: RELEASING.md, to: contribute/releasing.md }
-  skip: [slides/, microsoft-slides/]
+    - { from: microsoft-atlassian/markdown-support.md, to: microsoft-atlassian/README.md }
 
-  # Titles and sidebar order, keyed by repo path. Pages not listed take their
-  # title from the first `# heading` and sort by title.
+  # Reference entries in these states aren't published
+  hideStates: [draft, broken, retired]
+
+  # Titles and sidebar order for the files above, keyed by repo path. Without a
+  # title, a page takes its first `# heading`. `after: <slide>` puts a page
+  # right after that lesson (`order` sorts pages after the same lesson).
+  # Higher weights go lower in the sidebar.
   pages:
-    course/markdown-101/README.md:
-      weight: 1
-      downloads:
-        - { file: markdown-101.pdf, label: "Slides (PDF)" }
-        - { file: markdown-101.pptx, label: "Slides (PowerPoint)" }
-        - { file: markdown-101.html, label: "Slides (HTML, opens in a browser)" }
-        - { file: markdown-cheatsheet.pdf, label: "Cheat sheet (PDF)" }
-    course/markdown-101/cheatsheet.md:
-      weight: 1
-      downloads:
-        - { file: markdown-cheatsheet.pdf, label: "Cheat sheet (PDF)" }
-    course/markdown-101/exercise-before.md: { weight: 2, title: "Exercise: before" }
-    course/markdown-101/exercise-after.md: { weight: 3, title: "Exercise: after" }
-    course/markdown-101/editions/microsoft.md:
-      weight: 4
-      downloads:
-        - { file: markdown-101-microsoft.pdf, label: "Slides (PDF)" }
-        - { file: markdown-101-microsoft.pptx, label: "Slides (PowerPoint)" }
-        - { file: markdown-101-microsoft.html, label: "Slides (HTML, opens in a browser)" }
-        - { file: markdown-cheatsheet-microsoft.pdf, label: "Cheat sheet (PDF)" }
-    course/markdown-101/editions/microsoft-cheatsheet.md:
-      weight: 5
-      downloads:
-        - { file: markdown-cheatsheet-microsoft.pdf, label: "Cheat sheet (PDF)" }
-    course/markdown-101/editions/teams-recap-before.md: { weight: 6, title: "Teams recap exercise: before" }
-    course/markdown-101/editions/teams-recap-after.md: { weight: 7, title: "Teams recap exercise: after" }
-    course/markdown-101/extending.md: { weight: 8 }
-    microsoft-atlassian/README.md: { title: "Markdown at work" }
+    course/markdown-101/exercise-before.md: { title: "Practice: the messy note", after: exercise, order: 1 }
+    course/markdown-101/exercise-after.md: { title: "Practice: one answer", after: exercise, order: 2 }
+    course/markdown-101/cheatsheet.md: { weight: 100000 }
+    course/markdown-101/editions/teams-recap-before.md: { title: "Practice: the messy recap", after: exercise, order: 1 }
+    course/markdown-101/editions/teams-recap-after.md: { title: "Practice: one answer", after: exercise, order: 2 }
+    course/markdown-101/editions/microsoft-cheatsheet.md: { weight: 100000 }
     microsoft-atlassian/markdown-support.md: { title: "What works where" }
-    docs/README.md: { title: Contribute }
-    docs/building.md: { weight: 1 }
-    RELEASING.md: { weight: 2, title: "Release a version" }
-    docs/conventions.md: { weight: 3 }
-    docs/website.md: { weight: 4 }
-    docs/website-setup.md: { weight: 5 }
 
   navbar:
     displayTitle: true
@@ -140,8 +123,7 @@ params:
     displayPoweredBy: false
   displayUpdatedDate: false
   editURL:
-    enable: true
-    base: https://github.com/thephm/markdown/edit/main
+    enable: false
   search:
     enable: true
     type: flexsearch
@@ -156,6 +138,5 @@ params:
       enable: true
       display: hover
   page:
-    width: wide # room for the reference tables
     contextMenu:
       enable: false

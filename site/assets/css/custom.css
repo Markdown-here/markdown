@@ -36,3 +36,10 @@
 
 /* Exercise files: wrap long lines so the whole file is visible */
 .mdh-exercise pre, .mdh-exercise code { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Images in lessons: slides use full-slide pictures, too big for a page */
+.content img { max-width: min(100%, 32rem); max-height: 24rem; height: auto; }
+
+/* Markdown headings inside code examples: the default grey is too faint */
+.chroma .gh, .chroma .gu { color: #3e1f8f; font-weight: 600; }
+.dark .chroma .gh, .dark .chroma .gu { color: #c9b8f7; }

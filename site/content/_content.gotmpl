@@ -1,37 +1,80 @@
 {{- /*
-  Content adapter: turns the repo's own Markdown files into site pages, so the
-  site never holds a copy of them. hugo.yaml mounts the source folders under
-  assets/src/ and lists which files go where (`params.sources`).
-
-  For each file it:
-  - reads the frontmatter and keeps it as page params (`source` is the repo path)
-  - takes the title from the first `# heading`, or from `params.pages` in
-    hugo.yaml, and drops that heading from the body (the layout prints it)
-  - shows exercises as plain text you can copy, since that's the point of them
-  - drops empty template sections (like `## Notes` with a lone `-`) from
-    reference entries
+  Content adapter: turns the repo's own files into site pages, so the site
+  never holds a copy of them. hugo.yaml mounts the source folders under
+  assets/src/ and says what goes where (`params.courses`, `params.sources`).
 
   Why not plain Hugo content folders: Hugo reads `type`, `url`, and `aliases`
   in frontmatter as its own settings, and our files use them for other things.
+
+  1. Courses: each deck becomes a lesson, one page per slide, in deck order.
+     Live-session slides (`_class: lead` or `break`) and speaker notes are
+     left out. A slide that two courses share is published in both, but search
+     and the sitemap only list it once.
+  2. Other files: the cheat sheets, practice files, references, and what works
+     where. Titles come from the first `# heading`, or from `params.pages`.
 */ -}}
 {{- $repo := site.Params.repo -}}
 {{- $branch := site.Params.branch -}}
+{{- $hide := site.Params.hideStates | default slice -}}
+
+{{- /* 1. Courses */ -}}
+{{- $lessonWeights := dict -}}
+{{- $firstHome := dict -}}
+{{- range site.Params.courses -}}
+  {{- $course := . -}}
+  {{- $deck := partial "deck.html" $course.deck -}}
+  {{- $n := 0 -}}
+  {{- range $deck.slides -}}
+    {{- $id := . -}}
+    {{- $file := "" -}}
+    {{- range $deck.dirs -}}
+      {{- $candidate := printf "%s/%s.md" . $id -}}
+      {{- if and (not $file) (resources.Get (printf "src/%s" $candidate)) -}}{{- $file = $candidate -}}{{- end -}}
+    {{- end -}}
+    {{- if not $file -}}{{- errorf "%s: slide %q not found" $course.deck $id -}}{{- end -}}
+    {{- $parsed := partial "parse.html" (resources.Get (printf "src/%s" $file)).Content -}}
+    {{- if not (findRE `<!--\s*_class:\s*(lead|break)\b` $parsed.body 1) -}}
+      {{- $n = add $n 1 -}}
+      {{- $content := replaceRE `(?s)<!--.*?-->` "" $parsed.body | strings.TrimLeft "\n" -}}
+      {{- $title := $id | humanize -}}
+      {{- with findRESubmatch `\A#{1,2} +(.+?) *(?:\n|\z)` $content 1 -}}
+        {{- $title = index (index . 0) 1 | replaceRE "[`*]" "" -}}
+        {{- $content = strings.TrimPrefix (index (index . 0) 0) $content -}}
+      {{- end -}}
+      {{- $pagePath := printf "%s/%s" $course.path $id -}}
+      {{- $weight := mul $n 10 -}}
+      {{- $lessonWeights = merge $lessonWeights (dict $pagePath $weight) -}}
+      {{- $params := dict "source" $file "docType" "Slide" -}}
+      {{- $sitemap := dict -}}
+      {{- with index $firstHome $file -}}
+        {{- /* Shared with an earlier course: point search engines at that page */ -}}
+        {{- $params = merge $params (dict "canonical" (printf "%s%s/" site.BaseURL .) "excludeSearch" true) -}}
+        {{- $sitemap = dict "disable" true -}}
+      {{- else -}}
+        {{- $firstHome = merge $firstHome (dict $file $pagePath) -}}
+      {{- end -}}
+      {{- $.AddPage (dict
+        "path" $pagePath
+        "kind" "page"
+        "title" $title
+        "weight" $weight
+        "params" $params
+        "sitemap" $sitemap
+        "content" (dict "mediaType" "text/markdown" "value" $content)
+      ) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 2. Other files */ -}}
 {{- range resources.Match "src/**.md" -}}
   {{- $repoPath := .Name | strings.TrimPrefix "/" | strings.TrimPrefix "src/" -}}
   {{- $target := partial "site-path.html" $repoPath -}}
-  {{- if $target -}}
-    {{- $text := replace .Content "\r\n" "\n" -}}
-
-    {{- /* Frontmatter and body */ -}}
-    {{- $fm := dict -}}
-    {{- $body := $text -}}
-    {{- with findRESubmatch `(?s)\A---\n(.*?)\n---\n?(.*)\z` $text 1 -}}
-      {{- $match := index . 0 -}}
-      {{- with index $match 1 | strings.TrimSpace -}}
-        {{- $fm = transform.Unmarshal (dict "format" "yaml") . -}}
-      {{- end -}}
-      {{- $body = index $match 2 -}}
-    {{- end -}}
+  {{- $parsed := partial "parse.html" .Content -}}
+  {{- $fm := $parsed.fm -}}
+  {{- $isRef := hasPrefix $repoPath "references/" -}}
+  {{- if and $target (not (and $isRef (in $hide ($fm.state | default "")))) -}}
+    {{- $body := $parsed.body -}}
     {{- $docType := $fm.type | default "" -}}
     {{- $extra := index site.Params.pages (lower $repoPath) | default dict -}}
 
@@ -49,20 +92,50 @@
     {{- with $extra.title -}}{{- $title = . -}}{{- end -}}
     {{- if not $title -}}{{- $title = path.Base $target.path | humanize -}}{{- end -}}
 
-    {{- /* Exercises: the raw file, then how it renders */ -}}
+    {{- /* Order: a weight, or right after a lesson */ -}}
+    {{- $weight := $extra.weight | default 0 -}}
+    {{- with $extra.after -}}
+      {{- $key := printf "%s/%s" (path.Dir $target.path) . -}}
+      {{- $base := index $lessonWeights $key -}}
+      {{- if not $base -}}{{- errorf "%s: `after: %s` isn't a lesson in %s" $repoPath . (path.Dir $target.path) -}}{{- end -}}
+      {{- $weight = add $base ($extra.order | default 1) -}}
+    {{- end -}}
+
+    {{- /* Practice files: the raw file, then how it renders */ -}}
     {{- if eq $docType "Exercise" -}}
       {{- $raw := strings.Trim $body "\n" -}}
       {{- $content = printf "Copy this into your editor, or [download the file](%s/raw/%s/%s).\n\n<div class=\"mdh-exercise\">\n\n`````markdown\n%s\n`````\n\n</div>\n\n<details>\n<summary>See how it renders</summary>\n\n%s\n\n</details>\n" $repo $branch $repoPath $raw $raw -}}
     {{- end -}}
 
+    {{- /* Reference lists: a table built from references.json */ -}}
+    {{- if and $isRef (eq $docType "List") -}}
+      {{- $folder := path.Base $target.path -}}
+      {{- $intro := "" -}}
+      {{- with findRESubmatch `(?m)^(.+?) \d+ entries\.` $content 1 -}}{{- $intro = index (index . 0) 1 -}}{{- end -}}
+      {{- $rows := slice -}}
+      {{- range (resources.Get "src/references/references.json" | transform.Unmarshal) -}}
+        {{- if and (hasPrefix .id (printf "%s/" $folder)) (not (in $hide .state)) -}}
+          {{- $entry := partial "parse.html" (resources.Get (printf "src/%s" .path)).Content -}}
+          {{- /* Keep link text, drop the link: it's relative to the entry's own file */ -}}
+          {{- $summary := partial "summary.html" $entry.body | replaceRE `\[([^\]]+)\]\([^)]*\)` "$1" -}}
+          {{- $summary = replace $summary "|" "\\|" -}}
+          {{- $rows = $rows | append (dict "sort" (lower .title) "row" (printf "| [%s](/%s/) | %s |" .title .id $summary)) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $lines := slice $intro "" "| Name | What it is |" "|---|---|" -}}
+      {{- range sort $rows "sort" -}}{{- $lines = $lines | append .row -}}{{- end -}}
+      {{- $content = delimit $lines "\n" -}}
+    {{- end -}}
+
     {{- /* Reference entries: drop sections that only hold an empty "-" */ -}}
-    {{- if hasPrefix $repoPath "references/" -}}
+    {{- $description := "" -}}
+    {{- if and $isRef (ne $docType "List") -}}
+      {{- $description = partial "summary.html" $content -}}
       {{- $parts := split $content "\n## " -}}
       {{- $kept := slice (index $parts 0) -}}
       {{- range after 1 $parts -}}
         {{- $lines := split . "\n" -}}
-        {{- $restText := delimit (after 1 $lines) "\n" -}}
-        {{- if ne (replaceRE `[\s-]` "" $restText) "" -}}
+        {{- if ne (replaceRE `[\s-]` "" (delimit (after 1 $lines) "\n")) "" -}}
           {{- $kept = $kept | append . -}}
         {{- end -}}
       {{- end -}}
@@ -73,18 +146,13 @@
     {{- $tags := slice -}}
     {{- range $fm.tags -}}{{- with . -}}{{- $tags = $tags | append . -}}{{- end -}}{{- end -}}
 
-    {{- $params := merge $fm (dict
-      "source" $repoPath
-      "docType" $docType
-      "tags" $tags
-      "downloads" ($extra.downloads | default slice)
-      "editURL" (printf "%s/edit/%s/%s" $repo $branch $repoPath)
-    ) -}}
+    {{- $params := merge $fm (dict "source" $repoPath "docType" $docType "tags" $tags) -}}
+    {{- with $description -}}{{- $params = merge $params (dict "description" .) -}}{{- end -}}
     {{- $.AddPage (dict
       "path" $target.path
       "kind" $target.kind
       "title" $title
-      "weight" ($extra.weight | default 0)
+      "weight" $weight
       "params" $params
       "content" (dict "mediaType" "text/markdown" "value" $content)
     ) -}}

@@ -14,5 +14,7 @@
     {{- $src = printf "%s/raw/%s/%s" site.Params.repo site.Params.branch $repoPath -}}
   {{- end -}}
 {{- end -}}
-<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" />
+{{- /* Marp background images, like ![bg right:30%](...), have settings, not alt text */ -}}
+{{- $alt := cond (findRE `^bg( |$)` .PlainText 1) "" .PlainText -}}
+<img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" />
 {{- /* no trailing newline */ -}}

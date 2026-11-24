@@ -1,25 +1,19 @@
 {{- /*
   Map a repo path, like "course/markdown-101/cheatsheet.md", to where it lives
-  on the site, using `params.sources` and `params.skip` in hugo.yaml.
+  on the site, using `params.sources` in hugo.yaml.
 
   Returns a dict { path, kind } (path has no leading or trailing slash, kind is
-  "page" or "section"), or nothing if the file isn't published.
+  "page" or "section"), or false if the file isn't published this way.
 */ -}}
 {{- $repoPath := . -}}
 {{- $result := false -}}
-{{- $skipped := false -}}
-{{- range site.Params.skip -}}
-  {{- if strings.Contains $repoPath . -}}{{- $skipped = true -}}{{- end -}}
-{{- end -}}
-{{- if not $skipped -}}
-  {{- range site.Params.sources -}}
-    {{- if and (not $result) (strings.HasPrefix $repoPath .from) -}}
-      {{- $mapped := printf "%s%s" .to (strings.TrimPrefix .from $repoPath) -}}
-      {{- if eq (path.Base $mapped) "README.md" -}}
-        {{- $result = dict "path" (strings.Trim (path.Dir $mapped) "/.") "kind" "section" -}}
-      {{- else if strings.HasSuffix $mapped ".md" -}}
-        {{- $result = dict "path" (strings.TrimSuffix ".md" $mapped) "kind" "page" -}}
-      {{- end -}}
+{{- range site.Params.sources -}}
+  {{- if and (not $result) (strings.HasPrefix $repoPath .from) -}}
+    {{- $mapped := printf "%s%s" .to (strings.TrimPrefix .from $repoPath) -}}
+    {{- if eq (path.Base $mapped) "README.md" -}}
+      {{- $result = dict "path" (strings.Trim (path.Dir $mapped) "/.") "kind" "section" -}}
+    {{- else if strings.HasSuffix $mapped ".md" -}}
+      {{- $result = dict "path" (strings.TrimSuffix ".md" $mapped) "kind" "page" -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

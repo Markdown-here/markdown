@@ -1,0 +1,15 @@
+{{- /*
+  Split a Markdown file's text into frontmatter and body.
+  Returns a dict { fm, body }: fm is the YAML frontmatter as a map.
+*/ -}}
+{{- $text := replace . "\r\n" "\n" -}}
+{{- $fm := dict -}}
+{{- $body := $text -}}
+{{- with findRESubmatch `(?s)\A---\n(.*?)\n---\n?(.*)\z` $text 1 -}}
+  {{- $match := index . 0 -}}
+  {{- with index $match 1 | strings.TrimSpace -}}
+    {{- $fm = transform.Unmarshal (dict "format" "yaml") . -}}
+  {{- end -}}
+  {{- $body = index $match 2 -}}
+{{- end -}}
+{{- return dict "fm" $fm "body" $body -}}

@@ -1,0 +1,41 @@
+{{- /*
+  Read a deck file, like "course/markdown-101/deck.yml", and return its slides
+  in order, the same way scripts/build_deck.py does: `extends`, `slide_dirs`
+  (searched first), `insert` (after/before), and `remove`.
+
+  Returns a dict { dirs, slides }: the slide folders (repo paths, most
+  specific first) and the slide IDs in order.
+*/ -}}
+{{- $deckPath := . -}}
+{{- $res := resources.Get (printf "src/%s" $deckPath) -}}
+{{- if not $res -}}{{- errorf "deck %s not found" $deckPath -}}{{- end -}}
+{{- $data := $res | transform.Unmarshal -}}
+{{- $dir := path.Dir $deckPath -}}
+
+{{- $base := dict "dirs" slice "slides" slice -}}
+{{- with $data.extends -}}
+  {{- $base = partial "deck.html" (path.Join $dir .) -}}
+{{- end -}}
+
+{{- $dirs := slice -}}
+{{- range $data.slide_dirs -}}{{- $dirs = $dirs | append (path.Join $dir .) -}}{{- end -}}
+{{- range $base.dirs -}}{{- $dirs = $dirs | append . -}}{{- end -}}
+
+{{- $slides := $base.slides -}}
+{{- with $data.slides -}}{{- $slides = . -}}{{- end -}}
+
+{{- with $data.remove -}}{{- $slides = complement . $slides -}}{{- end -}}
+
+{{- range $data.insert -}}
+  {{- $anchor := .after | default .before -}}
+  {{- $at := -1 -}}
+  {{- range $i, $id := $slides -}}{{- if eq $id $anchor -}}{{- $at = $i -}}{{- end -}}{{- end -}}
+  {{- if lt $at 0 -}}{{- errorf "%s: can't insert next to %q, it isn't in the deck" $deckPath $anchor -}}{{- end -}}
+  {{- if .after -}}{{- $at = add $at 1 -}}{{- end -}}
+  {{- $new := first $at $slides -}}
+  {{- range .slides -}}{{- $new = $new | append . -}}{{- end -}}
+  {{- range after $at $slides -}}{{- $new = $new | append . -}}{{- end -}}
+  {{- $slides = $new -}}
+{{- end -}}
+
+{{- return dict "dirs" $dirs "slides" $slides -}}

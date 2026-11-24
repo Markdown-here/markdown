@@ -1,0 +1,13 @@
+{{- /* Hextra's page description, plus `params.description`, which the content
+   adapter sets to a reference entry's summary. */ -}}
+{{ with .Description | default .Params.description | plainify | htmlUnescape -}}
+  {{ . -}}
+{{ else -}}
+  {{ if .IsHome -}}
+    {{ with .Site.Params.description | plainify | htmlUnescape -}}
+      {{ . -}}
+    {{ end -}}
+  {{ else -}}
+    {{ .Summary | plainify | htmlUnescape | chomp -}}
+  {{ end -}}
+{{ end -}}
