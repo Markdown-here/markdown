@@ -26,7 +26,7 @@ Write like a person who knows the subject, not like an AI.
 - Every `.md` file starts with frontmatter whose first field is `type`, capitalized. Allowed types are listed in [docs/conventions.md](docs/conventions.md#document-types).
 - After adding or changing anything in `references/`, run `python scripts/build_references.py`, then `--check`. Commit the generated files.
 - Slugs are permanent. Never rename or reuse one.
-- Work-specific content goes in `work/`. Keep the core course tool-neutral.
+- Content for a specific workplace tool stack goes in `microsoft-atlassian/`. Keep the core course tool-neutral.
 - Mark anything untested at work with **(verify)**.
 - Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits the repo in its footer. Render it and look at it before calling it done.
 - Slides are one file per slide (`type: Slide`) in `slides/` folders. Deck files (`deck.yml`, `*-deck.yml`) set the order. Edit slide files, never the built deck in `dist/`. Slide IDs (file names) are permanent. See [course/markdown-101/extending.md](course/markdown-101/extending.md).

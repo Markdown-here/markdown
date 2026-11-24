@@ -19,10 +19,10 @@ Every Markdown file in this repo starts with YAML frontmatter, and its **first f
 | `Guide` | How-to instructions |
 | `List` | A generated list of references |
 | `Inbox` | Items waiting for triage |
-| `Context` | Background on an environment, like [work/](../work/) |
+| `Context` | Background on an environment, like [microsoft-atlassian/](../microsoft-atlassian/) |
 | `Exercise` | A course exercise: starter file or answer key |
 | `Cheatsheet` | A one-page handout |
-| `Reference` | A lookup page, like [what works where](../work/markdown-support.md) |
+| `Reference` | A lookup page, like [what works where](../microsoft-atlassian/markdown-support.md) |
 
 Reference entries and templates use their own types (`Resource`, `App`, `Person`, and so on): see [references/README.md](../references/README.md). To add a new type, add it here and to `DOC_TYPES` in [`scripts/build_references.py`](../scripts/build_references.py).
 
@@ -37,7 +37,7 @@ Every reference is its own Markdown file with YAML frontmatter. Its `slug` is th
 | [course/](../course/) | The Markdown 101 course, its editions, slides, and handouts |
 | [references/](../references/) | One file per reference entry, plus the generated lists |
 | [templates/](../templates/) | Entry templates, based on [HAL_md](https://github.com/thephm/hal_md) |
-| [work/](../work/) | Work-specific content. The core course stays tool-neutral |
+| [microsoft-atlassian/](../microsoft-atlassian/) | Markdown in a Microsoft 365, GitHub, and Confluence workplace. The core course stays tool-neutral |
 | [design/](../design/) | The Marp theme for slides and handouts |
 | [media/](../media/) | Source images and diagrams |
 | [scripts/](../scripts/) | Build scripts for the reference lists, decks, and diagrams |

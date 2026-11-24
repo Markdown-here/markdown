@@ -31,8 +31,8 @@ The slides and handouts are also available as PDF and PowerPoint on the [Release
 
 | Page | What it covers |
 |---|---|
-| [What works where](work/markdown-support.md) | Which Markdown features work in each app we use |
-| [Work context](work/README.md) | Our tools, our house flavor, and the plan to publish docs from Git to Confluence |
+| [What works where](microsoft-atlassian/markdown-support.md) | Which Markdown features work in each app we use |
+| [Work context](microsoft-atlassian/README.md) | Our tools, our house flavor, and the plan to publish docs from Git to Confluence |
 
 ## Contribute
 

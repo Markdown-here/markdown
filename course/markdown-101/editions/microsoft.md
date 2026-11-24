@@ -4,7 +4,7 @@ type: Course
 
 # Markdown 101: Microsoft edition
 
-Same structure and timing as the [core course](../README.md), tuned for a workplace on Microsoft 365, GitHub, and Confluence. Background on the environment and the bigger docs-as-code goal: [work context](../../../work/README.md).
+Same structure and timing as the [core course](../README.md), tuned for a workplace on Microsoft 365, GitHub, and Confluence. Background on the environment and the bigger docs-as-code goal: [work context](../../../microsoft-atlassian/README.md).
 
 > Items marked **(verify)** need a quick test in the real environment before the session.
 
@@ -75,7 +75,7 @@ No setup at all: download the HTML, PDF, or PowerPoint from the latest [release]
 
 ## Edition-specific materials
 
-- [x] [Slide deck](microsoft-deck.yml) in [Marp](../../../references/tools/marp.md), with presenter notes: the core deck plus the slides in [microsoft-slides/](microsoft-slides/). See [Presenting](#presenting) to preview and export it. It follows the house flavor in [Which Markdown?](../../../work/README.md#which-markdown)
+- [x] [Slide deck](microsoft-deck.yml) in [Marp](../../../references/tools/marp.md), with presenter notes: the core deck plus the slides in [microsoft-slides/](microsoft-slides/). See [Presenting](#presenting) to preview and export it. It follows the house flavor in [Which Markdown?](../../../microsoft-atlassian/README.md#which-markdown)
 - [x] [`teams-recap-before.md`](teams-recap-before.md): a realistic, messy meeting recap (no real names or projects), with the answer key [`teams-recap-after.md`](teams-recap-after.md)
 - [ ] Mermaid version of a familiar draw.io diagram
 - [x] [Cheat sheet variant](microsoft-cheatsheet.md) with a "Teams vs Markdown" box
