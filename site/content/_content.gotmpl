@@ -174,7 +174,7 @@
       {{- $content = delimit $lines "\n" -}}
     {{- end -}}
 
-    {{- /* Reference entries: drop sections that only hold an empty "-", and
+    {{- /* Reference entries: drop sections that only hold an empty "-" or "1.", and
          sections listed in `hideSections` (your own notes) */ -}}
     {{- $description := "" -}}
     {{- if and $isRef (ne $docType "List") -}}
@@ -184,7 +184,8 @@
       {{- range after 1 $parts -}}
         {{- $lines := split . "\n" -}}
         {{- $heading := index $lines 0 | strings.TrimSpace -}}
-        {{- if and (ne (replaceRE `[\s-]` "" (delimit (after 1 $lines) "\n")) "") (not (in (site.Params.hideSections | default slice) $heading)) -}}
+        {{- $rest := replaceRE `(?m)^\s*(?:-|\d+\.)\s*$` "" (delimit (after 1 $lines) "\n") -}}
+        {{- if and (ne (strings.TrimSpace $rest) "") (not (in (site.Params.hideSections | default slice) $heading)) -}}
           {{- $kept = $kept | append . -}}
         {{- end -}}
       {{- end -}}
