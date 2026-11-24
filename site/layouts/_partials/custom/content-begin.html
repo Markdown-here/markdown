@@ -36,10 +36,12 @@
   <dt>{{ $field | humanize }}</dt><dd>{{ delimit . ", " | safeHTML }}</dd>
     {{- end -}}
   {{- end }}
-  {{- /* People and organizations: the entries that name them */ -}}
+  {{- /* People and organizations: the resources and tools that name them */ -}}
   {{- $kind := path.Base (path.Dir $source) -}}
   {{- if and (in (slice "people" "organizations") $kind) .Params.slug -}}
+    {{- /* Only resources and tools: people and organizations have their own rows */ -}}
     {{- $named := where site.RegularPages (printf "Params.%s" $kind) "intersect" (slice .Params.slug) -}}
+    {{- $named = where $named "Section" "in" (slice "resources" "tools") -}}
     {{- with sort $named "Title" }}
   <dt>{{ cond (eq $kind "people") "Work" "Related" }}</dt><dd>{{ range $i, $p := . }}{{ if $i }}, {{ end }}<a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ end }}</dd>
     {{- end -}}
