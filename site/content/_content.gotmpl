@@ -1,0 +1,92 @@
+{{- /*
+  Content adapter: turns the repo's own Markdown files into site pages, so the
+  site never holds a copy of them. hugo.yaml mounts the source folders under
+  assets/src/ and lists which files go where (`params.sources`).
+
+  For each file it:
+  - reads the frontmatter and keeps it as page params (`source` is the repo path)
+  - takes the title from the first `# heading`, or from `params.pages` in
+    hugo.yaml, and drops that heading from the body (the layout prints it)
+  - shows exercises as plain text you can copy, since that's the point of them
+  - drops empty template sections (like `## Notes` with a lone `-`) from
+    reference entries
+
+  Why not plain Hugo content folders: Hugo reads `type`, `url`, and `aliases`
+  in frontmatter as its own settings, and our files use them for other things.
+*/ -}}
+{{- $repo := site.Params.repo -}}
+{{- $branch := site.Params.branch -}}
+{{- range resources.Match "src/**.md" -}}
+  {{- $repoPath := .Name | strings.TrimPrefix "/" | strings.TrimPrefix "src/" -}}
+  {{- $target := partial "site-path.html" $repoPath -}}
+  {{- if $target -}}
+    {{- $text := replace .Content "\r\n" "\n" -}}
+
+    {{- /* Frontmatter and body */ -}}
+    {{- $fm := dict -}}
+    {{- $body := $text -}}
+    {{- with findRESubmatch `(?s)\A---\n(.*?)\n---\n?(.*)\z` $text 1 -}}
+      {{- $match := index . 0 -}}
+      {{- with index $match 1 | strings.TrimSpace -}}
+        {{- $fm = transform.Unmarshal (dict "format" "yaml") . -}}
+      {{- end -}}
+      {{- $body = index $match 2 -}}
+    {{- end -}}
+    {{- $docType := $fm.type | default "" -}}
+    {{- $extra := index site.Params.pages (lower $repoPath) | default dict -}}
+
+    {{- /* Title */ -}}
+    {{- $title := "" -}}
+    {{- $content := strings.TrimLeft "\n" $body -}}
+    {{- with findRESubmatch `\A# +(.+?) *(?:\n|\z)` $content 1 -}}
+      {{- $title = index (index . 0) 1 | replaceRE "[`*]" "" -}}
+      {{- $content = strings.TrimPrefix (index (index . 0) 0) $content -}}
+    {{- end -}}
+    {{- with $fm.title -}}{{- if not $title -}}{{- $title = . -}}{{- end -}}{{- end -}}
+    {{- if and (not $title) $fm.first_name -}}
+      {{- $title = delimit (slice $fm.first_name $fm.last_name) " " | strings.TrimSpace -}}
+    {{- end -}}
+    {{- with $extra.title -}}{{- $title = . -}}{{- end -}}
+    {{- if not $title -}}{{- $title = path.Base $target.path | humanize -}}{{- end -}}
+
+    {{- /* Exercises: the raw file, then how it renders */ -}}
+    {{- if eq $docType "Exercise" -}}
+      {{- $raw := strings.Trim $body "\n" -}}
+      {{- $content = printf "Copy this into your editor, or [download the file](%s/raw/%s/%s).\n\n<div class=\"mdh-exercise\">\n\n`````markdown\n%s\n`````\n\n</div>\n\n<details>\n<summary>See how it renders</summary>\n\n%s\n\n</details>\n" $repo $branch $repoPath $raw $raw -}}
+    {{- end -}}
+
+    {{- /* Reference entries: drop sections that only hold an empty "-" */ -}}
+    {{- if hasPrefix $repoPath "references/" -}}
+      {{- $parts := split $content "\n## " -}}
+      {{- $kept := slice (index $parts 0) -}}
+      {{- range after 1 $parts -}}
+        {{- $lines := split . "\n" -}}
+        {{- $restText := delimit (after 1 $lines) "\n" -}}
+        {{- if ne (replaceRE `[\s-]` "" $restText) "" -}}
+          {{- $kept = $kept | append . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $content = delimit $kept "\n## " -}}
+    {{- end -}}
+
+    {{- /* Tags, without empty entries */ -}}
+    {{- $tags := slice -}}
+    {{- range $fm.tags -}}{{- with . -}}{{- $tags = $tags | append . -}}{{- end -}}{{- end -}}
+
+    {{- $params := merge $fm (dict
+      "source" $repoPath
+      "docType" $docType
+      "tags" $tags
+      "downloads" ($extra.downloads | default slice)
+      "editURL" (printf "%s/edit/%s/%s" $repo $branch $repoPath)
+    ) -}}
+    {{- $.AddPage (dict
+      "path" $target.path
+      "kind" $target.kind
+      "title" $title
+      "weight" ($extra.weight | default 0)
+      "params" $params
+      "content" (dict "mediaType" "text/markdown" "value" $content)
+    ) -}}
+  {{- end -}}
+{{- end -}}

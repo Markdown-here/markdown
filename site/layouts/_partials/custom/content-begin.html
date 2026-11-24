@@ -1,0 +1,43 @@
+{{- /* Shown above the page content. Hextra calls this partial on every page. */ -}}
+
+{{- /* Course downloads, from `downloads` in params.pages (hugo.yaml). The Course
+   workflow builds them and attaches them to each release. */ -}}
+{{- with .Params.downloads -}}
+<div class="mdh-box">
+  <p><strong>Download</strong></p>
+  <ul>
+    {{- range . }}
+    <li><a href="{{ site.Params.repo }}/releases/latest/download/{{ .file }}">{{ .label }}</a></li>
+    {{- end }}
+  </ul>
+  <p class="mdh-muted">From the <a href="{{ site.Params.repo }}/releases/latest">latest release</a>.</p>
+</div>
+{{- end -}}
+
+{{- /* Reference entries: the facts from the frontmatter */ -}}
+{{- $source := .Params.source | default "" -}}
+{{- if and (hasPrefix $source "references/") (ne (path.Base $source) "README.md") (strings.Contains (strings.TrimPrefix "references/" $source) "/") -}}
+<dl class="mdh-facts">
+  {{- with .Params.url }}
+  <dt>Link</dt><dd><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd>
+  {{- end }}
+  {{- with .Params.docType }}<dt>Type</dt><dd>{{ . }}</dd>{{ end }}
+  {{- with .Params.state }}<dt>State</dt><dd>{{ . }}</dd>{{ end }}
+  {{- range $field := slice "people" "organizations" -}}
+    {{- $links := slice -}}
+    {{- range index $.Params $field -}}
+      {{- with . -}}
+        {{- with site.GetPage (printf "/%s/%s" $field .) -}}
+          {{- $links = $links | append (printf `<a href="%s">%s</a>` .RelPermalink .Title) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- with $links }}
+  <dt>{{ $field | humanize }}</dt><dd>{{ delimit . ", " | safeHTML }}</dd>
+    {{- end -}}
+  {{- end }}
+  {{- with .GetTerms "tags" }}
+  <dt>Tags</dt><dd>{{ range $i, $t := . }}{{ if $i }} {{ end }}<a href="{{ $t.RelPermalink }}">#{{ $t.LinkTitle }}</a>{{ end }}</dd>
+  {{- end }}
+</dl>
+{{- end -}}

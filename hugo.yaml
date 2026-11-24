@@ -1,0 +1,161 @@
+# The markdown.here website. Hugo builds it from the Markdown already in this
+# repo: nothing here is a copy. How it works: docs/website.md.
+
+baseURL: https://markdown.here/
+title: Markdown.here
+locale: en
+enableRobotsTXT: true
+titleCaseStyle: none # keep tags as written: #cli, not #Cli
+disableAliases: true
+resourceDir: .hugo-resources # build cache, not committed # reference entries use `aliases` for other names, not redirects
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home: [html, llms]
+  page: [html]
+  section: [html]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # keep HTML comments and inline HTML from the source files
+  highlight:
+    noClasses: false
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.146.0"
+  imports:
+    - path: github.com/imfing/hextra
+  mounts:
+    # Site-only files: home page, templates, styles
+    - { source: site/content, target: content }
+    - { source: site/layouts, target: layouts }
+    - { source: site/assets, target: assets }
+    - { source: site/static, target: static }
+    # The source Markdown. site/content/_content.gotmpl turns it into pages,
+    # using `params.sources` below.
+    - { source: course, target: assets/src/course }
+    - { source: references, target: assets/src/references }
+    - { source: microsoft-atlassian, target: assets/src/microsoft-atlassian }
+    - { source: docs, target: assets/src/docs }
+    - { source: RELEASING.md, target: assets/src/RELEASING.md }
+    - { source: media, target: static/media, files: ["*.svg", "*.png", "*.jpg"] }
+
+menu:
+  main:
+    - { name: Courses, pageRef: /courses, weight: 1 }
+    - { identifier: references, name: References, weight: 2 }
+    - { name: Resources, pageRef: /resources, parent: references, weight: 1 }
+    - { name: Tools, pageRef: /tools, parent: references, weight: 2 }
+    - { name: People, pageRef: /people, parent: references, weight: 3 }
+    - { name: Organizations, pageRef: /organizations, parent: references, weight: 4 }
+    - { name: About the lists, pageRef: /references, parent: references, weight: 5 }
+    - { name: At work, pageRef: /microsoft-atlassian, weight: 3 }
+    - { name: Contribute, pageRef: /contribute, weight: 4 }
+    - { name: Search, weight: 5, params: { type: search } }
+    - { name: GitHub, weight: 6, url: "https://github.com/thephm/markdown", params: { icon: github } }
+
+params:
+  description: Learn Markdown, try it, and find everything else worth knowing about it.
+  images: [/images/social-card.png] # preview image when a page is shared
+
+  # Where the source lives. Used for "Edit this page", downloads, and links to
+  # files that aren't web pages, like deck.yml. If the repo moves, change it
+  # here, in `editURL.base` below, and in the GitHub menu item above.
+  repo: https://github.com/thephm/markdown
+  branch: main
+
+  # Which repo files become pages, and where. First match wins. A README.md, or
+  # a file mapped to <folder>/README.md, becomes that folder's index page.
+  # Files that match nothing, or contain a `skip` folder, aren't published.
+  sources:
+    - { from: course/, to: courses/ }
+    - { from: references/README.md, to: references/README.md }
+    - { from: references/resources.md, to: resources/README.md }
+    - { from: references/tools.md, to: tools/README.md }
+    - { from: references/people.md, to: people/README.md }
+    - { from: references/organizations.md, to: organizations/README.md }
+    - { from: references/resources/, to: resources/ }
+    - { from: references/tools/, to: tools/ }
+    - { from: references/people/, to: people/ }
+    - { from: references/organizations/, to: organizations/ }
+    - { from: microsoft-atlassian/, to: microsoft-atlassian/ }
+    - { from: docs/, to: contribute/ }
+    - { from: RELEASING.md, to: contribute/releasing.md }
+  skip: [slides/, microsoft-slides/]
+
+  # Titles and sidebar order, keyed by repo path. Pages not listed take their
+  # title from the first `# heading` and sort by title.
+  pages:
+    course/markdown-101/README.md:
+      weight: 1
+      downloads:
+        - { file: markdown-101.pdf, label: "Slides (PDF)" }
+        - { file: markdown-101.pptx, label: "Slides (PowerPoint)" }
+        - { file: markdown-101.html, label: "Slides (HTML, opens in a browser)" }
+        - { file: markdown-cheatsheet.pdf, label: "Cheat sheet (PDF)" }
+    course/markdown-101/cheatsheet.md:
+      weight: 1
+      downloads:
+        - { file: markdown-cheatsheet.pdf, label: "Cheat sheet (PDF)" }
+    course/markdown-101/exercise-before.md: { weight: 2, title: "Exercise: before" }
+    course/markdown-101/exercise-after.md: { weight: 3, title: "Exercise: after" }
+    course/markdown-101/editions/microsoft.md:
+      weight: 4
+      downloads:
+        - { file: markdown-101-microsoft.pdf, label: "Slides (PDF)" }
+        - { file: markdown-101-microsoft.pptx, label: "Slides (PowerPoint)" }
+        - { file: markdown-101-microsoft.html, label: "Slides (HTML, opens in a browser)" }
+        - { file: markdown-cheatsheet-microsoft.pdf, label: "Cheat sheet (PDF)" }
+    course/markdown-101/editions/microsoft-cheatsheet.md:
+      weight: 5
+      downloads:
+        - { file: markdown-cheatsheet-microsoft.pdf, label: "Cheat sheet (PDF)" }
+    course/markdown-101/editions/teams-recap-before.md: { weight: 6, title: "Teams recap exercise: before" }
+    course/markdown-101/editions/teams-recap-after.md: { weight: 7, title: "Teams recap exercise: after" }
+    course/markdown-101/extending.md: { weight: 8 }
+    microsoft-atlassian/README.md: { title: "Markdown at work" }
+    microsoft-atlassian/markdown-support.md: { title: "What works where" }
+    docs/README.md: { title: Contribute }
+    docs/building.md: { weight: 1 }
+    RELEASING.md: { weight: 2, title: "Release a version" }
+    docs/conventions.md: { weight: 3 }
+    docs/website.md: { weight: 4 }
+    docs/website-setup.md: { weight: 5 }
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    width: wide
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    enable: true
+    displayCopyright: false
+    displayPoweredBy: false
+  displayUpdatedDate: false
+  editURL:
+    enable: true
+    base: https://github.com/thephm/markdown/edit/main
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+      version: "0.8.143"
+  mermaid:
+    base: https://cdn.jsdelivr.net/npm/mermaid@12.3.0/dist # same version as npm run media
+  highlight:
+    copy:
+      enable: true
+      display: hover
+  page:
+    width: wide # room for the reference tables
+    contextMenu:
+      enable: false

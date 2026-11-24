@@ -40,5 +40,6 @@ Every reference is its own Markdown file with YAML frontmatter. Its `slug` is th
 | [microsoft-atlassian/](../microsoft-atlassian/) | Markdown in a Microsoft 365, GitHub, and Confluence workplace. The core course stays tool-neutral |
 | [design/](../design/) | The Marp theme for slides and handouts |
 | [media/](../media/) | Source images and diagrams |
-| [scripts/](../scripts/) | Build scripts for the reference lists, decks, and diagrams |
+| [scripts/](../scripts/) | Build scripts for the reference lists, decks, diagrams, and website checks |
+| [site/](../site/) | Website-only files: home page, templates, styles. See [The website](website.md) |
 | [docs/](./) | How this repo works |

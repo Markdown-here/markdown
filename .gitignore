@@ -11,3 +11,8 @@ __pycache__/
 # Build output
 node_modules/
 dist/
+
+# Website build output (Hugo)
+public/
+.hugo-resources/
+.hugo_build.lock

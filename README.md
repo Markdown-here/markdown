@@ -40,6 +40,8 @@ The slides and handouts are also available as PDF and PowerPoint on the [Release
 |---|---|
 | [Building and releasing](docs/building.md) | Build the slides and handouts, update diagrams and lists, publish a release |
 | [Releasing from a phone](RELEASING.md) | Step by step: publish a version from Android with Termux |
+| [The website](docs/website.md) | How markdown.here is built from this repo, and how to preview and publish it |
+| [Website setup](docs/website-setup.md) | One time: GitHub Pages, moving the repo to the organization, and the domain |
 | [Conventions](docs/conventions.md) | Document types, frontmatter, and permanent IDs |
 | [Extending Markdown 101](course/markdown-101/extending.md) | Add slides, reorder decks, or create a new edition |
 | [Adding references](references/README.md) | The format for resources, tools, people, and organizations |

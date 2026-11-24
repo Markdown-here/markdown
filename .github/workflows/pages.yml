@@ -1,0 +1,85 @@
+name: Website
+
+# Builds the markdown.here website with Hugo and publishes it on GitHub Pages.
+# Every push to main: build, check, publish. Pull requests: build and check only.
+# How it works and how to set it up: docs/website.md and docs/website-setup.md.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One publish at a time. A newer push waits instead of cancelling a publish halfway.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: 0.170.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Check the reference lists are up to date
+        run: python scripts/build_references.py --check
+
+      - uses: actions/setup-go@v7 # Hugo uses Go to download the Hextra theme
+        with:
+          go-version-file: go.mod
+          cache: false
+
+      - name: Install Hugo
+        run: |
+          cd "$RUNNER_TEMP"
+          base="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          file="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          curl -sSfLO "$base/$file"
+          curl -sSfL "$base/hugo_${HUGO_VERSION}_checksums.txt" | grep " $file\$" | sha256sum -c
+          tar -xzf "$file" hugo
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+
+      - name: Get the site address
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+
+      - name: Build the website
+        env:
+          HUGO_ENVIRONMENT: production
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: hugo --minify --gc --panicOnWarning ${BASE_URL:+--baseURL "$BASE_URL/"}
+
+      - name: Check links inside the website
+        run: python scripts/check_site_links.py public
+
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: public
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

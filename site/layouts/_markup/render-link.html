@@ -1,0 +1,49 @@
+{{- /*
+  Links in the source files point at other files in the repo, like
+  `../../references/tools/vs-code.md`, so they work on GitHub. Here they become
+  site URLs, like `/tools/vs-code/`.
+
+  - A link to a published .md file, or to a folder with a published README.md,
+    goes to that page.
+  - A link to any other repo file or folder (deck.yml, slides/, a workflow)
+    goes to that file on GitHub.
+  - A link to an .md file that doesn't exist fails the build, so broken links
+    show up before they're published.
+*/ -}}
+{{- $dest := .Destination -}}
+{{- $u := urls.Parse $dest -}}
+{{- $isExternal := or $u.IsAbs (hasPrefix $dest "//") (hasPrefix $dest "mailto:") -}}
+{{- $source := .PageInner.Params.source -}}
+{{- if and (hasPrefix $dest "/") (not (hasPrefix $dest "//")) -}}
+  {{- /* Site paths like /courses/: keep working when the site lives in a subfolder */ -}}
+  {{- $dest = relURL (strings.TrimPrefix "/" $dest) -}}
+{{- else if and $source (not $isExternal) $u.Path (not (hasPrefix $u.Path "/")) -}}
+  {{- $fragment := cond (ne $u.Fragment "") (printf "#%s" $u.Fragment) "" -}}
+  {{- $repoPath := path.Join (path.Dir $source) $u.Path -}}
+  {{- $candidates := slice $repoPath -}}
+  {{- if not (strings.HasSuffix $repoPath ".md") -}}
+    {{- $candidates = slice (path.Join $repoPath "README.md") -}}
+  {{- end -}}
+  {{- /* `with partial` is Hugo's partial-decorator syntax, so assign first */ -}}
+  {{- $page := false -}}
+  {{- range $candidates -}}
+    {{- $target := partial "site-path.html" . -}}
+    {{- with $target -}}
+      {{- with site.GetPage (printf "/%s" .path) -}}{{- $page = . -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $page -}}
+    {{- $dest = printf "%s%s" $page.RelPermalink $fragment -}}
+  {{- else if hasPrefix $repoPath ".." -}}
+    {{- errorf "%s: link %q points outside the repo" $source .Destination -}}
+  {{- else if and (strings.HasSuffix $repoPath ".md") (not (fileExists $repoPath)) -}}
+    {{- errorf "%s: link %q points at %s, which doesn't exist" $source .Destination $repoPath -}}
+  {{- else -}}
+    {{- $kind := cond (strings.HasSuffix $u.Path "/") "tree" "blob" -}}
+    {{- if and (eq $kind "blob") (not (strings.Contains (path.Base $repoPath) ".")) -}}{{- $kind = "tree" -}}{{- end -}}
+    {{- $dest = printf "%s/%s/%s/%s%s" site.Params.repo $kind site.Params.branch $repoPath $fragment -}}
+    {{- $isExternal = true -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /* no trailing newline */ -}}

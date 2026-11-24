@@ -1,0 +1,18 @@
+{{- /*
+  Images in the source files point at repo files, like `../../media/flow.svg`.
+  Files in media/ are published at /media/. Any other repo image is loaded from
+  GitHub, so it still shows.
+*/ -}}
+{{- $src := .Destination -}}
+{{- $u := urls.Parse $src -}}
+{{- $source := .PageInner.Params.source -}}
+{{- if and $source (not $u.IsAbs) (not (hasPrefix $src "/")) -}}
+  {{- $repoPath := path.Join (path.Dir $source) $u.Path -}}
+  {{- if hasPrefix $repoPath "media/" -}}
+    {{- $src = printf "/%s" $repoPath | relURL -}}
+  {{- else -}}
+    {{- $src = printf "%s/raw/%s/%s" site.Params.repo site.Params.branch $repoPath -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" />
+{{- /* no trailing newline */ -}}
