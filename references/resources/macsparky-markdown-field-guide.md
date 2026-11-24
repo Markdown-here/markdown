@@ -17,7 +17,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
   - macos
@@ -28,7 +28,7 @@ tags:
 
 ## Summary
 
-An interactive e-book about Markdown for Mac and iOS users, with screencasts and interviews. John Gruber linked to it approvingly when it came out in 2013.
+An interactive e-book about Markdown for Mac and iOS users, with screencasts and interviews. [John Gruber](../people/john-gruber.md) linked to it approvingly when it came out in 2013.
 
 ## Key takeaways
 

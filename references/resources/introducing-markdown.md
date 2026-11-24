@@ -11,7 +11,7 @@ date: 2004-03-15
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - history
@@ -21,7 +21,7 @@ tags:
 
 ## Summary
 
-Gruber's announcement of Markdown: a text-to-HTML tool that lets web writers use a readable plain-text syntax.
+[Gruber](../people/john-gruber.md)'s announcement of Markdown: a text-to-HTML tool that lets web writers use a readable plain-text syntax.
 
 ## Key takeaways
 

@@ -16,7 +16,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
 ---
@@ -25,7 +25,7 @@ tags:
 
 ## Summary
 
-The book version of the Markdown Guide website: what Markdown is, how it flows from text file to HTML, where it's used (websites, docs, notes, books), and the basic and extended syntax with compatibility advice.
+The book version of the [Markdown Guide](markdown-guide.md) website: what Markdown is, how it flows from text file to HTML, where it's used (websites, docs, notes, books), and the basic and extended syntax with compatibility advice.
 
 ## Key takeaways
 

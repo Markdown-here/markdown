@@ -14,7 +14,7 @@ integrations:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - framework
@@ -26,7 +26,7 @@ tags:
 
 ## Summary
 
-Stripe's Markdown-based syntax and toolchain for building custom documentation sites.
+[Stripe](../organizations/stripe.md)'s Markdown-based syntax and toolchain for building custom documentation sites.
 
 ## Quotes
 

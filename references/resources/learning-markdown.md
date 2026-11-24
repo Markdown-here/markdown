@@ -18,7 +18,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
 ---
@@ -27,7 +27,7 @@ tags:
 
 ## Summary
 
-A MakeUseOf guide to Markdown for people who write for the web: the basic syntax, a few MultiMarkdown extras, automation shortcuts, and a tour of editors by platform. Fun, but many of the apps it recommends are gone.
+A MakeUseOf guide to Markdown for people who write for the web: the basic syntax, a few [MultiMarkdown](../tools/multimarkdown.md) extras, automation shortcuts, and a tour of editors by platform. Fun, but many of the apps it recommends are gone.
 
 ## Key takeaways
 

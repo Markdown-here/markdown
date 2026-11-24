@@ -14,7 +14,7 @@ integrations:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - flavor
@@ -26,7 +26,7 @@ tags:
 
 ## Summary
 
-A superset of Markdown by Fletcher Penney adding tables, footnotes, citations, and more output formats.
+A superset of Markdown by [Fletcher Penney](../people/fletcher-penney.md) adding tables, footnotes, citations, and more output formats.
 
 ## Quotes
 

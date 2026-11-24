@@ -14,7 +14,7 @@ integrations:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - converter
@@ -30,7 +30,7 @@ tags:
 
 ## Summary
 
-Microsoft's open source tool for converting Office documents, PDFs, and more into Markdown, aimed at LLM pipelines.
+[Microsoft](../organizations/microsoft.md)'s open source tool for converting Office documents, PDFs, and more into Markdown, aimed at LLM pipelines.
 
 ## Quotes
 

@@ -8,7 +8,7 @@ url: https://github.com/DavidAnson/markdownlint
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 organizations:
   - 
 people:
@@ -27,7 +27,7 @@ tags:
 
 ## Summary
 
-Style and consistency checker for Markdown files; also available as a VS Code extension.
+Style and consistency checker for Markdown files; also available as a [VS Code](vs-code.md) extension.
 
 ## References
 

@@ -11,7 +11,7 @@ date: 2021-05-04
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - microsoft
@@ -21,7 +21,7 @@ tags:
 
 ## Summary
 
-Markdown from a Microsoft 365 point of view: where it already shows up across Microsoft's products, and why it isn't a single standard.
+Markdown from a Microsoft 365 point of view: where it already shows up across [Microsoft](../organizations/microsoft.md)'s products, and why it isn't a single standard.
 
 ## Key takeaways
 

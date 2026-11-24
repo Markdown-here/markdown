@@ -11,7 +11,7 @@ date:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - style-guide
@@ -22,7 +22,7 @@ tags:
 
 ## Summary
 
-The Markdown rules Microsoft's PowerShell documentation team writes by. Not a tutorial: a concrete, enforceable style guide.
+The Markdown rules [Microsoft](../organizations/microsoft.md)'s PowerShell documentation team writes by. Not a tutorial: a concrete, enforceable style guide.
 
 ## Key takeaways
 

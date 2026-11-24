@@ -11,7 +11,7 @@ date: 2004-03-19
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - history
@@ -21,7 +21,7 @@ tags:
 
 ## Summary
 
-An essay on why Markdown is forgiving: Gruber explains how a debate over strict XML feed parsing changed his mind, and why Markdown deliberately accepts imperfect input instead of failing on it.
+An essay on why Markdown is forgiving: [Gruber](../people/john-gruber.md) explains how a debate over strict XML feed parsing changed his mind, and why Markdown deliberately accepts imperfect input instead of failing on it.
 
 ## Key takeaways
 

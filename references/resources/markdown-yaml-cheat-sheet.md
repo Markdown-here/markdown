@@ -11,7 +11,7 @@ date:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - cheatsheet
@@ -22,7 +22,7 @@ tags:
 
 ## Summary
 
-A one-page cheat sheet covering Markdown basics and the YAML you need for frontmatter.
+A one-page cheat sheet covering Markdown basics and the [YAML](yaml.md) you need for frontmatter.
 
 ## Key takeaways
 

@@ -6,7 +6,7 @@ url: https://daringfireball.net/projects/markdown/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 people:
   - john-gruber
 organizations:
@@ -20,7 +20,7 @@ tags:
 
 ## Summary
 
-John Gruber's original 2004 description of Markdown's philosophy and syntax. Where it all started.
+[John Gruber](../people/john-gruber.md)'s original 2004 description of Markdown's philosophy and syntax. Where it all started.
 
 ## References
 

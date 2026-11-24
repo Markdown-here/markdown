@@ -16,7 +16,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
 ---
@@ -25,7 +25,7 @@ tags:
 
 ## Summary
 
-A short introduction to Markdown that's mostly valuable as a list of links: online and offline editors, Pandoc and other converters, and what people build with Markdown, such as slides, résumés, and documentation sites.
+A short introduction to Markdown that's mostly valuable as a list of links: online and offline editors, [Pandoc](../tools/pandoc.md) and other converters, and what people build with Markdown, such as slides, résumés, and documentation sites.
 
 ## Key takeaways
 

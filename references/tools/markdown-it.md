@@ -14,7 +14,7 @@ integrations:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - library
@@ -26,7 +26,7 @@ tags:
 
 ## Summary
 
-JavaScript Markdown parser with full CommonMark support, plugins, and high speed.
+JavaScript Markdown parser with full [CommonMark](../resources/commonmark-spec.md) support, plugins, and high speed.
 
 ## Quotes
 

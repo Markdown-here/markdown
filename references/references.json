@@ -449,7 +449,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "book"
     ],
@@ -487,7 +487,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "people": [
       "john-gruber"
     ],
@@ -512,7 +512,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "history"
@@ -550,7 +550,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "people": [],
     "organizations": [
       "github"
@@ -598,7 +598,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "history"
@@ -626,7 +626,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "book"
     ],
@@ -671,7 +671,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "book",
       "macos",
@@ -693,7 +693,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "history"
@@ -740,7 +740,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "book"
     ],
@@ -760,7 +760,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "style-guide",
@@ -828,7 +828,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "history"
@@ -847,7 +847,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "cheatsheet",
@@ -1034,7 +1034,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "book"
     ],
@@ -1118,7 +1118,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "article",
       "microsoft"
@@ -1440,7 +1440,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "framework",
@@ -1462,7 +1462,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "library",
@@ -1503,7 +1503,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "organizations": [],
     "people": [],
     "integrations": [],
@@ -1531,7 +1531,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "converter",
@@ -1631,7 +1631,7 @@
     "state": "active",
     "source": "personal use",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "organizations": [],
     "people": [],
     "integrations": [],
@@ -1702,7 +1702,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "flavor",
@@ -1803,7 +1803,7 @@
     "state": "active",
     "source": "c:\notes",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "windows",
@@ -1830,7 +1830,7 @@
     "state": "watch",
     "source": "https://quarto.org/docs/presentations/revealjs/",
     "added": "2026-11-22",
-    "updated": "",
+    "updated": "2026-11-24",
     "tags": [
       "tool",
       "slides",

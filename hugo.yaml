@@ -115,7 +115,7 @@ params:
       title: What works where
       weight: 1
       list: resources
-      summary: Which Markdown features work in GitHub, VS Code, OneDrive, SharePoint, Teams, and Confluence.
+      summary: Which Markdown features work in [GitHub](/organizations/github/), [VS Code](/tools/vs-code/), OneDrive, SharePoint, Teams, and Confluence.
 
   navbar:
     displayTitle: true

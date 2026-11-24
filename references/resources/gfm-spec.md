@@ -6,7 +6,7 @@ url: https://github.github.com/gfm/
 state: active
 source: personal use
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 people:
   - 
 organizations:
@@ -20,7 +20,7 @@ tags:
 
 ## Summary
 
-CommonMark plus GitHub's extensions: tables, task lists, strikethrough, and autolinks.
+[CommonMark](commonmark-spec.md) plus [GitHub](../organizations/github.md)'s extensions: tables, task lists, strikethrough, and autolinks.
 
 ## References
 

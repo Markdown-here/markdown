@@ -14,7 +14,7 @@ integrations:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - windows
@@ -27,7 +27,7 @@ tags:
 
 ## Summary
 
-Microsoft PowerToys adds previews to Windows File Explorer, including rendered Markdown files.
+[Microsoft](../organizations/microsoft.md) PowerToys adds previews to Windows File Explorer, including rendered Markdown files.
 
 ## Quotes
 

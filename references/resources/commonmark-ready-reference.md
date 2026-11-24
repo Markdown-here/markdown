@@ -16,7 +16,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
 ---
@@ -25,7 +25,7 @@ tags:
 
 ## Summary
 
-A compact reference on CommonMark: why the original Markdown needed a proper spec, and how to build and run the `cmark` reference implementation yourself on Linux and Windows.
+A compact reference on [CommonMark](../organizations/commonmark.md): why the original Markdown needed a proper spec, and how to build and run the `cmark` reference implementation yourself on Linux and Windows.
 
 ## Key takeaways
 

@@ -11,7 +11,7 @@ date: 2004-03-25
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - history
@@ -21,7 +21,7 @@ tags:
 
 ## Summary
 
-A release note for Markdown 1.0b4, and the first pointer to going the other way: HTML back to Markdown with Aaron Swartz's html2text.
+A release note for Markdown 1.0b4, and the first pointer to going the other way: HTML back to Markdown with [Aaron Swartz](../people/aaron-swartz.md)'s [html2text](../tools/html2text.md).
 
 ## Key takeaways
 

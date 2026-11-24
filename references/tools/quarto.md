@@ -16,7 +16,7 @@ integrations:
 state: watch
 source: https://quarto.org/docs/presentations/revealjs/
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - tool
   - slides
@@ -34,7 +34,7 @@ tags:
 
 ## Summary
 
-A publishing system built on [Pandoc](pandoc.md). It turns Markdown (`.qmd`) into documents, websites, books, and presentations. Presentations can be [reveal.js](reveal-js.md), PowerPoint, or Beamer. It has a VS Code extension.
+A publishing system built on [Pandoc](pandoc.md). It turns Markdown (`.qmd`) into documents, websites, books, and presentations. Presentations can be [reveal.js](reveal-js.md), PowerPoint, or Beamer. It has a [VS Code](vs-code.md) extension.
 
 ## Why it's the runner-up for Markdown 101
 

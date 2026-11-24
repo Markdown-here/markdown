@@ -11,7 +11,7 @@ date: 2004-12-17
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - article
   - history
@@ -21,7 +21,7 @@ tags:
 
 ## Summary
 
-Why Markdown moved from the GPL to a BSD-style license in version 1.0.1, plus Gruber's wish list for 1.1.
+Why Markdown moved from the GPL to a BSD-style license in version 1.0.1, plus [Gruber](../people/john-gruber.md)'s wish list for 1.1.
 
 ## Key takeaways
 
