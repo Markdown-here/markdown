@@ -47,3 +47,7 @@
 /* Home page: Hextra leaves a tall gap above the headline */
 .mdh-hero { margin-top: -1.5rem; }
 @media (max-width: 767px) { .mdh-hero { margin-top: -1rem; } }
+
+/* Table headers line up with their column. Browsers center them by default;
+   a column marked :---: in Markdown still centers (it gets a style attribute). */
+.content table th:not([style]) { text-align: start; }
