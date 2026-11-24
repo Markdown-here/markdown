@@ -37,7 +37,7 @@ You never edit web pages and you never commit them. The workflow builds them fre
 | `/courses/markdown-101-microsoft/…` | The same, from the Microsoft edition's deck, slides, cheat sheet, and Teams recap exercise |
 | `/tools/`, `/resources/`, `/people/`, `/organizations/` | A table built from [`references.json`](../references/references.json), with each entry's summary |
 | `/tools/pandoc/` and the other entries | Each entry file in `references/` |
-| `/microsoft-atlassian/` | [`markdown-support.md`](../microsoft-atlassian/markdown-support.md) |
+| `/resources/what-works-where/` | [`markdown-support.md`](../microsoft-atlassian/markdown-support.md), pinned to the top of the Resources list |
 | `/` | The home page in [`site/content/_index.md`](../site/content/_index.md) |
 
 **Not on the site:** the course plans (`course/markdown-101/README.md`, `editions/microsoft.md`), `extending.md`, `docs/`, `RELEASING.md`, `references/README.md`, `inbox.md`, `templates/`, and the rest of `microsoft-atlassian/`. Links to them from the site open them on GitHub.
@@ -91,7 +91,8 @@ Under `pages` in `hugo.yaml`, keyed by the file's repo path:
 
 - `title` replaces the `# heading`. The exercises need this, because their heading is the meeting's name.
 - `after: exercise` puts the page right after the `exercise` lesson. `order` sorts pages that follow the same lesson.
-- `weight` sets a place directly: lessons are 10, 20, 30, and so on, so `100000` means last.
+- `weight` sets a place directly: lessons are 10, 20, 30, and so on, so `100000` means last. In a reference section, `weight: 1` puts a page first.
+- `list: resources` with a `summary` pins a page to the top of that reference list, the way "What works where" is.
 
 ### Add a course
 

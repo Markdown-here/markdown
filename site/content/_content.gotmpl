@@ -123,6 +123,13 @@
         {{- end -}}
       {{- end -}}
       {{- $lines := slice $intro "" "| Name | What it is |" "|---|---|" -}}
+      {{- /* Pages pinned to this list with `list:` in params.pages */ -}}
+      {{- range $key, $page := site.Params.pages -}}
+        {{- if eq $page.list $folder -}}
+          {{- $pinned := partial "site-path.html" $key -}}
+          {{- $lines = $lines | append (printf "| [%s](/%s/) | %s |" $page.title $pinned.path ($page.summary | default "")) -}}
+        {{- end -}}
+      {{- end -}}
       {{- range sort $rows "sort" -}}{{- $lines = $lines | append .row -}}{{- end -}}
       {{- $content = delimit $lines "\n" -}}
     {{- end -}}

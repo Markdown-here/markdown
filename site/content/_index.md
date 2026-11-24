@@ -29,6 +29,6 @@ description: Learn Markdown, try it, and find everything else worth knowing abou
   {{< hextra/feature-card title="Tools" link="tools/" subtitle="Editors, converters, libraries, and services." >}}
   {{< hextra/feature-card title="People" link="people/" subtitle="The people who created, shaped, or teach Markdown." >}}
   {{< hextra/feature-card title="Microsoft edition" link="courses/markdown-101-microsoft/" subtitle="The same course using VS Code, Notepad, OneDrive, Teams, and Copilot." >}}
-  {{< hextra/feature-card title="What works where" link="microsoft-atlassian/" subtitle="Which Markdown features work in GitHub, VS Code, OneDrive, SharePoint, Teams, and Confluence." >}}
+  {{< hextra/feature-card title="What works where" link="resources/what-works-where/" subtitle="Which Markdown features work in GitHub, VS Code, OneDrive, SharePoint, Teams, and Confluence." >}}
   {{< hextra/feature-card title="Organizations" link="organizations/" subtitle="Spec bodies, companies, and projects." >}}
 {{< /hextra/feature-grid >}}

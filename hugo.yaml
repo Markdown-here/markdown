@@ -47,14 +47,12 @@ module:
 menu:
   main:
     - { name: Courses, pageRef: /courses, weight: 1 }
-    - { identifier: references, name: References, weight: 2 }
-    - { name: Resources, pageRef: /resources, parent: references, weight: 1 }
-    - { name: Tools, pageRef: /tools, parent: references, weight: 2 }
-    - { name: People, pageRef: /people, parent: references, weight: 3 }
-    - { name: Organizations, pageRef: /organizations, parent: references, weight: 4 }
-    - { name: What works where, pageRef: /microsoft-atlassian, weight: 3 }
-    - { name: Search, weight: 4, params: { type: search } }
-    - { name: GitHub, weight: 5, url: "https://github.com/Markdown-here/markdown", params: { icon: github } }
+    - { name: Resources, pageRef: /resources, weight: 2 }
+    - { name: Tools, pageRef: /tools, weight: 3 }
+    - { name: People, pageRef: /people, weight: 4 }
+    - { name: Organizations, pageRef: /organizations, weight: 5 }
+    - { name: Search, weight: 7, params: { type: search } }
+    - { name: GitHub, weight: 8, url: "https://github.com/Markdown-here/markdown", params: { icon: github } }
 
 params:
   description: Learn Markdown, try it, and find everything else worth knowing about it.
@@ -92,7 +90,7 @@ params:
     - { from: references/tools/, to: tools/ }
     - { from: references/people/, to: people/ }
     - { from: references/organizations/, to: organizations/ }
-    - { from: microsoft-atlassian/markdown-support.md, to: microsoft-atlassian/README.md }
+    - { from: microsoft-atlassian/markdown-support.md, to: resources/what-works-where.md }
 
   # Reference entries in these states aren't published
   hideStates: [draft, broken, retired]
@@ -100,7 +98,8 @@ params:
   # Titles and sidebar order for the files above, keyed by repo path. Without a
   # title, a page takes its first `# heading`. `after: <slide>` puts a page
   # right after that lesson (`order` sorts pages after the same lesson).
-  # Higher weights go lower in the sidebar.
+  # Higher weights go lower in the sidebar. `list: resources` (with a
+  # `summary`) pins a page to the top of that reference list.
   pages:
     course/markdown-101/exercise-before.md: { title: "Practice: the messy note", after: exercise, order: 1 }
     course/markdown-101/exercise-after.md: { title: "Practice: one answer", after: exercise, order: 2 }
@@ -108,7 +107,11 @@ params:
     course/markdown-101/editions/teams-recap-before.md: { title: "Practice: the messy recap", after: exercise, order: 1 }
     course/markdown-101/editions/teams-recap-after.md: { title: "Practice: one answer", after: exercise, order: 2 }
     course/markdown-101/editions/microsoft-cheatsheet.md: { weight: 100000 }
-    microsoft-atlassian/markdown-support.md: { title: "What works where" }
+    microsoft-atlassian/markdown-support.md:
+      title: What works where
+      weight: 1
+      list: resources
+      summary: Which Markdown features work in GitHub, VS Code, OneDrive, SharePoint, Teams, and Confluence.
 
   navbar:
     displayTitle: true
