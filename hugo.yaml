@@ -95,6 +95,9 @@ params:
 
   # Reference entries in these states aren't published
   hideStates: [draft, broken, retired]
+  # Sections of reference entries left off the site: your own working notes.
+  # Put anything learners should see under Summary or Key takeaways instead.
+  hideSections: [Notes]
 
   # Titles and sidebar order for the files above, keyed by repo path. Without a
   # title, a page takes its first `# heading`. `after: <slide>` puts a page

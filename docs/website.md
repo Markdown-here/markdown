@@ -46,6 +46,8 @@ You never edit web pages and you never commit them. The workflow builds them fre
 
 **Reference entries left out:** entries with `state: draft`, `broken`, or `retired`. The list is `hideStates` in [`hugo.yaml`](../hugo.yaml).
 
+**Sections left out:** each entry's `## Notes`, which are your own working notes. Put anything learners should see under `## Summary` or `## Key takeaways`. The list is `hideSections` in `hugo.yaml`.
+
 **URLs are permanent**, like slugs and slide IDs. Renaming a file changes its URL and breaks every link to it from other sites.
 
 ## Which file does what
