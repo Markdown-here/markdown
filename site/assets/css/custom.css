@@ -76,3 +76,20 @@
 /* All tags page: a compact multi-column list */
 .content ul.mdh-tags { list-style: none; padding: 0; margin-inline-start: 0; columns: 12rem; column-gap: 1.5rem; }
 .content ul.mdh-tags li { margin: 0; padding: 0.15rem 0; break-inside: avoid; }
+
+/* Tags as pills */
+.content a.mdh-tag {
+  display: inline-block;
+  padding: 0.05rem 0.55rem;
+  margin: 0.1rem 0;
+  border-radius: 999px;
+  font-size: 0.85em;
+  line-height: 1.6;
+  text-decoration: none;
+  color: #3e1f8f;
+  background: hsl(258 63% 54% / 0.1);
+  border: 1px solid hsl(258 63% 54% / 0.25);
+}
+.content a.mdh-tag:hover { background: hsl(258 63% 54% / 0.2); }
+.dark .content a.mdh-tag { color: #d6c9fb; background: hsl(258 63% 70% / 0.15); border-color: hsl(258 63% 70% / 0.3); }
+.dark .content a.mdh-tag:hover { background: hsl(258 63% 70% / 0.25); }

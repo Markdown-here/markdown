@@ -11,7 +11,7 @@
           <p>Resources, tools, people, and organizations, by tag.</p>
           <ul class="mdh-tags">
             {{- range .Data.Terms.Alphabetical }}
-            <li><a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a> <span class="mdh-muted">{{ .Count }}</span></li>
+            <li><a class="mdh-tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="mdh-muted">{{ .Count }}</span></li>
             {{- end }}
           </ul>
         </div>
