@@ -22,7 +22,6 @@ description: Learn Markdown and find everything else worth knowing about it.
 </div>
 
 {{< hextra/feature-grid >}}
-  {{< hextra/feature-card title="Microsoft edition" link="courses/markdown-101-microsoft/" subtitle="The same course using VS Code, Notepad, OneDrive, Teams, and Copilot." >}}
   {{< hextra/feature-card title="Cheat sheet" link="courses/markdown-101/cheatsheet/" subtitle="One page with the syntax you'll use every day." >}}
   {{< hextra/feature-card title="Resources" link="resources/" subtitle="Books, specs, guides, articles, and videos." >}}
   {{< hextra/feature-card title="Tools" link="tools/" subtitle="Editors, converters, libraries, and services." >}}
