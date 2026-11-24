@@ -51,7 +51,7 @@ The [Course workflow](../.github/workflows/course.yml) builds the course into PD
 | Every push to `main` | The `markdown-101` artifact on the workflow run | `Markdown 101 · dev-<commit>` |
 | A version tag, like `v0.1` | A [GitHub Release](https://github.com/thephm/markdown/releases) with all files attached | `Markdown 101 · v0.1` |
 
-To release a version:
+To release a version (step by step, including one-time setup on an Android phone: [RELEASING.md](../RELEASING.md)):
 
 ```bash
 git tag v0.1
