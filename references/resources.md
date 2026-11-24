@@ -42,5 +42,5 @@ Books, specs, guides, articles, and videos about Markdown. 34 entries. Schema: [
 | [Using Markdown](resources/using-markdown.md) | Book | active | `#book` |  |
 | [What Is Markdown and Why Should You Care](resources/what-is-markdown-vivaldi.md) | Article | active | `#article` `#beginner` | <https://vivaldi.com/blog/markdown-in-vivaldi-notes/> |
 | [What's Up With Markdown](resources/whats-up-with-markdown.md) | Article | active | `#article` `#microsoft` | <https://bob1german.com/2021/05/04/whats-up-with-markdown/> |
-| [Writing in Markdown](resources/writing-in-markdown.md) | Book | active | `#book` |  |
+| [Writing in Markdown](resources/writing-in-markdown.md) | Book | active | `#book` | <https://mattgemmell.com/books/writing-in-markdown/> |
 | [YAML](resources/yaml.md) | Technology | active | `#spec` `#yaml` | <https://yaml.org/> |

@@ -3,7 +3,7 @@ type: Book
 slug: writing-in-markdown
 title: Writing in Markdown
 subtitle: 
-url: 
+url: https://mattgemmell.com/books/writing-in-markdown/
 people:
   - matt-gemmell
 organizations:
@@ -16,7 +16,7 @@ rating:
 state: active
 source: "c:\notes"
 added: 2026-11-22
-updated: 
+updated: 2026-11-24
 tags:
   - book
 ---
@@ -44,4 +44,5 @@ A short, opinionated guide for writers. Best known for its suggested style rules
 
 ## References
 
-1.
+1. [Writing in Markdown](https://mattgemmell.com/books/writing-in-markdown/), the book's page on Matt Gemmell's site
+2. [Writing in Markdown on Goodreads](https://www.goodreads.com/book/show/29811282-writing-in-markdown)
