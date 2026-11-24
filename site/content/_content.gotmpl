@@ -164,7 +164,7 @@
     {{- $tags := slice -}}
     {{- range $fm.tags -}}{{- with . -}}{{- $tags = $tags | append . -}}{{- end -}}{{- end -}}
 
-    {{- $params := merge $fm (dict "source" $repoPath "docType" $docType "tags" $tags) -}}
+    {{- $params := merge $fm (dict "source" $repoPath "docType" $docType "tags" $tags "downloads" ($extra.downloads | default slice)) -}}
     {{- with $description -}}
       {{- /* description: plain text for search engines; summary: with site links, for tag pages */ -}}
       {{- $params = merge $params (dict
