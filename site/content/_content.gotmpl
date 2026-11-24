@@ -113,24 +113,10 @@
       {{- $intro := "" -}}
       {{- with findRESubmatch `(?m)^(.+?) \d+ entries\.` $content 1 -}}{{- $intro = index (index . 0) 1 -}}{{- end -}}
       {{- $refs := resources.Get "src/references/references.json" | transform.Unmarshal -}}
-      {{- /* Published entries, and each person's or organization's work: the
-           entries that name them in their `people` or `organizations` field */ -}}
+      {{- /* Published entries, to know which summary links have a page */ -}}
       {{- $published := dict -}}
-      {{- $work := dict -}}
       {{- range $refs -}}
-        {{- if not (in $hide .state) -}}
-          {{- $e := . -}}
-          {{- $published = merge $published (dict $e.id true) -}}
-          {{- range $field := slice "people" "organizations" -}}
-            {{- range index $e $field -}}
-              {{- with . -}}
-                {{- $key := printf "%s/%s" $field . -}}
-                {{- $list := index $work $key | default slice -}}
-                {{- $work = merge $work (dict $key ($list | append (printf "[%s](/%s/)" $e.title $e.id))) -}}
-              {{- end -}}
-            {{- end -}}
-          {{- end -}}
-        {{- end -}}
+        {{- if not (in $hide .state) -}}{{- $published = merge $published (dict .id true) -}}{{- end -}}
       {{- end -}}
       {{- $rows := slice -}}
       {{- range $refs -}}
@@ -152,10 +138,6 @@
               {{- if and $linked (index $published $linked.path) -}}{{- $new = printf "[%s](/%s/)" $text $linked.path -}}{{- end -}}
             {{- end -}}
             {{- $summary = replace $summary $whole $new -}}
-          {{- end -}}
-          {{- with index $work $e.id -}}
-            {{- $label := cond (eq $folder "people") "Work" "Related" -}}
-            {{- $summary = printf "%s<br>**%s:** %s" $summary $label (delimit . ", ") -}}
           {{- end -}}
           {{- $summary = replace $summary "|" "\\|" -}}
           {{- $rows = $rows | append (dict "sort" (lower $e.title) "row" (printf "| [%s](/%s/) | %s |" $e.title $e.id $summary)) -}}
