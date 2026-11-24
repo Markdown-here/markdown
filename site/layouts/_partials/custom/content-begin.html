@@ -22,7 +22,8 @@
   <dt>Link</dt><dd><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd>
   {{- end }}
   {{- with .Params.docType }}<dt>Type</dt><dd>{{ . }}</dd>{{ end }}
-  {{- with .Params.state }}<dt>State</dt><dd>{{ . }}</dd>{{ end }}
+  {{- /* The state is for curators, except stale: worth a warning before you install it */ -}}
+  {{- if eq .Params.state "stale" }}<dt>Note</dt><dd>Unmaintained or outdated. Listed for context.</dd>{{ end }}
   {{- range $field := slice "people" "organizations" -}}
     {{- $links := slice -}}
     {{- range index $.Params $field -}}
