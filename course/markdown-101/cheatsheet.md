@@ -1,7 +1,7 @@
 ---
 type: Cheatsheet
 marp: true
-footer: "Markdown 101 · [github.com/Markdown-here/markdown](https://github.com/Markdown-here/markdown)"
+footer: "Markdown 101 · [markdown.here](https://markdown.here)"
 theme: markdown101
 size: a4-portrait
 class: cheatsheet

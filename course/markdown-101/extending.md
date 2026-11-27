@@ -105,4 +105,4 @@ git checkout v0.2
 
 Pin a release tag rather than `main`, so the course doesn't change under you the week of a session.
 
-Please keep the credit to this repo in the footer.
+Please keep the credit to [markdown.here](https://markdown.here) in the footer.

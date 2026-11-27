@@ -28,7 +28,7 @@ Write like a person who knows the subject, not like an AI.
 - Slugs are permanent. Never rename or reuse one.
 - Content for a specific workplace tool stack goes in `microsoft-atlassian/`. Keep the core course tool-neutral.
 - Mark anything untested at work with **(verify)**.
-- Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits the repo in its footer. Render it and look at it before calling it done.
+- Anything meant to be shared (slides, handouts) uses the `markdown101` theme in [design/](design/) and credits [markdown.here](https://markdown.here) in its footer. Render it and look at it before calling it done.
 - Slides are one file per slide (`type: Slide`) in `slides/` folders. Deck files (`deck.yml`, `*-deck.yml`) set the order. Edit slide files, never the built deck in `dist/`. Slide IDs (file names) are permanent. See [course/markdown-101/extending.md](course/markdown-101/extending.md).
 - The website (markdown.here) is for learners. It's built from the repo's own files by `hugo.yaml` and `site/`: lessons from the slides in deck order, plus cheat sheets, exercises, and references. Never copy content into `site/`. Course plans and contributor docs stay on GitHub. See [docs/website.md](docs/website.md).
 - Diagrams: edit `media/<name>.mmd`, run `npm run media`, and commit the `.mmd` and the `.svg` together.

@@ -19,7 +19,7 @@ Start a Markdown file with the block below. For a slide deck, put the same setti
 type: Presentation    # or Cheatsheet
 marp: true
 theme: markdown101
-footer: "Markdown 101 · [github.com/Markdown-here/markdown](https://github.com/Markdown-here/markdown)"
+footer: "Markdown 101 · [markdown.here](https://markdown.here)"
 ---
 ```
 
@@ -36,4 +36,4 @@ Slide classes: `<!-- _class: lead -->` for title and closing slides, `<!-- _clas
 - **Command line:** `npm install`, then `npm run build`. HTML, PDF, and PowerPoint files land in `dist/`, which isn't committed.
 - **Releases:** GitHub builds everything on each push and publishes a release for each version tag. See [Releases](../docs/building.md#releases).
 
-Always credit the source: the `footer` links back to this repo.
+Always credit the source: the `footer` links to [markdown.here](https://markdown.here).
